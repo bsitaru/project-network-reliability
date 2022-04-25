@@ -21,8 +21,10 @@ t_double n_root(t_double x, int n) {
 
 struct UnionFind {
     unordered_map<t_node, t_node> uf;
+    int components;
 
     UnionFind(const vector<t_node> &nodes) {
+        components = nodes.size();
         for (auto node: nodes) uf[node] = node;
     }
 
@@ -33,8 +35,10 @@ struct UnionFind {
 
     void unite(t_node x, t_node y) {
         t_node fx = find(x), fy = find(y);
-        if(fx != fy)
+        if(fx != fy) {
             uf[fy] = fx;
+            components--;
+        }
     }
 };
 
@@ -51,5 +55,45 @@ void debug_measure_time_ms(function<void()> fn, string text, bool print = true) 
     auto time_taken = chrono::duration_cast<chrono::milliseconds>(chrono::high_resolution_clock::now() - t_start);
     if(print)   cout << text << ": " << time_taken.count() << " ms" << endl;
 }
+
+struct Profiler {
+    using time_stamp = chrono::time_point<chrono::system_clock>;
+
+    unordered_map<string, long> time_spent;
+    unordered_map<string, time_stamp> time_stamps;
+
+    void reset() {
+        time_spent.clear();
+    }
+
+    void print() {
+        vector< pair<long, string> > prs;
+        for(auto [x, y]: time_spent)
+            prs.emplace_back(y, x);
+
+        cout << "Profiling: " << endl;
+        for(auto [time, who]: prs)
+            cout << who << ": " << (double)time * 0.001 << " ms" << endl;
+    }
+
+    void profile(const string& who, function<void()> fn) {
+        auto t_start = chrono::high_resolution_clock::now();
+        fn();
+        auto time_taken = chrono::duration_cast<chrono::microseconds>(chrono::high_resolution_clock::now() - t_start);
+        time_spent[who] += time_taken.count();
+    }
+
+    void start(const string& who) {
+        time_stamps[who] = chrono::high_resolution_clock::now();
+    }
+
+    void stop(const string& who) {
+        auto now = chrono::high_resolution_clock::now();
+        auto time_taken = chrono::duration_cast<chrono::microseconds>(now - time_stamps[who]);
+        time_spent[who] += time_taken.count();
+    }
+};
+
+static Profiler profiler;
 
 #endif //NETWORK_RELIABILITY_UNRELIABILITY_UTILS_HPP

@@ -49,7 +49,7 @@ struct Graph {
         adj.clear();
         radj.clear();
         m = 0;
-        for (auto e: edges) {
+        for (auto &e: edges) {
             adj[e.from].push_back(e);
             m += e.cnt;
             if (directed)
@@ -154,6 +154,19 @@ static pair<Graph, vector<t_edge>> unite(Graph &g, t_node x, t_node y) {
     new_nodes.erase(it);
 
     return {Graph(new_nodes, new_edges, g.p, g.directed), removed_edges};
+}
+
+Graph to_unit_edges(Graph &g) {
+    vector<t_edge> new_edges;
+    new_edges.reserve(g.get_m());
+    for(auto e: g.edges) {
+        int cnt = e.cnt;
+        e.cnt = 1;
+        for(int i = 0; i < cnt; i++)
+            new_edges.push_back(e);
+    }
+
+    return Graph(g.nodes, new_edges, g.p, g.directed);
 }
 
 #endif //NETWORK_RELIABILITY_UNRELIABILITY_GRAPH_HPP

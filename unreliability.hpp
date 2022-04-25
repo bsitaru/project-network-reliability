@@ -26,6 +26,13 @@ t_double monte_carlo(Graph &g) {
 }
 
 Graph contract(Graph &g, t_double q) {
+
+    struct HASH{
+        size_t operator()(const pair<int,int>&x)const{
+            return hash<long long>()(((long long)x.first)^(((long long)x.second)<<32));
+        }
+    };
+
     UnionFind uf(g.nodes);
 
     for (auto &e: g.edges)
@@ -34,12 +41,13 @@ Graph contract(Graph &g, t_double q) {
         }
 
     vector<t_node> new_nodes;
+    new_nodes.reserve((double)g.get_n() / 1.41);
     for (auto &node: g.nodes)
         if (uf.find(node) == node)
             new_nodes.push_back(node);
 
     vector<t_edge> new_edges;
-    map<pair<t_node, t_node>, t_edge> edges;
+    unordered_map<pair<t_node, t_node>, t_edge, HASH> edges;
     for (auto &e: g.edges) {
         auto f_from = uf.find(e.from), f_to = uf.find(e.to);
         if (f_from > f_to) swap(f_from, f_to);
@@ -59,28 +67,25 @@ Graph contract(Graph &g, t_double q) {
 }
 
 t_double unreliability(Graph &g, int depth = 1) {
-    if (g.get_n() <= NODES_BRUTE)
+    if (g.get_n() <= NODES_BRUTE) {
         return brute_unreliability(g);
+    }
 
-    int c;
-    debug_measure_time([&]() {
-//        c = KSMincut::fastmincut(g);
-        c = EKMincut::mincut(g);
-    }, "fastmincut", false);
-
+    int c = EKMincut::mincut(g);
 
     t_double pc = power(g.p, c);
 
-    if (pc >= 0.5)
+    if (pc >= 0.5) {
         return monte_carlo(g);
+    }
 
     t_double q = n_root(0.5, c);
+
     t_double ans = 0.0;
     for (int i = 0; i < 2; i++) {
         Graph gc = contract(g, q);
         gc.p = g.p / q;
-        ans += unreliability(gc, depth + 1) / 2.0;
-
+        ans += unreliability(gc, depth + 1) * 0.5;
     }
     return ans;
 }
@@ -92,19 +97,11 @@ t_double compute_unreliability(Graph &g, const t_double eps) {
     t_double coef = 1.0 / t_double(t);
     t_double ans = 0.0;
 
-    long tot_time = 0;
     for (int i = 0; i < t; i++) {
-        auto time_s = chrono::high_resolution_clock::now();
         t_double ug = unreliability(g);
-        auto time_taken_brute = chrono::duration_cast<chrono::milliseconds>(
-                chrono::high_resolution_clock::now() - time_s);
-//        cout << "sample time: " << time_taken_brute.count() << " ms" << endl;
-        tot_time += time_taken_brute.count();
-
         ans += ug * coef;
     }
 
-//    cout << "average sample time: " << tot_time / t << " ms" << endl;
 
     return ans;
 }

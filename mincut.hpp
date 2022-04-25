@@ -148,15 +148,15 @@ namespace KSMincut {    // karger-stein
     }
 
     static int fastmincut(Graph &g) {
-        if (g.c != -1) return g.c;
-        int n = g.get_n();
+        Graph my_g = to_unit_edges(g);
+        int n = my_g.get_n();
         int t = ceil(t_double(n) * log(n) / t_double(n - 1));
-        int ans = g.get_m();
+        int ans = my_g.get_m();
         for (int i = 0; i < t; i++) {
-            int cut = _fastmincut(g);
+            int cut = _fastmincut(my_g);
             ans = min(ans, cut);
         }
-        g.c = ans;
+        my_g.c = ans;
         return ans;
     }
 };
@@ -394,7 +394,7 @@ namespace EKMincut {    // edmond-karp
                 for (auto id: adj[T]) {
                     int nod = edges[id].to;
                     id ^= 1;
-                    if (edges[id].cap - edges[id].flow && d[nod] != 0) {
+                    if (nod != T && edges[id].cap - edges[id].flow && d[nod] != 0) {
                         int addFlow = get_flow(nod);
                         addFlow = min(addFlow, edges[id].cap - edges[id].flow);
                         if (addFlow) {
@@ -407,6 +407,14 @@ namespace EKMincut {    // edmond-karp
             }
 
             return flow;
+        }
+
+        void unite(int x, int y) {
+            for(auto id: adj[y]) {
+                if(edges[id].to != x)   adj[x].push_back(id);
+                edges[id].from = x;
+                edges[id ^ 1].to = x;
+            }
         }
     };
 
@@ -431,6 +439,17 @@ namespace EKMincut {    // edmond-karp
             int c = flow.get_max_flow(s, t);
             ans = min(ans, c);
         }
+//        for (int i = 0; i < n - 1; i++) {
+//            int t;
+//            for(auto id: flow.adj[s])
+//                if(flow.edges[id].to != s) {
+//                    t = flow.edges[id].to;
+//                    break;
+//                }
+//            int c = flow.get_max_flow(s, t);
+//            ans = min(ans, c);
+//            flow.unite(s, t);
+//        }
         return ans;
     }
 }
