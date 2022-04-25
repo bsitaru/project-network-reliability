@@ -45,4 +45,11 @@ void debug_measure_time(function<void()> fn, string text, bool print = true) {
     if(print)   cout << text << ": " << time_taken.count() << " us" << endl;
 }
 
+void debug_measure_time_ms(function<void()> fn, string text, bool print = true) {
+    auto t_start = chrono::high_resolution_clock::now();
+    fn();
+    auto time_taken = chrono::duration_cast<chrono::milliseconds>(chrono::high_resolution_clock::now() - t_start);
+    if(print)   cout << text << ": " << time_taken.count() << " ms" << endl;
+}
+
 #endif //NETWORK_RELIABILITY_UNRELIABILITY_UTILS_HPP

@@ -37,8 +37,8 @@ void compute_all() {
 
 void unrel_stats() {
     vector<t_double> ps = {0.001, 0.01, 0.1, 0.2, 0.4, 0.5, 0.6, 0.75, 0.9, 0.99};
-    Graph ig = Generator::erdos_renyi(10, 0.7);
-//    Graph ig = Generator::complete_graph(30);
+//    Graph ig = Generator::erdos_renyi(30, 0.12);
+    Graph ig = Generator::complete_graph(10);
 
     cout << "n = " << ig.get_n() << ", m = " << ig.get_m() << endl;
     cout << endl;
@@ -54,7 +54,11 @@ void unrel_stats() {
 
         Graph my_g = g;
 
-        t_double ans_unrel = median_trick([&](){ return compute_unreliability(g, eps); }, 4, delta);
+        t_double ans_unrel;
+
+        debug_measure_time_ms([&]() {
+            ans_unrel = median_trick([&](){ return compute_unreliability(g, eps); }, 4, delta);
+        }, "ans_unrel time");
 
         g = my_g;
         auto time_s = chrono::high_resolution_clock::now();
@@ -73,7 +77,7 @@ void unrel_stats() {
 }
 
 void mincut_comparison() {
-    Graph g = Generator::erdos_renyi(30, 0.7);
+    Graph g = Generator::erdos_renyi(100, 0.9);
     Graph ig = g;
 
     debug_measure_time([&]() {
@@ -93,6 +97,13 @@ void mincut_comparison() {
 
     g = ig;
     debug_measure_time([&]() {
+        int x = EKFastMincut::mincut(g);
+        cout << "answer ek fast cut: " << x << endl;
+    }, "ekfastcut");
+
+
+    g = ig;
+    debug_measure_time([&]() {
         int x = DinMincut::mincut(g);
         cout << "answer din cut: " << x << endl;
     }, "dinic cut");
@@ -106,7 +117,7 @@ void mincut_comparison() {
 
 int main() {
     Random::init_predictable(true);
-//    unrel_stats();
-    mincut_comparison();
+    unrel_stats();
+//    mincut_comparison();
     return 0;
 }

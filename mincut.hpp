@@ -161,11 +161,11 @@ namespace KSMincut {    // karger-stein
     }
 };
 
-namespace EKMincut {    // edmond-karp
+namespace EKFastMincut {    // edmond-karp
     typedef pair<int, int> pii;
     typedef pair<pii, int> p3i;
 
-    const int NMAX = 1005;
+    const int NMAX = 35;
 
     class EdmondsKarp {
     public:
@@ -296,6 +296,139 @@ namespace EKMincut {    // edmond-karp
         for (auto t: g.nodes) {
             if (s == t) continue;
             int c = flow.getMaxFlow(s, t);
+            ans = min(ans, c);
+        }
+        return ans;
+    }
+}
+
+namespace EKMincut {    // edmond-karp
+    struct FlowEdge {
+        int from, to;
+        int cap, flow = 0;
+        FlowEdge(int from, int to, int cap) : from(from), to(to), cap(cap) {}
+    };
+
+    struct EdmondsKarp {
+        int N, M, S, T;
+        vector<FlowEdge> edges;
+        vector< vector<int> > adj;
+        vector<int> d, f;
+
+        EdmondsKarp() {
+            N = M = S = T = 0;
+        }
+
+        void init(int N, int exp_m) {
+            this->N = N;
+            M = 0;
+            edges.clear();
+            edges.reserve(exp_m);
+            adj.resize(N);
+            d.resize(N); f.resize(N);
+            for(int i = 0; i < N; i++)  {
+                adj[i].clear();
+                d[i] = f[i] = 0;
+            }
+        }
+
+        void add_edge(int x, int y, int c) {
+            edges.emplace_back(x, y, c);
+            edges.emplace_back(y, x, 0);
+            adj[x].push_back(M);
+            adj[y].push_back(M + 1);
+            M += 2;
+        }
+
+        void BFS(int start) {
+            for (int i = 0; i < N; i++) d[i] = 0;
+            d[start] = 1;
+            queue<int> q;
+            q.push(start);
+            while (!q.empty()) {
+                int nod = q.front();
+                q.pop();
+                for (auto nxt_id: adj[nod]) {
+                    int nxt = edges[nxt_id].to;
+                    if (!d[nxt] && edges[nxt_id].cap - edges[nxt_id].flow) {
+                        d[nxt] = 1 + d[nod];
+                        f[nxt] = nxt_id;
+                        q.push(nxt);
+                    }
+                }
+            }
+        }
+
+        inline int get_flow(int nod) {
+            int ans = 1 << 30;
+            while(nod != S) {
+                int id = f[nod];
+                ans = min(ans, edges[id].cap - edges[id].flow);
+                nod = edges[id].from;
+            }
+            return ans;
+        }
+
+        inline void push_flow(int nod, int id, int flow) {
+            while(true) {
+                edges[id].flow += flow;
+                edges[id ^ 1].flow -= flow;
+                if(nod == S)    break;
+                id = f[nod];
+                nod = edges[id].from;
+            }
+        }
+
+        int get_max_flow(int _S, int _T) {
+            S = _S;
+            T = _T;
+
+            for(auto &e: edges)  e.flow = 0;
+
+            int flow = 0;
+            bool newFlow = true;
+            while (newFlow) {
+                newFlow = false;
+                BFS(S);
+
+                for (auto id: adj[T]) {
+                    int nod = edges[id].to;
+                    id ^= 1;
+                    if (edges[id].cap - edges[id].flow && d[nod] != 0) {
+                        int addFlow = get_flow(nod);
+                        addFlow = min(addFlow, edges[id].cap - edges[id].flow);
+                        if (addFlow) {
+                            push_flow(nod, id, addFlow);
+                            flow += addFlow;
+                            newFlow = true;
+                        }
+                    }
+                }
+            }
+
+            return flow;
+        }
+    };
+
+    static EdmondsKarp flow;
+
+    int mincut(Graph &g) {
+        flow.init(g.get_n(), g.edges.size());
+        unordered_map<t_node, int> mp;
+        int n = 0;
+        for (auto e: g.edges) {
+            int x = e.from, y = e.to;
+            if(!mp.count(x))    mp[x] = n++;
+            if(!mp.count(y))    mp[y] = n++;
+            x = mp[x]; y = mp[y];
+            flow.add_edge(x, y, e.cnt);
+            flow.add_edge(y, x, e.cnt);
+        }
+
+        int s = 0;
+        int ans = g.get_m();
+        for (int t = 1; t < n; t++) {
+            int c = flow.get_max_flow(s, t);
             ans = min(ans, c);
         }
         return ans;
