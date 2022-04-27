@@ -9,8 +9,8 @@
 #include "types.hpp"
 
 using namespace std;
-
-Graph sample_root_connected(Graph g) {
+// TODO: repair
+DiGraph sample_root_connected(DiGraph g) {
     int n = g.get_n();
 
     vector<t_edge> s_edges;
@@ -18,7 +18,7 @@ Graph sample_root_connected(Graph g) {
         if (!Random::get_ber(g.p))
             s_edges.push_back(e);
 
-    Graph gs = g.subgraph(s_edges);
+    DiGraph gs = g.subgraph(s_edges);
 
     int steps = 0;
     while (true) {
@@ -45,19 +45,19 @@ Graph sample_root_connected(Graph g) {
     return gs;
 }
 
-t_double compute_r(Graph g, Graph gi, vector<t_edge> cntr_edges, const t_double eps) {
+t_double compute_r(DiGraph g, DiGraph gi, vector<t_edge> cntr_edges, const t_double eps) {
     // defined in proposition 9
     int s = ceil(5.0 * 1.0 / ((1.0 - g.p) * (1.0 - g.p) * eps * eps) * (g.get_n() - 1.0));
 
     int cnt = 0;
     for (int i = 0; i < s; i++) {
         //  sample gs connected in g contracted (gi)
-        Graph gs = sample_root_connected(gi);
+        DiGraph gs = sample_root_connected(gi);
 
         vector<int> ids(gs.edges.size());
         transform(begin(gs.edges), end(gs.edges), begin(ids), [](t_edge e) { return e.id; });
 
-        Graph gs_big = g.subgraph(ids);
+        DiGraph gs_big = g.subgraph(ids);
         // Add edges independently
         for (auto e: cntr_edges)
             if (!Random::get_ber(g.p))
@@ -72,7 +72,7 @@ t_double compute_r(Graph g, Graph gi, vector<t_edge> cntr_edges, const t_double 
     return r;
 }
 
-t_double compute_reliability(Graph g, const t_double eps) {
+t_double compute_reliability(DiGraph g, const t_double eps) {
     t_double zreach = 1.0;
     int n = g.get_n();
     // we consider root = g.nodes[0] and always contract the last two nodes in g.

@@ -8,6 +8,8 @@
 #include "types.hpp"
 #include "utils.hpp"
 
+#include "mincut_linear.hpp"
+
 using namespace std;
 
 struct SegmentTree {
@@ -118,7 +120,7 @@ namespace KSMincut {    // karger-stein
         for (const auto &x: edges_cnt)
             new_edges.push_back(x.second);
 
-        return Graph(new_nodes, new_edges, g.p, false);
+        return Graph(new_nodes, new_edges, g.p);
     }
 
     static int mincut(Graph &g) {
@@ -156,7 +158,6 @@ namespace KSMincut {    // karger-stein
             int cut = _fastmincut(my_g);
             ans = min(ans, cut);
         }
-        my_g.c = ans;
         return ans;
     }
 };
@@ -586,8 +587,8 @@ namespace SWMincut {    // stoer-wagner
         int node = g.nodes[0];
         in_set[node] = true;
         unordered_map<t_node, int> connect;
-        for(auto e: g.adj[node])
-            connect[e.to] += e.cnt;
+        for(auto id: g.adj[node])
+            connect[ g.edges[id].other(node) ] += g.edges[id].cnt;
         for(auto oth: g.nodes) {
             if(node == oth) continue;
             pq.push({connect[oth], oth});
@@ -603,10 +604,12 @@ namespace SWMincut {    // stoer-wagner
             }
             order.push_back(node);
             in_set[node] = true;
-            for(auto e: g.adj[node]) {
-                if(!in_set[e.to]) {
-                    connect[e.to] += e.cnt;
-                    pq.push({connect[e.to], e.to});
+            for(auto id: g.adj[node]) {
+                auto e = g.edges[id];
+                int to = e.other(node);
+                if(!in_set[to]) {
+                    connect[to] += e.cnt;
+                    pq.push({connect[to], to});
                 }
             }
         }

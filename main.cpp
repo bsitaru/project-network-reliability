@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 #include "brute.hpp"
+#include "digraph.hpp"
 #include "graph.hpp"
 #include "graph_generator.hpp"
 #include "median_trick.hpp"
@@ -15,7 +16,7 @@ using namespace std;
 void compute_all() {
     Graph g = Generator::example();
     Graph ig = g;
-    Graph dg = g.to_directed();
+    DiGraph dg = DiGraph(g);
 
     const t_double eps = 0.1;
 
@@ -103,7 +104,7 @@ void unrel_stats() {
 }
 
 void mincut_comparison() {
-    Graph g = Generator::erdos_renyi(100, 0.9);
+    Graph g = Generator::erdos_renyi(20, 0.9);
     Graph ig = g;
 
     debug_measure_time([&]() {
@@ -139,6 +140,12 @@ void mincut_comparison() {
         int x = SWMincut::mincut(g);
         cout << "answer sw cut: " << x << endl;
     }, "sw cut");
+
+    g = ig;
+    debug_measure_time([&]() {
+        int x = KargerLinearMincut::mincut(g);
+        cout << "answer karger linear cut: " << x << endl;
+    }, "karger linear cut");
 }
 
 void dodecahedron() {
@@ -189,11 +196,32 @@ void complete_check() {
     }
 }
 
+void k4s() {
+    int k = 100;
+    t_double eps = 0.2;
+    t_double delta = 0.05;
+    vector<t_double> ps = {0.25, 0.1};
+    Graph ig = Generator::k4(k);
+    for(auto p: ps) {
+        cout << "p = " << p << endl;
+        Graph g = ig;
+        g.p = p;
+        profiler.reset();
+        profiler.start("unrel");
+        auto ans_unrel = median_trick([&]() { return compute_unreliability(g, eps); }, 4, delta);
+        cout << fixed << "answer: " << setprecision(20) << ans_unrel << endl;
+        profiler.stop("unrel");
+        profiler.print();
+        cout << endl;
+    }
+}
+
 int main() {
     Random::init_predictable(true);
 //    unrel_stats();
 //    mincut_comparison();
 //    dodecahedron();
-    complete_check();
+//    complete_check();
+    k4s();
     return 0;
 }

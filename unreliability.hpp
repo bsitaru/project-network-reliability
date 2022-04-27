@@ -63,7 +63,7 @@ Graph contract(Graph &g, t_double q) {
     for (const auto &x: edges)
         new_edges.push_back(x.second);
 
-    return Graph(new_nodes, new_edges, g.p, false);
+    return Graph(new_nodes, new_edges, g.p);
 }
 
 t_double unreliability(Graph &g, int depth = 1) {

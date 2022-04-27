@@ -29,9 +29,8 @@ namespace Generator {
                 {4, 5, 8, 1}
         };
         t_double p = 0.01;
-        bool directed = false;
 
-        return Graph(nodes, edges, p, directed);
+        return Graph(nodes, edges, p);
     }
 
     Graph erdos_renyi(int n, t_double p) {
@@ -47,9 +46,8 @@ namespace Generator {
                 }
 
         t_double graph_p = 0.01;
-        bool directed = false;
 
-        return Graph(nodes, edges, graph_p, directed);
+        return Graph(nodes, edges, graph_p);
     }
 
     Graph complete_graph(int n) {
@@ -90,9 +88,8 @@ namespace Generator {
         }
 
         t_double graph_p = 0.01;
-        bool directed = false;
 
-        return Graph(nodes, edges, graph_p, directed);
+        return Graph(nodes, edges, graph_p);
     }
 
     Graph dodecahedron() {
@@ -135,9 +132,31 @@ namespace Generator {
         }
 
         t_double graph_p = 0.01;
-        bool directed = false;
 
-        return Graph(nodes, edges, graph_p, directed);
+        return Graph(nodes, edges, graph_p);
+    }
+
+    Graph k4(int k) {
+        int n = 2 * k;
+        vector<t_node> nodes;
+        for(int i = 0; i < n; i++)  nodes.push_back(i);
+
+        vector<t_edge> edges;
+        int id = 0;
+        for(int i = 0; i < k; i++) {
+            edges.push_back({i, i + k, id++, 1});
+
+            if(i < k - 1) {
+                edges.push_back({i, i + 1, id++, 1});
+                edges.push_back({i, i + k + 1, id++, 1});
+                edges.push_back({i + k, i + k + 1, id++, 1});
+                edges.push_back({i + k, i + 1, id++, 1});
+            }
+        }
+
+        t_double graph_p = 0.01;
+
+        return Graph(nodes, edges, graph_p);
     }
 }
 
