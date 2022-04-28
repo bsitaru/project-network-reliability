@@ -158,6 +158,27 @@ namespace Generator {
 
         return Graph(nodes, edges, graph_p);
     }
+
+    Graph grid(int n, int m) {
+        int N = n * m;
+        vector<t_node> nodes;
+        for(int i = 0; i < N; i++)  nodes.push_back(i);
+
+        vector<t_edge> edges;
+        int id = 0;
+        for(int i = 0; i < n; i++)
+            for(int j = 0; j < m; j++) {
+                if(i + 1 < n)   edges.push_back({i * n + j, (i + 1) * n + j, id++, 1});
+                if(j + 1 < m)   edges.push_back({i * n + j, i * n + (j + 1), id++, 1});
+            }
+
+        t_double graph_p = 0.01;
+        return Graph(nodes, edges, graph_p);
+    }
+
+    Graph grid(int n) {
+        return grid(n, n);
+    }
 }
 
 #endif //NETWORK_RELIABILITY_UNRELIABILITY_GRAPH_GENERATOR_HPP

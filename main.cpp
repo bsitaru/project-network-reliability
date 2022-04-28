@@ -196,6 +196,45 @@ void complete_check() {
     }
 }
 
+void complete_diffrent_p() {
+
+    ofstream fdata("plot_data/complete.dat");
+
+    t_double eps = 0.2;
+    t_double delta = 0.05;
+    vector<Graph> graphs = {
+            Generator::complete_graph(10),
+            Generator::complete_graph(20),
+            Generator::complete_graph(30),
+            Generator::grid(3),
+            Generator::grid(5),
+            Generator::grid(7)
+    };
+
+//    fdata << "# p unrel_cmpl10 unrel_cmpl20 unrel_cmpl30 unrel_grid3 unrel_grid5 unrel_grid7" << endl;
+
+    t_double p_delta = 0.005;
+
+    for(t_double p = p_delta; p < 1; p += p_delta) {
+        fdata << scientific << p << " ";
+        for(auto g: graphs) {
+            g.p = p;
+
+            cout << "n = " << g.get_n() << " , p = " << p << endl;
+            profiler.reset();
+            profiler.start("unrel");
+            auto ans_unrel = median_trick([&]() { return compute_unreliability(g, eps); }, 4, delta);
+            cout << scientific << "answer: " << ans_unrel << endl;
+            profiler.stop("unrel");
+            profiler.print();
+            cout << endl;
+
+            fdata << scientific << ans_unrel << " ";
+        }
+        fdata << endl;
+    }
+}
+
 void k4s() {
     int k = 100;
     t_double eps = 0.2;
@@ -221,7 +260,8 @@ int main() {
 //    unrel_stats();
 //    mincut_comparison();
 //    dodecahedron();
-    complete_check();
+//    complete_check();
+    complete_diffrent_p();
 //    k4s();
     return 0;
 }
