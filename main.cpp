@@ -182,7 +182,7 @@ void dodecahedron() {
 void complete_check() {
     t_double eps = 0.1;
     t_double delta = 0.1;
-    for(int n = 30; n <= 100; n += 10) {
+    for(int n = 10; n <= 100; n += 10) {
         cout << "n = " << n << endl;
         Graph g = Generator::complete_graph(n);
         g.p = 0.01;
