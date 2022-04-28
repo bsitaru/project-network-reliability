@@ -85,7 +85,6 @@ struct Graph {
 //    }
 
     bool connected() {
-        assert(!directed);
         unordered_set<t_node> visited;
         function<void(int)> DFS = [&](t_node node) {
             if (visited.find(node) != visited.end()) return;

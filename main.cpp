@@ -27,13 +27,13 @@ void compute_all() {
     t_double ans = median_trick([&](){ return compute_unreliability(g, eps); }, 4, 1e-2);
     t_double ans_brute = brute_unreliability(ig);
 
-    cout << fixed << setprecision(20) << ans << endl;
-    cout << fixed << setprecision(20) << ans_brute << endl;
-    cout << fixed << setprecision(20) << ans_rel << endl;
+    cout << scientific << ans << endl;
+    cout << scientific << ans_brute << endl;
+    cout << scientific << ans_rel << endl;
     t_double appx = ans / ans_brute;
-    cout << fixed << setprecision(20) << "approximation: " << appx << " , actual eps: " << appx - 1.0 << endl;
+    cout << scientific << "approximation: " << appx << " , actual eps: " << appx - 1.0 << endl;
     appx = ans_rel / ans_brute;
-    cout << fixed << setprecision(20) << "approximation rel: " << appx << " , actual eps: " << appx - 1.0 << endl;
+    cout << scientific << "approximation rel: " << appx << " , actual eps: " << appx - 1.0 << endl;
 }
 
 void unrel_stats() {
@@ -67,7 +67,7 @@ void unrel_stats() {
     t_double delta = 0.1;
 
     for(auto p: ps) {
-        cout << fixed << setprecision(5) << "p = " << p << ": " << endl;
+        cout << scientific << "p = " << p << ": " << endl;
 
         for (int i = 0; i < graphs.size(); i++) {
 
@@ -81,7 +81,7 @@ void unrel_stats() {
             profiler.reset();
             debug_measure_time_ms([&]() {
                 ans_unrel = median_trick([&]() { return compute_unreliability(g, eps); }, 4, delta);
-                cout << "answer: " << ans_unrel << endl;
+                cout << scientific << "answer: " << ans_unrel << endl;
             }, "ans_unrel time");
             profiler.print();
 
@@ -104,17 +104,17 @@ void unrel_stats() {
 }
 
 void mincut_comparison() {
-    Graph g = Generator::erdos_renyi(20, 0.9);
+    Graph g = Generator::erdos_renyi(5000, 0.7);
     Graph ig = g;
 
-    debug_measure_time([&]() {
-        int x = KSMincut::fastmincut(g);
-        cout << "answer ks cut: " << x << endl;
-    }, "fastmincut");
-
-    int n = g.get_n();
-    long exp_us = n * n * (log2(n) * log2(n) * log2(n));
-    cout << "expected:   " << exp_us << endl;
+//    debug_measure_time([&]() {
+//        int x = KSMincut::fastmincut(g);
+//        cout << "answer ks cut: " << x << endl;
+//    }, "fastmincut");
+//
+//    int n = g.get_n();
+//    long exp_us = n * n * (log2(n) * log2(n) * log2(n));
+//    cout << "expected:   " << exp_us << endl;
 
     g = ig;
     debug_measure_time([&]() {
@@ -122,11 +122,11 @@ void mincut_comparison() {
         cout << "answer ek cut: " << x << endl;
     }, "ekcut");
 
-    g = ig;
-    debug_measure_time([&]() {
-        int x = EKFastMincut::mincut(g);
-        cout << "answer ek fast cut: " << x << endl;
-    }, "ekfastcut");
+//    g = ig;
+//    debug_measure_time([&]() {
+//        int x = EKFastMincut::mincut(g);
+//        cout << "answer ek fast cut: " << x << endl;
+//    }, "ekfastcut");
 
 
     g = ig;
@@ -135,17 +135,17 @@ void mincut_comparison() {
         cout << "answer din cut: " << x << endl;
     }, "dinic cut");
 
-    g = ig;
-    debug_measure_time([&]() {
-        int x = SWMincut::mincut(g);
-        cout << "answer sw cut: " << x << endl;
-    }, "sw cut");
+//    g = ig;
+//    debug_measure_time([&]() {
+//        int x = SWMincut::mincut(g);
+//        cout << "answer sw cut: " << x << endl;
+//    }, "sw cut");
 
-    g = ig;
-    debug_measure_time([&]() {
-        int x = KargerLinearMincut::mincut(g);
-        cout << "answer karger linear cut: " << x << endl;
-    }, "karger linear cut");
+//    g = ig;
+//    debug_measure_time([&]() {
+//        int x = KargerLinearMincut::mincut(g);
+//        cout << "answer karger linear cut: " << x << endl;
+//    }, "karger linear cut");
 }
 
 void dodecahedron() {
@@ -161,18 +161,18 @@ void dodecahedron() {
         Graph my_g = g;
         my_g.p = p;
 
-        cout << "p = " << p << endl;
+        cout << scientific << "p = " << p << endl;
 
 //        profiler.start("unrel");
 //        auto ans_unrel = median_trick([&]() { return compute_unreliability(my_g, eps); }, 4, delta);
-//        cout << fixed << "answer: " << setprecision(20) << ans_unrel << endl;
+//        cout << scientific << "answer: " << ans_unrel << endl;
 //        profiler.stop("unrel");
 
         my_g = g;
         my_g.p = p;
         profiler.start("brut");
         auto ans_brute = brute_unreliability(my_g);
-        cout << fixed << "answer brute: " << setprecision(20) << ans_brute << endl;
+        cout << scientific << "answer brute: " << ans_brute << endl;
         profiler.stop("brut");
 
         profiler.print();
@@ -182,14 +182,14 @@ void dodecahedron() {
 void complete_check() {
     t_double eps = 0.1;
     t_double delta = 0.1;
-    for(int n = 5; n <= 35; n++) {
+    for(int n = 30; n <= 100; n += 10) {
         cout << "n = " << n << endl;
         Graph g = Generator::complete_graph(n);
         g.p = 0.01;
         profiler.reset();
         profiler.start("unrel");
         auto ans_unrel = median_trick([&]() { return compute_unreliability(g, eps); }, 4, delta);
-        cout << fixed << "answer: " << setprecision(20) << ans_unrel << endl;
+        cout << scientific << "answer: " << ans_unrel << endl;
         profiler.stop("unrel");
         profiler.print();
         cout << endl;
@@ -203,13 +203,13 @@ void k4s() {
     vector<t_double> ps = {0.25, 0.1};
     Graph ig = Generator::k4(k);
     for(auto p: ps) {
-        cout << "p = " << p << endl;
+        cout << scientific << "p = " << p << endl;
         Graph g = ig;
         g.p = p;
         profiler.reset();
         profiler.start("unrel");
         auto ans_unrel = median_trick([&]() { return compute_unreliability(g, eps); }, 4, delta);
-        cout << fixed << "answer: " << setprecision(20) << ans_unrel << endl;
+        cout << scientific << "answer: " << ans_unrel << endl;
         profiler.stop("unrel");
         profiler.print();
         cout << endl;
@@ -221,7 +221,7 @@ int main() {
 //    unrel_stats();
 //    mincut_comparison();
 //    dodecahedron();
-//    complete_check();
-    k4s();
+    complete_check();
+//    k4s();
     return 0;
 }

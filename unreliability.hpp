@@ -68,7 +68,8 @@ Graph contract(Graph &g, t_double q) {
 
 t_double unreliability(Graph &g, int depth = 1) {
     if (g.get_n() <= NODES_BRUTE) {
-        return brute_unreliability(g);
+        t_double ans_brute = brute_unreliability(g);
+        return ans_brute;
     }
 
     int c = EKMincut::mincut(g);
@@ -85,23 +86,24 @@ t_double unreliability(Graph &g, int depth = 1) {
     for (int i = 0; i < 2; i++) {
         Graph gc = contract(g, q);
         gc.p = g.p / q;
-        ans += unreliability(gc, depth + 1) * 0.5;
+        ans += unreliability(gc, depth + 1);
     }
-    return ans;
+    return ans * 0.5;
 }
 
 t_double compute_unreliability(Graph &g, const t_double eps) {
     // t = 4 * r * eps^(-2)
     int t = ceil(4.0 / (eps * eps));
 
-    t_double coef = 1.0 / t_double(t);
+//    t_double coef = 1.0 / t_double(t);
     t_double ans = 0.0;
 
     for (int i = 0; i < t; i++) {
         t_double ug = unreliability(g);
-        ans += ug * coef;
+        ans += ug;
     }
 
+    ans /= t_double(t);
 
     return ans;
 }

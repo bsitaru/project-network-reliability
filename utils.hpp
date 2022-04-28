@@ -10,7 +10,7 @@ t_double power(t_double x, int e, t_double ans = 1.0) {
 
 t_double n_root(t_double x, int n) {
     t_double l = 0.0, r = 1.0;
-    int steps = 60;
+    int steps = 100;
     for(int i = 0; i < steps; i++) {
         t_double m = (l + r) / 2.0;
         if(power(m, n) <= x)    l = m;
@@ -73,7 +73,7 @@ struct Profiler {
 
         cout << "Profiling: " << endl;
         for(auto [time, who]: prs)
-            cout << who << ": " << (double)time * 0.001 << " ms" << endl;
+            cout << fixed << setprecision(3) << who << ": " << (double)time * 0.001 << " ms" << endl;
     }
 
     void profile(const string& who, function<void()> fn) {

@@ -81,7 +81,6 @@ struct DiGraph {
     }
 
     DiGraph to_directed() {
-        assert(!directed);
         vector<t_edge> new_edges = edges;
         for (auto e: edges)
             new_edges.push_back({e.to, e.from, e.id + (int) edges.size()});
@@ -89,7 +88,6 @@ struct DiGraph {
     }
 
     bool connected() {
-        assert(!directed);
         unordered_set<t_node> visited;
         function<void(int)> DFS = [&](t_node node) {
             if (visited.find(node) != visited.end()) return;
@@ -103,7 +101,6 @@ struct DiGraph {
     }
 
     unordered_set<t_node> get_root_connected_nodes() {
-        assert(directed);
         unordered_set<t_node> visited;
         function<void(int)> DFS = [&](t_node node) {
             if (visited.find(node) != visited.end()) return;
