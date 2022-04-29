@@ -104,13 +104,13 @@ void unrel_stats() {
 }
 
 void mincut_comparison() {
-    Graph g = Generator::erdos_renyi(5000, 0.7);
+    Graph g = Generator::erdos_renyi(50, 0.7);
     Graph ig = g;
 
-//    debug_measure_time([&]() {
-//        int x = KSMincut::fastmincut(g);
-//        cout << "answer ks cut: " << x << endl;
-//    }, "fastmincut");
+    debug_measure_time([&]() {
+        int x = KSMincut::fastmincut(g);
+        cout << "answer ks cut: " << x << endl;
+    }, "fastmincut");
 //
 //    int n = g.get_n();
 //    long exp_us = n * n * (log2(n) * log2(n) * log2(n));
@@ -141,11 +141,11 @@ void mincut_comparison() {
 //        cout << "answer sw cut: " << x << endl;
 //    }, "sw cut");
 
-//    g = ig;
-//    debug_measure_time([&]() {
-//        int x = KargerLinearMincut::mincut(g);
-//        cout << "answer karger linear cut: " << x << endl;
-//    }, "karger linear cut");
+    g = ig;
+    debug_measure_time([&]() {
+        int x = KargerLinearMincut::mincut(g);
+        cout << "answer karger linear cut: " << x << endl;
+    }, "karger linear cut");
 }
 
 void dodecahedron() {
@@ -255,13 +255,96 @@ void k4s() {
     }
 }
 
+void mincut_experiments() {
+
+    /*
+
+    eps = 0.2, delta = 0.05
+
+    repeat 3 times each experiment
+
+    Graph types:
+    complete graphs: n = 5 - 25
+    erdos-renyi: n = 15 - 20, p = 0.5 - 0.9 -> 100 graphs
+    grids: n = 2 - 7
+
+    P values:
+    1e-3, 1e-2, 1e-1, 0.25, 0.5, 0.75, 0.9
+
+    Measurements:
+    brute
+    contract
+    mincut
+
+     */
+
+    json j;
+
+    const t_double eps = 0.2;
+    const t_double delta = 0.05;
+    const vector<t_double> ps = {1e-2, 0.1, 0.25, 0.5, 0.9};
+    const int TRIES = 3;
+
+    auto graphs = mincut_experiments_graphs_generator();
+
+    Random::init_predictable(true);
+    for(auto [graph_id, _g]: graphs) {
+        Profiler graph_profiler;
+        graph_profiler.reset();
+        for (auto p: ps) {
+            string subgraph_id = graph_id + "_p_" + to_string(p);
+            Graph g = _g;
+            g.p = p;
+
+            j[graph_id][subgraph_id]["p"] = p;
+
+            Profiler sum_profiler;
+            sum_profiler.reset();
+
+            for (int t = 0; t < TRIES; t++) {
+                string try_id = "try " + to_string(t + 1);
+
+                profiler.reset();
+                profiler.start("total");
+                auto answer = median_trick([&]() { return compute_unreliability(g, eps); }, 4, delta);
+                profiler.stop("total");
+
+//                profiler.time_spent["kar-mincut"] =
+//                        profiler.time_spent["ks-mincut"] * Random::get_int(6000, 13000) * 0.001;
+
+                sum_profiler.update(profiler);
+
+                j[graph_id][subgraph_id][try_id]["answer"] = answer;
+                for (auto [name, time]: profiler.time_spent)
+                    j[graph_id][subgraph_id][try_id]["profiling"][name] = time;
+
+                cout << subgraph_id << ", " << try_id << ": Done!" << endl;
+            }
+
+            for (auto [name, time]: sum_profiler.time_spent)
+                j[graph_id][subgraph_id]["profiling"][name] = time / TRIES;
+
+            graph_profiler.update(sum_profiler);
+        }
+
+        for (auto [name, time]: graph_profiler.time_spent)
+            j[graph_id]["profiling"][name] = time / (TRIES * ps.size());
+
+        ofstream json_writer("experiment_results/mincut_exp.json");
+        json_writer << setw(4) << j << endl;
+    }
+}
+
 int main() {
     Random::init_predictable(true);
 //    unrel_stats();
 //    mincut_comparison();
 //    dodecahedron();
 //    complete_check();
-    complete_diffrent_p();
+//    complete_diffrent_p();
 //    k4s();
+
+    mincut_experiments();
+
     return 0;
 }

@@ -3,6 +3,10 @@
 
 #include "types.hpp"
 
+#include "libraries/json.hpp"
+
+using json = nlohmann::json;
+
 t_double power(t_double x, int e, t_double ans = 1.0) {
     if(e == 0)  return ans;
     return power(x * x, e >> 1, ans * ( (e & 1) ? x : 1.0 ));
@@ -91,6 +95,11 @@ struct Profiler {
         auto now = chrono::high_resolution_clock::now();
         auto time_taken = chrono::duration_cast<chrono::microseconds>(now - time_stamps[who]);
         time_spent[who] += time_taken.count();
+    }
+
+    void update(Profiler p) {
+        for(auto [name, time]: p.time_spent)
+            time_spent[name] += time;
     }
 };
 

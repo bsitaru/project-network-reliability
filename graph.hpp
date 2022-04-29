@@ -133,4 +133,14 @@ Graph to_unit_edges(Graph &g) {
     return Graph(g.nodes, new_edges, g.p);
 }
 
+void print_graph(Graph &g, ofstream &out, bool complete = false) {
+    out << g.get_n() << " " << g.edges.size() << endl;
+    for(auto &e: g.edges) {
+        if(complete)
+            out << e.from << " " << e.to << " " << e.id << " " << e.cnt << endl;
+        else
+            out << e.from << " " << e.to << endl;
+    }
+}
+
 #endif //NETWORK_RELIABILITY_UNRELIABILITY_GRAPH_HPP

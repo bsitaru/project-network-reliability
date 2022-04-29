@@ -607,7 +607,7 @@ namespace KargerLinearMincut_GH {
     };
 
     double tester(pgraph G) {
-        double d = 0.5;
+        double d = 0.2;
         vector<ptree> trees = tworespectingtrees(d, G);
 //        printf("%d\n", int(trees.size()));
 

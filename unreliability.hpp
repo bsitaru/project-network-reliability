@@ -68,23 +68,30 @@ Graph contract(Graph &g, t_double q) {
 
 t_double unreliability(Graph &g, int depth = 1) {
     if (g.get_n() <= NODES_BRUTE) {
+        profiler.start("brute");
         t_double ans_brute = brute_unreliability(g);
+        profiler.stop("brute");
         return ans_brute;
     }
 
-    int c = EKMincut::mincut(g);
+//    profiler.start("mincut");
+    int c = BenchmarkMincut::mincut(g);
+//    profiler.stop("mincut");
 
     t_double pc = power(g.p, c);
 
     if (pc >= 0.5) {
-        return monte_carlo(g);
+        t_double ans_mc = monte_carlo(g);
+        return ans_mc;
     }
 
     t_double q = n_root(0.5, c);
 
     t_double ans = 0.0;
     for (int i = 0; i < 2; i++) {
+        profiler.start("contract");
         Graph gc = contract(g, q);
+        profiler.stop("contract");
         gc.p = g.p / q;
         ans += unreliability(gc, depth + 1);
     }

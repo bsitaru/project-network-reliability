@@ -181,4 +181,35 @@ namespace Generator {
     }
 }
 
+map<string, Graph> mincut_experiments_graphs_generator() {
+    Random::init(1519);
+
+    map<string, Graph> graphs;
+
+    for(int n = 5; n <= 25; n++) {
+        Graph g = Generator::complete_graph(n);
+        string id = "complete_" + to_string(n);
+        graphs[id] = g;
+    }
+
+    for(int n = 2; n <= 7; n++) {
+        Graph g = Generator::grid(n);
+        string id = "grid_" + to_string(n);
+    }
+
+    for(int t = 0; t < 100; t++) {
+        string num_id = to_string(t);
+        num_id = string(2 - num_id.size(), '0') + num_id;
+
+        string id = "er_" + num_id;
+
+        int n = Random::get_int(15, 20);
+        Graph g = Generator::erdos_renyi(n, 0.7);
+
+        graphs[id] = g;
+    }
+
+    return graphs;
+}
+
 #endif //NETWORK_RELIABILITY_UNRELIABILITY_GRAPH_GENERATOR_HPP
