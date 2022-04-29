@@ -279,7 +279,7 @@ void mincut_experiments() {
      */
 
     json j;
-    ifstream json_reader("mincut_exp.json");
+    ifstream json_reader("experiment_results/mincut_exp.json");
     json_reader >> j;
     json_reader.close();
 
