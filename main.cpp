@@ -279,6 +279,9 @@ void mincut_experiments() {
      */
 
     json j;
+    ifstream json_reader("mincut_exp.json");
+    json_reader >> j;
+    json_reader.close();
 
     const t_double eps = 0.2;
     const t_double delta = 0.05;
@@ -289,6 +292,8 @@ void mincut_experiments() {
 
     Random::init_predictable(true);
     for(auto [graph_id, _g]: graphs) {
+        if(j.contains(graph_id))    continue;
+
         Profiler graph_profiler;
         graph_profiler.reset();
         for (auto p: ps) {
