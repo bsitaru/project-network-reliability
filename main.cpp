@@ -198,40 +198,88 @@ void complete_check() {
 
 void complete_diffrent_p() {
 
-    ofstream fdata("plot_data/complete.dat");
+    /*
 
-    t_double eps = 0.2;
-    t_double delta = 0.05;
-    vector<Graph> graphs = {
-            Generator::complete_graph(10),
-            Generator::complete_graph(20),
-            Generator::complete_graph(30),
-            Generator::grid(3),
-            Generator::grid(5),
-            Generator::grid(7)
-    };
+    eps = 0.2, delta = 0.05
 
-//    fdata << "# p unrel_cmpl10 unrel_cmpl20 unrel_cmpl30 unrel_grid3 unrel_grid5 unrel_grid7" << endl;
+    repeat 3 times each experiment
 
-    t_double p_delta = 0.005;
+    Graph types:
+    complete graphs: n = 5 - 25
 
-    for(t_double p = p_delta; p < 1; p += p_delta) {
-        fdata << scientific << p << " ";
-        for(auto g: graphs) {
+    P values:
+    0.001 - 0.999
+
+    Measurements:
+    total_time, answer
+
+     */
+
+    json j;
+
+    vector<Graph> graphs;
+
+    for(int n = 10; n <= 200; n += 10) {
+        graphs.push_back(Generator::complete_graph(n));
+    }
+
+
+    const t_double eps = 0.2;
+    const t_double delta = 0.05;
+    const int TRIES = 3;
+
+    Random::init_predictable(true);
+    for(auto g: graphs) {
+        int n = g.get_n();
+        string num_id = to_string(n);
+        num_id = string(3 - (int)num_id.size(), '0') + num_id;
+        string graph_id = "complete_" + num_id;
+
+        Profiler graph_profiler;
+        graph_profiler.reset();
+
+        t_double p_delta = 0.01;
+
+        vector<t_double> ps;
+        for (t_double p = p_delta; p < 1; p += 2 * p_delta) {
+            ps.push_back(p);
+            if(p > 0.25 && p < 0.9) p += p_delta;
+        }
+
+        for (auto p: ps) {
+            string subgraph_id = graph_id + "_p_" + to_string(p);
             g.p = p;
 
-            cout << "n = " << g.get_n() << " , p = " << p << endl;
-            profiler.reset();
-            profiler.start("unrel");
-            auto ans_unrel = median_trick([&]() { return compute_unreliability(g, eps); }, 4, delta);
-            cout << scientific << "answer: " << ans_unrel << endl;
-            profiler.stop("unrel");
-            profiler.print();
-            cout << endl;
+            j[graph_id][subgraph_id]["p"] = p;
 
-            fdata << scientific << ans_unrel << " ";
+            Profiler sum_profiler;
+            sum_profiler.reset();
+
+            for(int t = 0; t < TRIES; t++) {
+                string try_id = "try " + to_string(t + 1);
+
+                profiler.reset();
+                profiler.start("time_unrel");
+                auto answer = median_trick([&]() { return compute_unreliability(g, eps); }, 4, delta);
+                profiler.stop("time_unrel");
+
+                sum_profiler.update(profiler);
+
+                j[graph_id][subgraph_id][try_id]["answer"] = answer;
+                j[graph_id][subgraph_id][try_id]["time_unrel"] = profiler.time_spent["time_unrel"];
+
+                cout << subgraph_id << ", " << try_id << ": Done!" << endl;
+            }
+
+            j[graph_id][subgraph_id]["average_time"] = sum_profiler.time_spent["time_unrel"] / TRIES;
+
+            graph_profiler.update(sum_profiler);
         }
-        fdata << endl;
+
+        j[graph_id]["average_time"] = graph_profiler.time_spent["time_unrel"] / (TRIES * ps.size());
+
+        ofstream json_writer("experiment_results/complete_diff_p_exp.json");
+        json_writer << setw(4) << j << endl;
     }
 }
 
@@ -346,10 +394,10 @@ int main() {
 //    mincut_comparison();
 //    dodecahedron();
 //    complete_check();
-//    complete_diffrent_p();
+    complete_diffrent_p();
 //    k4s();
 
-    mincut_experiments();
+//    mincut_experiments();
 
     return 0;
 }
