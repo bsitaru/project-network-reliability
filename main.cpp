@@ -152,8 +152,8 @@ void dodecahedron() {
     Graph g = Generator::dodecahedron();
 
     vector<t_double> ps = {0.1, 0.01, 0.001, 0.0001, 0.00001};
-    t_double eps = 0.1;
-    t_double delta = 0.1;
+    t_double eps = 0.2;
+    t_double delta = 0.05;
 
     for(auto p: ps) {
         profiler.reset();
@@ -163,17 +163,17 @@ void dodecahedron() {
 
         cout << scientific << "p = " << p << endl;
 
-//        profiler.start("unrel");
-//        auto ans_unrel = median_trick([&]() { return compute_unreliability(my_g, eps); }, 4, delta);
-//        cout << scientific << "answer: " << ans_unrel << endl;
-//        profiler.stop("unrel");
+        profiler.start("unrel");
+        auto ans_unrel = median_trick([&]() { return compute_unreliability(my_g, eps); }, 4, delta);
+        cout << scientific << "answer: " << ans_unrel << endl;
+        profiler.stop("unrel");
 
-        my_g = g;
-        my_g.p = p;
-        profiler.start("brut");
-        auto ans_brute = brute_unreliability(my_g);
-        cout << scientific << "answer brute: " << ans_brute << endl;
-        profiler.stop("brut");
+//        my_g = g;
+//        my_g.p = p;
+//        profiler.start("brut");
+//        auto ans_brute = brute_unreliability(my_g);
+//        cout << scientific << "answer brute: " << ans_brute << endl;
+//        profiler.stop("brut");
 
         profiler.print();
     }
@@ -219,21 +219,28 @@ void complete_diffrent_p() {
 
     vector<Graph> graphs;
 
-    for(int n = 10; n <= 200; n += 10) {
-        graphs.push_back(Generator::complete_graph(n));
-    }
+//    for(int n = 10; n <= 200; n += 10) {
+//        graphs.push_back(Generator::complete_graph(n));
+//    }
 
+//    for(int n = 2; n <= 10; n++)
+//        graphs.push_back(Generator::grid(n));
+
+    for(int i = 0; i < 10; i++)
+        graphs.push_back(Generator::erdos_renyi(50, 0.05 * Random::get_int(10, 20)));
 
     const t_double eps = 0.2;
     const t_double delta = 0.05;
-    const int TRIES = 3;
+    const int TRIES = 1;
 
     Random::init_predictable(true);
+    int i = 0;
     for(auto g: graphs) {
         int n = g.get_n();
-        string num_id = to_string(n);
+        string num_id = to_string(i);
         num_id = string(3 - (int)num_id.size(), '0') + num_id;
-        string graph_id = "complete_" + num_id;
+        string graph_id = "er_" + num_id;
+        i++;
 
         Profiler graph_profiler;
         graph_profiler.reset();
@@ -278,7 +285,7 @@ void complete_diffrent_p() {
 
         j[graph_id]["average_time"] = graph_profiler.time_spent["time_unrel"] / (TRIES * ps.size());
 
-        ofstream json_writer("experiment_results/complete_diff_p_exp.json");
+        ofstream json_writer("experiment_results/er_diff_p_exp.json");
         json_writer << setw(4) << j << endl;
     }
 }
@@ -388,16 +395,39 @@ void mincut_experiments() {
     }
 }
 
+void table_format() {
+    json j;
+    ifstream json_reader("experiment_results/mincut_exp.json");
+    json_reader >> j;
+
+    const vector<string> order = {
+            "brute", "contract",
+            "ek-mincut", "din-mincut",
+            "ks-mincut"
+    };
+
+    for(int n = 2; n <= 8; n++) {
+        string id = "grid_" + to_string(n);
+        cout << n;
+        for(auto procedure: order)
+            cout << " & " << (long)j[id]["profiling"][procedure] / 1000;
+
+        cout << " & 0 \\\\\n";
+    }
+}
+
 int main() {
     Random::init_predictable(true);
 //    unrel_stats();
 //    mincut_comparison();
 //    dodecahedron();
 //    complete_check();
-    complete_diffrent_p();
+//    complete_diffrent_p();
 //    k4s();
 
-//    mincut_experiments();
+    mincut_experiments();
+
+//    table_format();
 
     return 0;
 }

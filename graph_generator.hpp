@@ -192,7 +192,7 @@ map<string, Graph> mincut_experiments_graphs_generator() {
         graphs[id] = g;
     }
 
-    for(int n = 2; n <= 7; n++) {
+    for(int n = 2; n <= 8; n++) {
         Graph g = Generator::grid(n);
         string id = "grid_" + to_string(n);
         graphs[id] = g;
