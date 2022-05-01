@@ -29070,5 +29070,225 @@
             "ks-mincut": 277420890,
             "total": 278869069
         }
+    },
+    "grid_8": {
+        "grid_8_p_0.010000": {
+            "p": 0.01,
+            "profiling": {
+                "brute": 36855,
+                "contract": 501452,
+                "din-mincut": 1445426,
+                "ek-mincut": 975268,
+                "ks-mincut": 767833224,
+                "total": 770989943
+            },
+            "try 1": {
+                "answer": 0.00043555899594237285,
+                "profiling": {
+                    "brute": 42653,
+                    "contract": 534335,
+                    "din-mincut": 1541646,
+                    "ek-mincut": 1043351,
+                    "ks-mincut": 814660181,
+                    "total": 818037204
+                }
+            },
+            "try 2": {
+                "answer": 0.00044729509356608024,
+                "profiling": {
+                    "brute": 35878,
+                    "contract": 495847,
+                    "din-mincut": 1430059,
+                    "ek-mincut": 962210,
+                    "ks-mincut": 760775163,
+                    "total": 763891912
+                }
+            },
+            "try 3": {
+                "answer": 0.0004360820471946436,
+                "profiling": {
+                    "brute": 32034,
+                    "contract": 474176,
+                    "din-mincut": 1364574,
+                    "ek-mincut": 920243,
+                    "ks-mincut": 728064328,
+                    "total": 731040714
+                }
+            }
+        },
+        "grid_8_p_0.100000": {
+            "p": 0.1,
+            "profiling": {
+                "brute": 30277,
+                "contract": 462163,
+                "din-mincut": 1331826,
+                "ek-mincut": 898213,
+                "ks-mincut": 715178047,
+                "total": 718083989
+            },
+            "try 1": {
+                "answer": 0.07427588409833158,
+                "profiling": {
+                    "brute": 30838,
+                    "contract": 462817,
+                    "din-mincut": 1336490,
+                    "ek-mincut": 899989,
+                    "ks-mincut": 719428506,
+                    "total": 722340477
+                }
+            },
+            "try 2": {
+                "answer": 0.0760882913616179,
+                "profiling": {
+                    "brute": 30005,
+                    "contract": 463447,
+                    "din-mincut": 1338124,
+                    "ek-mincut": 901591,
+                    "ks-mincut": 714457740,
+                    "total": 717375438
+                }
+            },
+            "try 3": {
+                "answer": 0.07546416544571959,
+                "profiling": {
+                    "brute": 29990,
+                    "contract": 460225,
+                    "din-mincut": 1320864,
+                    "ek-mincut": 893059,
+                    "ks-mincut": 711647896,
+                    "total": 714536052
+                }
+            }
+        },
+        "grid_8_p_0.250000": {
+            "p": 0.25,
+            "profiling": {
+                "brute": 16162,
+                "contract": 426116,
+                "din-mincut": 1334427,
+                "ek-mincut": 899883,
+                "ks-mincut": 721273197,
+                "total": 724088958
+            },
+            "try 1": {
+                "answer": 0.6857058905674911,
+                "profiling": {
+                    "brute": 15948,
+                    "contract": 426044,
+                    "din-mincut": 1337983,
+                    "ek-mincut": 901967,
+                    "ks-mincut": 723021851,
+                    "total": 725842172
+                }
+            },
+            "try 2": {
+                "answer": 0.6824199594040671,
+                "profiling": {
+                    "brute": 16480,
+                    "contract": 428922,
+                    "din-mincut": 1342188,
+                    "ek-mincut": 904221,
+                    "ks-mincut": 723277731,
+                    "total": 726108798
+                }
+            },
+            "try 3": {
+                "answer": 0.6865390535257271,
+                "profiling": {
+                    "brute": 16058,
+                    "contract": 423383,
+                    "din-mincut": 1323111,
+                    "ek-mincut": 893461,
+                    "ks-mincut": 717520010,
+                    "total": 720315904
+                }
+            }
+        },
+        "grid_8_p_0.500000": {
+            "p": 0.5,
+            "profiling": {
+                "brute": 0,
+                "contract": 150589,
+                "din-mincut": 1033024,
+                "ek-mincut": 699936,
+                "ks-mincut": 701827733,
+                "total": 703759685
+            },
+            "try 1": {
+                "answer": 1.0,
+                "profiling": {
+                    "brute": 2,
+                    "contract": 151505,
+                    "din-mincut": 1036471,
+                    "ek-mincut": 700790,
+                    "ks-mincut": 701019540,
+                    "total": 702956818
+                }
+            },
+            "try 2": {
+                "answer": 1.0,
+                "profiling": {
+                    "contract": 150988,
+                    "din-mincut": 1036327,
+                    "ek-mincut": 703262,
+                    "ks-mincut": 706037888,
+                    "total": 707977030
+                }
+            },
+            "try 3": {
+                "answer": 1.0,
+                "profiling": {
+                    "contract": 149276,
+                    "din-mincut": 1026275,
+                    "ek-mincut": 695757,
+                    "ks-mincut": 698425773,
+                    "total": 700345208
+                }
+            }
+        },
+        "grid_8_p_0.900000": {
+            "p": 0.9,
+            "profiling": {
+                "din-mincut": 312819,
+                "ek-mincut": 270180,
+                "ks-mincut": 565908136,
+                "total": 566507326
+            },
+            "try 1": {
+                "answer": 1.0,
+                "profiling": {
+                    "din-mincut": 311003,
+                    "ek-mincut": 268388,
+                    "ks-mincut": 562302443,
+                    "total": 562897918
+                }
+            },
+            "try 2": {
+                "answer": 1.0,
+                "profiling": {
+                    "din-mincut": 312914,
+                    "ek-mincut": 270470,
+                    "ks-mincut": 567112903,
+                    "total": 567712452
+                }
+            },
+            "try 3": {
+                "answer": 1.0,
+                "profiling": {
+                    "din-mincut": 314541,
+                    "ek-mincut": 271684,
+                    "ks-mincut": 568309064,
+                    "total": 568911608
+                }
+            }
+        },
+        "profiling": {
+            "brute": 16659,
+            "contract": 308064,
+            "din-mincut": 1091504,
+            "ek-mincut": 748696,
+            "ks-mincut": 694404067,
+            "total": 696685980
+        }
     }
 }
