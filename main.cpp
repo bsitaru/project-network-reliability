@@ -416,6 +416,68 @@ void table_format() {
     }
 }
 
+void epsilon_comparison() {
+    json j;
+
+    const vector<t_double> epses = {0.25, 0.2, 0.1, 0.05};
+    const vector<t_double> ps = {0.001, 0.01, 0.1, 0.2, 0.25, 0.5, 0.75, 0.9};
+    const t_double delta = 0.05;
+
+    Random::init(19);
+    for(int t = 0; t < 1000; t++) {
+        int n = Random::get_int(4, 15);
+        int m = Random::get_int(n - 1, n * (n - 1) / 2);
+        Graph g = Generator::random(n, m);
+
+        cout << "Graph " << t << ": n = " << n << ", m = " << m << endl;
+
+        string num_id = to_string(t);
+        num_id = string(3 - num_id.size(), '0') + num_id;
+        string graph_id = num_id;
+
+        j[graph_id]["n"] = n;
+        j[graph_id]["m"] = m;
+
+        for(auto p: ps) {
+            string p_id = to_string(p);
+            g.p = p;
+
+            profiler.reset();
+            profiler.start("brute");
+            auto ans_brute = brute_unreliability(g);
+            profiler.stop("brute");
+
+            j[graph_id][p_id]["brute"]["answer"] = ans_brute;
+            j[graph_id][p_id]["brute"]["time"] = profiler.time_spent["brute"];
+            cout << "Brute " << graph_id << ", p = " << p << ": Done!" << endl;
+
+
+            for (auto eps: epses) {
+                string now_id = to_string(eps);
+                Graph gg = g;
+
+                profiler.reset();
+                profiler.start("unrel_time");
+                auto answer = median_trick([&]() { return compute_unreliability(gg, eps); }, 4, delta);
+                profiler.stop("unrel_time");
+
+                j[graph_id][p_id][now_id]["answer"] = answer;
+                j[graph_id][p_id][now_id]["time"] = profiler.time_spent["unrel_time"];
+                t_double rap = answer / ans_brute;
+                t_double act_eps = rap - 1.0;
+                j[graph_id][p_id][now_id]["rap"] = rap;
+                j[graph_id][p_id][now_id]["act_eps"] = act_eps;
+
+                cout << "Unrel " << graph_id << ", p = " << p << ", eps = " << eps << ": Done!" << endl;
+            }
+        }
+
+        ofstream json_writer("experiment_results/empirical_eps.json");
+        json_writer << setw(4) << j << endl;
+
+    }
+}
+
 int main() {
     Random::init_predictable(true);
 //    unrel_stats();
@@ -425,9 +487,11 @@ int main() {
 //    complete_diffrent_p();
 //    k4s();
 
-    mincut_experiments();
+//    mincut_experiments();
 
 //    table_format();
+
+    epsilon_comparison();
 
     return 0;
 }
