@@ -423,9 +423,9 @@ void epsilon_comparison() {
     const vector<t_double> ps = {0.001, 0.01, 0.1, 0.2, 0.25, 0.5, 0.75, 0.9};
     const t_double delta = 0.05;
 
-    Random::init(19);
+    Random::init(true);
     for(int t = 0; t < 1000; t++) {
-        int n = Random::get_int(4, 15);
+        int n = Random::get_int(5, 10);
         int m = Random::get_int(n - 1, n * (n - 1) / 2);
         Graph g = Generator::random(n, m);
 

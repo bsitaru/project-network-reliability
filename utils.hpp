@@ -46,6 +46,52 @@ struct UnionFind {
     }
 };
 
+struct UnionFindUndo {
+    struct Node {
+        t_node father;
+        int sz;
+    };
+    unordered_map<t_node, Node> uf;
+    int components;
+    vector< pair<t_node, t_node> > stack;
+
+    UnionFindUndo(const vector<t_node> &nodes) {
+        components = nodes.size();
+        for (auto node: nodes) uf[node] = {node, 1};
+        stack.reserve(nodes.size());
+    }
+
+    t_node find(t_node x) {
+        if (uf[x].father == x) return x;
+        return find(uf[x].father);
+    }
+
+    void unite(t_node x, t_node y) {
+        t_node fx = find(x), fy = find(y);
+        if(fx != fy) {
+            if(uf[fy].sz > uf[fx].sz)
+                swap(fx, fy);
+
+            stack.push_back({fx, fy});
+
+            uf[fy].father = fx;
+            uf[fx].sz += uf[fy].sz;
+            components--;
+        }
+    }
+
+    void undo() {
+        assert(!stack.empty());
+
+        auto [fx, fy] = stack.back();
+        stack.pop_back();
+
+        uf[fy].father = fy;
+        uf[fx].sz -= uf[fy].sz;
+        components++;
+    }
+};
+
 void debug_measure_time(function<void()> fn, string text, bool print = true) {
     auto t_start = chrono::high_resolution_clock::now();
     fn();
