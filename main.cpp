@@ -290,22 +290,20 @@ void complete_diffrent_p() {
     }
 }
 
-void k4s() {
-    int k = 100;
-    t_double eps = 0.2;
-    t_double delta = 0.05;
-    vector<t_double> ps = {0.25, 0.1};
-    Graph ig = Generator::k4(k);
+void experiment(string graph_id, Graph &ig, vector<t_double> ps) {
+    cout << graph_id << endl;
+    const t_double eps = 0.2;
+    const t_double delta = 0.05;
     for(auto p: ps) {
         cout << scientific << "p = " << p << endl;
         Graph g = ig;
         g.p = p;
         profiler.reset();
-        profiler.start("unrel");
+        profiler.start("time_unrel");
         auto ans_unrel = median_trick([&]() { return compute_unreliability(g, eps); }, 4, delta);
         cout << scientific << "answer: " << ans_unrel << endl;
-        profiler.stop("unrel");
-        profiler.print();
+        profiler.stop("time_unrel");
+        cout << "time: " << profiler.time_spent["time_unrel"] / 1000 << endl;
         cout << endl;
     }
 }
@@ -324,7 +322,7 @@ void mincut_experiments() {
     grids: n = 2 - 7
 
     P values:
-    1e-3, 1e-2, 1e-1, 0.25, 0.5, 0.75, 0.9
+    1e-2, 1e-1, 0.25, 0.5, 0.9
 
     Measurements:
     brute
@@ -406,20 +404,51 @@ void table_format() {
             "ks-mincut"
     };
 
-    for(int n = 2; n <= 8; n++) {
-        string id = "grid_" + to_string(n);
-        cout << n;
-        for(auto procedure: order)
-            cout << " & " << (long)j[id]["profiling"][procedure] / 1000;
+    auto graphs_vec = mincut_experiments_graphs_generator();
+    map<string, Graph> graphs;
+    for(auto [id, g]: graphs_vec)
+        graphs[id] = g;
 
-        cout << " & 0 \\\\\n";
+    unordered_map<string, long> tot_time;
+    const vector<string> procedures = {
+            "brute", "contract",
+            "ek-mincut",
+            "din-mincut",
+            "ks-mincut"
+    };
+    const int T = 100;
+    for(int t = 0; t < T; t++) {
+        string num_id = to_string(t);
+        num_id = string(2 - num_id.size(), '0') + num_id;
+        string graph_id = "er_" + num_id;
+
+        cout << t << " & ";
+        cout << graphs[graph_id].get_n() << " & ";
+        cout << graphs[graph_id].get_m() << " & ";
+
+        for(auto who: procedures)
+            cout <<  (long)j[graph_id]["profiling"][who] / 1000 << " & ";
+        cout << R"(0 \\ \hline)" << endl;
     }
+
+//    for(auto who: procedures) {
+//        cout << who << ": " << tot_time[who] / (T * 1000) << endl;
+//    }
+
+//    for(int n = 2; n <= 8; n++) {
+//        string id = "grid_" + to_string(n);
+//        cout << n;
+//        for(auto procedure: order)
+//            cout << " & " << (long)j[id]["profiling"][procedure] / 1000;
+//
+//        cout << " & 0 \\\\\n";
+//    }
 }
 
 void epsilon_comparison() {
     json j;
 
-    const vector<t_double> epses = {0.25, 0.2, 0.1, 0.05};
+    const vector<t_double> epses = {0.25, 0.2, 0.1, 0.05, 0.01};
     const vector<t_double> ps = {0.001, 0.01, 0.1, 0.2, 0.25, 0.5, 0.75, 0.9};
     const t_double delta = 0.05;
 
@@ -478,6 +507,49 @@ void epsilon_comparison() {
     }
 }
 
+void empiric_epsilon_stats() {
+    ifstream reader("experiment_results/empirical_eps.json");
+    json j;
+    reader >> j;
+    reader.close();
+
+    unordered_map<string, t_double> max_eps;
+    unordered_map<string, string> max_graph_id;
+    const vector<t_double> ps = {0.001, 0.01, 0.1, 0.2, 0.25, 0.5, 0.75, 0.9};
+    const vector<t_double> epses = {0.25, 0.2, 0.1, 0.05, 0.01};
+
+    for (auto it = j.begin(); it != j.end(); it++) {
+        string graph_id = it.key();
+        for(auto p: ps) {
+            string p_id = to_string(p);
+            for(auto eps: epses) {
+                string eps_id = to_string(eps);
+                t_double act_eps = (t_double)j[graph_id][p_id][eps_id]["act_eps"];
+                act_eps = fabs(act_eps);
+                if(max_eps[eps_id] < act_eps) {
+                    max_eps[eps_id] = act_eps;
+                    max_graph_id[eps_id] = graph_id;
+                }
+//                max_eps[eps_id] = max(max_eps[eps_id], fabs(act_eps));
+            }
+        }
+    }
+
+    for(auto [eps, act_eps]: max_eps)
+        cout << scientific << "eps = " << eps << ", max_act_eps = " << act_eps << ", graph_id = " << max_graph_id[eps] << endl;
+}
+
+void parallel_experiments() {
+    Graph geant = read_graph("graphs/geant2009.in");
+    Graph k50 = Generator::k4(50);
+    Graph k100 = Generator::k4(100);
+    vector<t_double> ps = {0.25, 0.1, 0.01, 0.001};
+
+    experiment("geant", geant, ps);
+    experiment("k50", k50, ps);
+    experiment("k100", k100, ps);
+}
+
 int main() {
     Random::init_predictable(true);
 //    unrel_stats();
@@ -491,7 +563,10 @@ int main() {
 
 //    table_format();
 
-    epsilon_comparison();
+//    epsilon_comparison();
+    empiric_epsilon_stats();
+
+//    parallel_experiments();
 
     return 0;
 }

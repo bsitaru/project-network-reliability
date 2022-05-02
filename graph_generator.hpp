@@ -213,4 +213,22 @@ map<string, Graph> mincut_experiments_graphs_generator() {
     return graphs;
 }
 
+Graph read_graph(string file_path) {
+    ifstream reader(file_path);
+    int n, m;
+    reader >> n >> m;
+    vector<t_node> nodes;
+    for(int i = 0; i < n; i++)  nodes.push_back(i);
+
+    int id = 0;
+    vector<t_edge> edges;
+    for(int i = 0; i < m; i++) {
+        int x, y;
+        reader >> x >> y;
+        edges.push_back({x, y, id++, 1});
+    }
+
+    return Graph(nodes, edges, 0.1);
+}
+
 #endif //NETWORK_RELIABILITY_UNRELIABILITY_GRAPH_GENERATOR_HPP
