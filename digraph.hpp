@@ -34,8 +34,14 @@ struct DiGraph {
         m = 0;
     }
 
-    DiGraph(Graph g) {
-        ;
+    DiGraph(Graph &g) {
+        int id = 0;
+        vector<t_edge> new_edges;
+        for(auto e: g.edges) {
+            new_edges.push_back({e.from, e.to, id++, 1});
+            new_edges.push_back({e.to, e.from, id++, 1});
+        }
+        *this = DiGraph(g.nodes, new_edges, g.p);
     }
 
     DiGraph(vector<t_node> &nodes, vector<t_edge> &edges, t_double p) {
@@ -77,13 +83,6 @@ struct DiGraph {
     }
 
     DiGraph subgraph(vector<t_edge> new_edges) {
-        return DiGraph(nodes, new_edges, p);
-    }
-
-    DiGraph to_directed() {
-        vector<t_edge> new_edges = edges;
-        for (auto e: edges)
-            new_edges.push_back({e.to, e.from, e.id + (int) edges.size()});
         return DiGraph(nodes, new_edges, p);
     }
 

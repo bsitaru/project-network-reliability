@@ -508,6 +508,7 @@ void epsilon_comparison() {
 }
 
 void empiric_epsilon_stats() {
+    freopen("logs/empirical_eps.log", "w", stdout);
     ifstream reader("experiment_results/empirical_eps.json");
     json j;
     reader >> j;
@@ -515,6 +516,7 @@ void empiric_epsilon_stats() {
 
     unordered_map<string, t_double> max_eps;
     unordered_map<string, string> max_graph_id;
+    unordered_map<string, vector<t_double>> act_epses;
     const vector<t_double> ps = {0.001, 0.01, 0.1, 0.2, 0.25, 0.5, 0.75, 0.9};
     const vector<t_double> epses = {0.25, 0.2, 0.1, 0.05, 0.01};
 
@@ -526,6 +528,7 @@ void empiric_epsilon_stats() {
                 string eps_id = to_string(eps);
                 t_double act_eps = (t_double)j[graph_id][p_id][eps_id]["act_eps"];
                 act_eps = fabs(act_eps);
+                act_epses[eps_id].push_back(act_eps);
                 if(max_eps[eps_id] < act_eps) {
                     max_eps[eps_id] = act_eps;
                     max_graph_id[eps_id] = graph_id;
@@ -533,6 +536,23 @@ void empiric_epsilon_stats() {
 //                max_eps[eps_id] = max(max_eps[eps_id], fabs(act_eps));
             }
         }
+    }
+
+    for(auto [eps, _]: max_eps) {
+        cout << "eps: " <<  eps << ":" << endl;
+        t_double eps_val;
+        for(auto e: epses)
+            if(to_string(e) == eps)
+                eps_val = e;
+
+        auto epses_now = act_epses[eps];
+        sort(begin(epses_now), end(epses_now));
+
+        for(int i = 0; i < epses_now.size(); i++) {
+            cout << scientific << i << ": " << epses_now[i] << " , rap: " << epses_now[i] / eps_val << endl;
+        }
+
+        cout << endl;
     }
 
     for(auto [eps, act_eps]: max_eps)
@@ -550,6 +570,81 @@ void parallel_experiments() {
     experiment("k100", k100, ps);
 }
 
+void brute_comparison() {
+    Random::init_predictable(true);
+    for (int t = 0; t < 100000; t++) {
+        int n = Random::get_int(5, 9);
+        int m = Random::get_int(n - 1, n * (n - 1) / 2);
+        Graph g = Generator::random(n, m);
+        t_double p = t_double(0.001) * Random::get_int(1, 999);
+        g.p = p;
+
+        cout << "Graph " << t << ": n = " << n << ", m = " << m << ", p = " << p << endl;
+
+        profiler.reset();
+        profiler.start("unrel");
+        auto ans_unrel = brute_unreliability(g);
+        profiler.stop("unrel");
+
+        profiler.start("rel");
+        auto ans_rel = brute_reliability(g);
+        profiler.stop("rel");
+
+        auto tot = ans_rel + ans_unrel;
+        assert( fabs(tot - 1.0) < 0.00000001 );
+
+        cout << scientific << "ans_unrel: " << ans_unrel << endl;
+        cout << scientific << "ans_rel: " << ans_rel << endl;
+        cout << scientific << "tot: " << ans_rel + ans_unrel << endl;
+
+        profiler.print();
+
+        cout << endl;
+    }
+}
+
+void rel_verify() {
+    const t_double eps = 0.2;
+    const t_double delta = 0.05;
+
+    Random::init_predictable(true);
+    for (int t = 0; t < 1000000; t++) {
+        int n = Random::get_int(3, 6);
+        int m = Random::get_int(n - 1, n * (n - 1) / 2);
+        t_double p = t_double(0.001) * Random::get_int(1, 950);
+        Graph g = Generator::random(n, m);
+        g.p = p;
+        DiGraph dg(g);
+
+        cout << "Graph " << t << ": n = " << n << ", m = " << m << ", p = " << p << endl;
+
+        profiler.reset();
+        profiler.start("rel");
+        auto ans_rel = median_trick([&]() { return compute_reliability(dg, eps); }, 4, delta);
+        profiler.stop("rel");
+
+        cout << scientific << "ans_rel: " << ans_rel << endl;
+
+        profiler.start("brute");
+        auto ans_brute = brute_reliability(g);
+        profiler.stop("brute");
+
+        cout << scientific << "ans_brute: " << ans_brute << endl;
+        t_double act_eps = (ans_rel / ans_brute) - 1.0;
+        cout << scientific << "epsilon: " << act_eps << endl;
+
+        profiler.print();
+
+        cout << endl;
+
+        if(fabs(act_eps) > 2 * eps) {
+            ofstream out("logs/rel_verify.log");
+            print_graph(g, out);
+            assert(0);
+        }
+    }
+}
+
 int main() {
     Random::init_predictable(true);
 //    unrel_stats();
@@ -564,9 +659,13 @@ int main() {
 //    table_format();
 
 //    epsilon_comparison();
-    empiric_epsilon_stats();
+//    empiric_epsilon_stats();
 
 //    parallel_experiments();
+
+//    brute_comparison();
+
+    rel_verify();
 
     return 0;
 }
