@@ -79,9 +79,7 @@ t_double compute_reliability(DiGraph g, const t_double eps) {
     int r = g.nodes[0];
     for (int i = 1; i < n; i++) {
         int vtx = g.edges[ g.adj[r][0] ].to;
-        profiler.start("unite");
         auto[gi, cntr_edges] = unite(g, r, vtx);
-        profiler.stop("unite");
         t_double rel = compute_r(g, gi, cntr_edges, eps);
         zreach *= rel;
         g = gi;
@@ -123,9 +121,7 @@ t_double compute_reliability_optimised(DiGraph g, const t_double eps) {
     int r = g.nodes[0];
     for (int i = 1; i < n; i++) {
         int vtx = g.edges[ g.adj[r][0] ].to;
-        profiler.start("unite");
         auto[gi, cntr_edges] = unite(g, r, vtx);
-        profiler.stop("unite");
         t_double rel = compute_r_optimised(g, gi, cntr_edges, eps);
         zreach *= rel;
         g = gi;
