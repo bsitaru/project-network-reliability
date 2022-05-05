@@ -630,12 +630,12 @@ namespace KargerLinearMincut_GH {
             mc.clear();
         }
 
-        for (auto it: trees) {
-            for (auto gt: it->E) delete (gt);
-            delete (it);
-        }
-        for (auto it: G->E) delete (it);
-        delete (G);
+//        for (auto it: trees) {
+//            for (auto gt: it->E) delete (gt);
+//            delete (it);
+//        }
+//        for (auto it: G->E) delete (it);
+//        delete (G);
 
         return res;
     }

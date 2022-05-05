@@ -11,14 +11,14 @@
 #include "utils.hpp"
 
 using namespace std;
-// TODO: repair
+
 struct DiGraph {
 
     // nodes of graph
     vector<t_node> nodes;
 
     // adjacent nodes for each node
-    unordered_map<t_node, vector<t_edge>> adj, radj;
+    unordered_map<t_node, vector<int>> adj, radj;
 
     // probability an edge fails
     t_double p;
@@ -51,17 +51,18 @@ struct DiGraph {
         adj.clear();
         radj.clear();
         m = 0;
-        for (auto &e: edges) {
-            adj[e.from].push_back(e);
-            m += e.cnt;
-            radj[e.to].push_back(e);
+        for (int i = 0; i < edges.size(); i++) {
+            adj[edges[i].from].push_back(i);
+            m += edges[i].cnt;
+            radj[edges[i].to].push_back(i);
         }
     }
 
     void add_edge(t_edge e) {
         edges.push_back(e);
-        adj[e.from].push_back(e);
-        radj[e.to].push_back(e);
+        int i = (int)edges.size() - 1;
+        adj[e.from].push_back(i);
+        radj[e.to].push_back(i);
         m += e.cnt;
     }
 
@@ -86,27 +87,14 @@ struct DiGraph {
         return DiGraph(nodes, new_edges, p);
     }
 
-    bool connected() {
-        unordered_set<t_node> visited;
-        function<void(int)> DFS = [&](t_node node) {
-            if (visited.find(node) != visited.end()) return;
-            visited.insert(node);
-
-            for (auto e: adj[node])
-                DFS(e.to);
-        };
-        DFS(nodes[0]);
-        return visited.size() == get_n();
-    }
-
     unordered_set<t_node> get_root_connected_nodes() {
         unordered_set<t_node> visited;
         function<void(int)> DFS = [&](t_node node) {
             if (visited.find(node) != visited.end()) return;
             visited.insert(node);
 
-            for (auto e: radj[node])
-                DFS(e.from);
+            for (auto i: radj[node])
+                DFS(edges[i].from);
         };
         DFS(nodes[0]);
         return visited;
@@ -121,6 +109,11 @@ struct DiGraph {
 
 static pair<DiGraph, vector<t_edge>> unite(DiGraph &g, t_node x, t_node y) {
     if (x == y) return {};
+    bool adjacent = false;
+    for(auto e: g.edges)
+        if( (e.from == x && e.to == y) || (e.from == y && e.to == x) )
+            adjacent = true;
+    assert(adjacent);
     vector<t_edge> new_edges;
     vector<t_edge> removed_edges;
     for (auto[from, to, id, cnt]: g.edges) {

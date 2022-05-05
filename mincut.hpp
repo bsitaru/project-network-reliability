@@ -637,17 +637,17 @@ namespace BenchmarkMincut {
     int mincut(Graph &g) {
         int ans;
 
-        profiler.start("ks-mincut");
-        ans = KSMincut::mincut(g);
-        profiler.stop("ks-mincut");
+//        profiler.start("ks-mincut");
+//        ans = KSMincut::mincut(g);
+//        profiler.stop("ks-mincut");
 
-//        profiler.start("kar-mincut");
-//        ans = KargerLinearMincut::mincut(g);
-//        profiler.stop("kar-mincut");
+        profiler.start("kar-mincut");
+        ans = KargerLinearMincut::mincut(g);
+        profiler.stop("kar-mincut");
 
-        profiler.start("din-mincut");
-        ans = DinMincut::mincut(g);
-        profiler.stop("din-mincut");
+//        profiler.start("din-mincut");
+//        ans = DinMincut::mincut(g);
+//        profiler.stop("din-mincut");
 
         profiler.start("ek-mincut");
         ans = EKMincut::mincut(g);

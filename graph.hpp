@@ -76,14 +76,6 @@ struct Graph {
         return Graph(nodes, new_edges, p);
     }
 
-//    DiGraph to_directed() {
-//        assert(!directed);
-//        vector<t_edge> new_edges = edges;
-//        for (auto e: edges)
-//            new_edges.push_back({e.to, e.from, e.id + (int) edges.size()});
-//        return Graph(nodes, new_edges, p, true);
-//    }
-
     bool connected() {
         unordered_set<t_node> visited;
         function<void(int)> DFS = [&](t_node node) {

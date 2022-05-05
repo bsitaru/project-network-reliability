@@ -9,7 +9,7 @@
 #include "types.hpp"
 
 using namespace std;
-// TODO: repair
+
 DiGraph sample_root_connected(DiGraph g) {
     int n = g.get_n();
 
@@ -34,9 +34,9 @@ DiGraph sample_root_connected(DiGraph g) {
                 [&](t_node x) { return visited.find(x) == visited.end(); });
 
         for (auto node: disconnected_nodes)
-            for (auto e: g.adj[node])
+            for (auto i: g.adj[node])
                 if (!Random::get_ber(g.p))
-                    new_edges.push_back(e);
+                    new_edges.push_back(g.edges[i]);
 
         gs = g.subgraph(new_edges);
         steps++;
@@ -76,10 +76,58 @@ t_double compute_reliability(DiGraph g, const t_double eps) {
     t_double zreach = 1.0;
     int n = g.get_n();
     // we consider root = g.nodes[0] and always contract the last two nodes in g.
+    int r = g.nodes[0];
     for (int i = 1; i < n; i++) {
-        auto[gi, cntr_edges] = unite(g, g.nodes[n - i - 1], g.nodes[n - i]);
-        t_double r = compute_r(g, gi, cntr_edges, eps);
-        zreach *= r;
+        int vtx = g.edges[ g.adj[r][0] ].to;
+        profiler.start("unite");
+        auto[gi, cntr_edges] = unite(g, r, vtx);
+        profiler.stop("unite");
+        t_double rel = compute_r(g, gi, cntr_edges, eps);
+        zreach *= rel;
+        g = gi;
+    }
+    return zreach;
+}
+
+t_double compute_r_optimised(DiGraph g, DiGraph gi, vector<t_edge> cntr_edges, const t_double eps) {
+    // defined in proposition 9
+    int s = ceil(5.0 * 1.0 / (eps * eps) * (g.get_n() - 1.0));
+
+    int cnt = 0;
+    for (int i = 0; i < s; i++) {
+        //  sample gs connected in g contracted (gi)
+        DiGraph gs = sample_root_connected(gi);
+
+        vector<int> ids(gs.edges.size());
+        transform(begin(gs.edges), end(gs.edges), begin(ids), [](t_edge e) { return e.id; });
+
+        DiGraph gs_big = g.subgraph(ids);
+        // Add edges independently
+        for (auto e: cntr_edges)
+            if (!Random::get_ber(g.p))
+                gs_big.add_edge(e);
+
+        // check if connected
+        if (gs_big.is_root_connected())
+            cnt++;
+    }
+
+    t_double r = t_double(cnt) / t_double(s);
+    return r;
+}
+
+t_double compute_reliability_optimised(DiGraph g, const t_double eps) {
+    t_double zreach = 1.0;
+    int n = g.get_n();
+    // we consider root = g.nodes[0] and always contract the last two nodes in g.
+    int r = g.nodes[0];
+    for (int i = 1; i < n; i++) {
+        int vtx = g.edges[ g.adj[r][0] ].to;
+        profiler.start("unite");
+        auto[gi, cntr_edges] = unite(g, r, vtx);
+        profiler.stop("unite");
+        t_double rel = compute_r_optimised(g, gi, cntr_edges, eps);
+        zreach *= rel;
         g = gi;
     }
     return zreach;

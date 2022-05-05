@@ -104,7 +104,7 @@ void unrel_stats() {
 }
 
 void mincut_comparison() {
-    Graph g = Generator::erdos_renyi(50, 0.7);
+    Graph g = Generator::grid(4);
     Graph ig = g;
 
     debug_measure_time([&]() {
@@ -507,6 +507,71 @@ void epsilon_comparison() {
     }
 }
 
+void epsilon_comparison_rel() {
+    json j;
+
+    const vector<t_double> epses = {0.25, 0.2, 0.1, 0.05, 0.01};
+    const vector<t_double> ps = {0.1, 0.25, 0.5, 0.75, 0.9};
+    const t_double delta = 0.05;
+
+    auto graphs = gen_eps_comparison_rel_graphs();
+
+    Random::init(true);
+    for(int t = 0; t < 100; t++) {
+        Graph g = graphs[t];
+        int n = g.get_n();
+        int m = g.get_m();
+
+
+        cout << "Graph " << t << ": n = " << n << ", m = " << m << endl;
+
+        string num_id = to_string(t);
+        num_id = string(3 - num_id.size(), '0') + num_id;
+        string graph_id = num_id;
+
+        j[graph_id]["n"] = n;
+        j[graph_id]["m"] = m;
+
+        for(auto p: ps) {
+            string p_id = to_string(p);
+            g.p = p;
+
+            profiler.reset();
+            profiler.start("brute");
+            auto ans_brute = brute_reliability(g);
+            profiler.stop("brute");
+
+            j[graph_id][p_id]["brute"]["answer"] = ans_brute;
+            j[graph_id][p_id]["brute"]["time"] = profiler.time_spent["brute"];
+            cout << "Brute " << graph_id << ", p = " << p << ": Done!" << endl;
+
+
+            for (auto eps: epses) {
+                string now_id = to_string(eps);
+                DiGraph dg(g);
+
+                profiler.reset();
+                profiler.start("rel_time");
+                auto answer = median_trick([&]() { return compute_reliability(dg, eps); }, 4, delta);
+                profiler.stop("rel_time");
+
+                j[graph_id][p_id][now_id]["answer"] = answer;
+                j[graph_id][p_id][now_id]["time"] = profiler.time_spent["rel_time"];
+                t_double rap = answer / ans_brute;
+                t_double act_eps = rap - 1.0;
+                j[graph_id][p_id][now_id]["rap"] = rap;
+                j[graph_id][p_id][now_id]["act_eps"] = act_eps;
+
+                cout << "Rel " << graph_id << ", p = " << p << ", eps = " << eps << ": Done!" << endl;
+            }
+        }
+
+        ofstream json_writer("experiment_results/empirical_eps_rel.json");
+        json_writer << setw(4) << j << endl;
+
+    }
+}
+
 void empiric_epsilon_stats() {
     freopen("logs/empirical_eps.log", "w", stdout);
     ifstream reader("experiment_results/empirical_eps.json");
@@ -606,41 +671,52 @@ void brute_comparison() {
 void rel_verify() {
     const t_double eps = 0.2;
     const t_double delta = 0.05;
+    const vector<t_double> ps = {0.75, 0.9};
 
-    Random::init_predictable(true);
-    for (int t = 0; t < 1000000; t++) {
-        int n = Random::get_int(3, 6);
+    Random::init(26);
+    for (int t = 0; t < 5; t++) {
+        int n = Random::get_int(5, 8);
         int m = Random::get_int(n - 1, n * (n - 1) / 2);
-        t_double p = t_double(0.001) * Random::get_int(1, 950);
+//        t_double p = t_double(0.001) * Random::get_int(1, 950);
         Graph g = Generator::random(n, m);
-        g.p = p;
-        DiGraph dg(g);
+        for(auto p: ps) {
+            g.p = p;
+            DiGraph dg(g);
 
-        cout << "Graph " << t << ": n = " << n << ", m = " << m << ", p = " << p << endl;
+            cout << "Graph " << t << ": n = " << n << ", m = " << m << ", p = " << p << endl;
 
-        profiler.reset();
-        profiler.start("rel");
-        auto ans_rel = median_trick([&]() { return compute_reliability(dg, eps); }, 4, delta);
-        profiler.stop("rel");
+            profiler.reset();
+            profiler.start("rel");
+            auto ans_rel = median_trick([&]() { return compute_reliability(dg, eps); }, 4, delta);
+            profiler.stop("rel");
 
-        cout << scientific << "ans_rel: " << ans_rel << endl;
+            cout << scientific << "ans_rel: " << ans_rel << endl;
 
-        profiler.start("brute");
-        auto ans_brute = brute_reliability(g);
-        profiler.stop("brute");
+            profiler.start("rel_optimised");
+            auto ans_rel_opt = median_trick([&]() { return compute_reliability_optimised(dg, eps); }, 4, delta);
+            profiler.stop("rel_optimised");
 
-        cout << scientific << "ans_brute: " << ans_brute << endl;
-        t_double act_eps = (ans_rel / ans_brute) - 1.0;
-        cout << scientific << "epsilon: " << act_eps << endl;
+            cout << scientific << "ans_rel_opt: " << ans_rel_opt << endl;
 
-        profiler.print();
+            profiler.start("brute");
+            auto ans_brute = brute_reliability(g);
+            profiler.stop("brute");
 
-        cout << endl;
+            cout << scientific << "ans_brute: " << ans_brute << endl;
+            t_double act_eps = (ans_rel / ans_brute) - 1.0;
+            cout << scientific << "epsilon: " << act_eps << endl;
+            t_double act_eps_opt = (ans_rel_opt / ans_brute) - 1.0;
+            cout << scientific << "epsilon_opt: " << act_eps_opt << endl;
 
-        if(fabs(act_eps) > 2 * eps) {
-            ofstream out("logs/rel_verify.log");
-            print_graph(g, out);
-            assert(0);
+            profiler.print();
+
+            cout << endl;
+
+            if (fabs(act_eps) > 2 * eps) {
+                ofstream out("logs/rel_verify.log");
+                print_graph(g, out);
+                assert(0);
+            }
         }
     }
 }
@@ -665,7 +741,9 @@ int main() {
 
 //    brute_comparison();
 
-    rel_verify();
+//    rel_verify();
+
+    epsilon_comparison_rel();
 
     return 0;
 }

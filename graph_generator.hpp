@@ -213,6 +213,18 @@ map<string, Graph> mincut_experiments_graphs_generator() {
     return graphs;
 }
 
+vector<Graph> gen_eps_comparison_rel_graphs() {
+    Random::init(17);
+    vector<Graph> graphs;
+    for(int t = 0; t < 100; t++) {
+        int n = Random::get_int(4, 7);
+        int m = Random::get_int(n - 1, n * (n - 1) / 2);
+        Graph g = Generator::random(n, m);
+        graphs.push_back(g);
+    }
+    return graphs;
+}
+
 Graph read_graph(string file_path) {
     ifstream reader(file_path);
     int n, m;
