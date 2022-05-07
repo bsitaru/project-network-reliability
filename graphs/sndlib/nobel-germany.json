@@ -1,0 +1,3352 @@
+{
+  "network": {
+    "average-avl": 0.999942,
+    "-xmlns": "http://sndlib.zib.de/network",
+    "-version": "1.0",
+    "parsererror": {
+      "-on": "1.0",
+      "-encoding": "ISO-8859-1",
+      "h3": [
+        "This page contains the following errors:",
+        {
+          "#item": {
+            "div": {
+              "-version": "1.0",
+              "-encoding": "ISO-8859-1",
+              "#text": "error on line 3245 at column 16: Couldn't find end of Start Tag addModule\n"
+            }
+          }
+        },
+        "Below is a rendering of the page up to the first error."
+      ]
+    },
+    "networkStructure": {
+      "nodes": {
+        "-coordinatesType": "geographical",
+        "node": [
+          {
+            "-id": "Hannover",
+            "coordinates": {
+              "x": "9.8",
+              "y": "52.39"
+            }
+          },
+          {
+            "-id": "Frankfurt",
+            "coordinates": {
+              "x": "8.66",
+              "y": "50.14"
+            }
+          },
+          {
+            "-id": "Hamburg",
+            "coordinates": {
+              "x": "10.08",
+              "y": "53.55"
+            }
+          },
+          {
+            "-id": "Norden",
+            "coordinates": {
+              "x": "7.21",
+              "y": "53.6"
+            }
+          },
+          {
+            "-id": "Bremen",
+            "coordinates": {
+              "x": "8.8",
+              "y": "53.08"
+            }
+          },
+          {
+            "-id": "Berlin",
+            "coordinates": {
+              "x": "13.48",
+              "y": "52.52"
+            }
+          },
+          {
+            "-id": "Muenchen",
+            "coordinates": {
+              "x": "11.55",
+              "y": "48.15"
+            }
+          },
+          {
+            "-id": "Ulm",
+            "coordinates": {
+              "x": "9.99",
+              "y": "48.4"
+            }
+          },
+          {
+            "-id": "Nuernberg",
+            "coordinates": {
+              "x": "11.08",
+              "y": "49.45"
+            }
+          },
+          {
+            "-id": "Stuttgart",
+            "coordinates": {
+              "x": "9.12",
+              "y": "48.73"
+            }
+          },
+          {
+            "-id": "Karlsruhe",
+            "coordinates": {
+              "x": "8.41",
+              "y": "49.01"
+            }
+          },
+          {
+            "-id": "Mannheim",
+            "coordinates": {
+              "x": "8.49",
+              "y": "49.49"
+            }
+          },
+          {
+            "-id": "Essen",
+            "coordinates": {
+              "x": "7.0",
+              "y": "51.44"
+            }
+          },
+          {
+            "-id": "Dortmund",
+            "coordinates": {
+              "x": "7.48",
+              "y": "51.51"
+            }
+          },
+          {
+            "-id": "Duesseldorf",
+            "coordinates": {
+              "x": "6.78",
+              "y": "51.22"
+            }
+          },
+          {
+            "-id": "Koeln",
+            "coordinates": {
+              "x": "7.01",
+              "y": "50.92"
+            }
+          },
+          {
+            "-id": "Leipzig",
+            "coordinates": {
+              "x": "12.38",
+              "y": "51.34"
+            }
+          }
+        ]
+      },
+      "links": {
+        "link": [
+          {
+            "-id": "L1",
+            "source": "Berlin",
+            "target": "Hamburg",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "3580.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "4580.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "8160.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "9160.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "12740.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "13740.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "17320.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "18320.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "21900.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "22900.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "26480.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "27480.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "31060.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "32060.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "35640.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "36640.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "40220.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "41220.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "44800.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "45800.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "49380.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "50380.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "53960.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "54960.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "58540.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "59540.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "63120.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "64120.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "67700.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "68700.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "72280.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "73280.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "76860.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "77860.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "81440.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "82440.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "86020.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "87020.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "90600.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "91600.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L2",
+            "source": "Berlin",
+            "target": "Hannover",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "3580.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "4580.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "8160.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "9160.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "12740.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "13740.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "17320.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "18320.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "21900.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "22900.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "26480.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "27480.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "31060.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "32060.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "35640.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "36640.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "40220.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "41220.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "44800.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "45800.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "49380.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "50380.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "53960.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "54960.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "58540.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "59540.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "63120.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "64120.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "67700.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "68700.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "72280.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "73280.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "76860.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "77860.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "81440.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "82440.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "86020.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "87020.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "90600.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "91600.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L3",
+            "source": "Berlin",
+            "target": "Leipzig",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "3150.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "4150.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "7300.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "8300.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "11450.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "12450.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "15600.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "16600.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "19750.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "20750.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "23900.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "24900.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "28050.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "29050.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "32200.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "33200.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "36350.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "37350.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "40500.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "41500.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "44650.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "45650.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "48800.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "49800.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "52950.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "53950.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "57100.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "58100.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "61250.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "62250.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "65400.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "66400.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "69550.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "70550.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "73700.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "74700.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "77850.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "78850.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "82000.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "83000.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L4",
+            "source": "Bremen",
+            "target": "Hamburg",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "2720.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "3720.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "6440.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "7440.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "10160.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "11160.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "13880.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "14880.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "17600.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "18600.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "21320.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "22320.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "25040.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "26040.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "28760.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "29760.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "32480.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "33480.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "36200.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "37200.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "39920.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "40920.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "43640.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "44640.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "47360.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "48360.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "51080.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "52080.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "54800.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "55800.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "58520.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "59520.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "62240.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "63240.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "65960.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "66960.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "69680.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "70680.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "73400.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "74400.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L5",
+            "source": "Bremen",
+            "target": "Hannover",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "2720.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "3720.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "6440.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "7440.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "10160.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "11160.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "13880.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "14880.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "17600.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "18600.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "21320.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "22320.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "25040.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "26040.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "28760.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "29760.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "32480.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "33480.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "36200.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "37200.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "39920.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "40920.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "43640.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "44640.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "47360.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "48360.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "51080.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "52080.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "54800.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "55800.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "58520.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "59520.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "62240.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "63240.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "65960.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "66960.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "69680.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "70680.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "73400.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "74400.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L6",
+            "source": "Bremen",
+            "target": "Norden",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "2720.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "3720.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "6440.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "7440.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "10160.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "11160.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "13880.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "14880.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "17600.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "18600.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "21320.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "22320.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "25040.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "26040.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "28760.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "29760.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "32480.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "33480.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "36200.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "37200.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "39920.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "40920.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "43640.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "44640.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "47360.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "48360.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "51080.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "52080.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "54800.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "55800.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "58520.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "59520.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "62240.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "63240.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "65960.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "66960.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "69680.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "70680.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "73400.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "74400.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L7",
+            "source": "Dortmund",
+            "target": "Essen",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "2290.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "3290.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "5580.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "6580.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "8870.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "9870.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "12160.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "13160.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "15450.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "16450.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "18740.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "19740.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "22030.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "23030.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "25320.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "26320.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "28610.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "29610.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "31900.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "32900.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "35190.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "36190.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "38480.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "39480.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "41770.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "42770.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "45060.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "46060.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "48350.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "49350.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "51640.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "52640.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "54930.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "55930.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "58220.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "59220.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "61510.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "62510.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "64800.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "65800.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L8",
+            "source": "Dortmund",
+            "target": "Hannover",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "3150.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "4150.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "7300.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "8300.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "11450.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "12450.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "15600.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "16600.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "19750.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "20750.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "23900.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "24900.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "28050.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "29050.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "32200.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "33200.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "36350.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "37350.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "40500.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "41500.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "44650.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "45650.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "48800.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "49800.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "52950.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "53950.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "57100.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "58100.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "61250.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "62250.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "65400.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "66400.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "69550.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "70550.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "73700.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "74700.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "77850.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "78850.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "82000.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "83000.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L9",
+            "source": "Dortmund",
+            "target": "Koeln",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "2720.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "3720.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "6440.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "7440.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "10160.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "11160.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "13880.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "14880.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "17600.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "18600.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "21320.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "22320.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "25040.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "26040.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "28760.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "29760.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "32480.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "33480.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "36200.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "37200.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "39920.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "40920.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "43640.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "44640.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "47360.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "48360.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "51080.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "52080.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "54800.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "55800.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "58520.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "59520.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "62240.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "63240.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "65960.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "66960.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "69680.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "70680.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "73400.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "74400.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L10",
+            "source": "Dortmund",
+            "target": "Norden",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "3580.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "4580.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "8160.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "9160.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "12740.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "13740.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "17320.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "18320.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "21900.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "22900.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "26480.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "27480.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "31060.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "32060.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "35640.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "36640.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "40220.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "41220.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "44800.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "45800.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "49380.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "50380.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "53960.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "54960.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "58540.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "59540.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "63120.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "64120.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "67700.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "68700.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "72280.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "73280.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "76860.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "77860.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "81440.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "82440.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "86020.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "87020.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "90600.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "91600.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L11",
+            "source": "Duesseldorf",
+            "target": "Essen",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "2290.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "3290.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "5580.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "6580.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "8870.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "9870.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "12160.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "13160.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "15450.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "16450.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "18740.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "19740.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "22030.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "23030.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "25320.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "26320.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "28610.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "29610.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "31900.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "32900.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "35190.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "36190.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "38480.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "39480.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "41770.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "42770.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "45060.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "46060.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "48350.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "49350.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "51640.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "52640.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "54930.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "55930.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "58220.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "59220.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "61510.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "62510.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "64800.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "65800.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L12",
+            "source": "Duesseldorf",
+            "target": "Koeln",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "2290.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "3290.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "5580.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "6580.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "8870.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "9870.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "12160.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "13160.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "15450.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "16450.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "18740.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "19740.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "22030.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "23030.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "25320.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "26320.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "28610.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "29610.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "31900.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "32900.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "35190.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "36190.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "38480.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "39480.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "41770.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "42770.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "45060.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "46060.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "48350.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "49350.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "51640.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "52640.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "54930.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "55930.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "58220.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "59220.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "61510.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "62510.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "64800.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "65800.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L13",
+            "source": "Frankfurt",
+            "target": "Hannover",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "3580.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "4580.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "8160.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "9160.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "12740.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "13740.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "17320.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "18320.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "21900.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "22900.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "26480.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "27480.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "31060.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "32060.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "35640.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "36640.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "40220.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "41220.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "44800.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "45800.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "49380.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "50380.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "53960.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "54960.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "58540.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "59540.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "63120.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "64120.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "67700.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "68700.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "72280.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "73280.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "76860.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "77860.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "81440.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "82440.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "86020.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "87020.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "90600.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "91600.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L14",
+            "source": "Frankfurt",
+            "target": "Koeln",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "3150.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "4150.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "7300.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "8300.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "11450.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "12450.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "15600.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "16600.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "19750.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "20750.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "23900.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "24900.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "28050.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "29050.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "32200.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "33200.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "36350.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "37350.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "40500.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "41500.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "44650.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "45650.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "48800.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "49800.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "52950.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "53950.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "57100.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "58100.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "61250.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "62250.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "65400.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "66400.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "69550.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "70550.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "73700.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "74700.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "77850.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "78850.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "82000.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "83000.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L15",
+            "source": "Frankfurt",
+            "target": "Leipzig",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "4010.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "5010.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "9020.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "10020.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "14030.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "15030.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "19040.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "20040.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "24050.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "25050.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "29060.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "30060.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "34070.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "35070.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "39080.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "40080.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "44090.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "45090.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "49100.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "50100.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "54110.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "55110.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "59120.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "60120.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "64130.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "65130.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "69140.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "70140.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "74150.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "75150.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "79160.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "80160.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "84170.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "85170.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "89180.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "90180.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "94190.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "95190.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "99200.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "100200.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L16",
+            "source": "Frankfurt",
+            "target": "Mannheim",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "2720.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "3720.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "6440.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "7440.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "10160.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "11160.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "13880.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "14880.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "17600.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "18600.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "21320.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "22320.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "25040.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "26040.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "28760.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "29760.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "32480.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "33480.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "36200.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "37200.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "39920.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "40920.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "43640.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "44640.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "47360.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "48360.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "51080.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "52080.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "54800.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "55800.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "58520.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "59520.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "62240.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "63240.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "65960.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "66960.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "69680.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "70680.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "73400.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "74400.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L17",
+            "source": "Frankfurt",
+            "target": "Nuernberg",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "3150.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "4150.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "7300.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "8300.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "11450.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "12450.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "15600.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "16600.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "19750.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "20750.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "23900.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "24900.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "28050.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "29050.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "32200.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "33200.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "36350.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "37350.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "40500.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "41500.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "44650.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "45650.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "48800.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "49800.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "52950.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "53950.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "57100.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "58100.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "61250.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "62250.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "65400.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "66400.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "69550.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "70550.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "73700.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "74700.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "77850.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "78850.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "82000.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "83000.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L18",
+            "source": "Hamburg",
+            "target": "Hannover",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "2720.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "3720.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "6440.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "7440.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "10160.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "11160.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "13880.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "14880.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "17600.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "18600.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "21320.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "22320.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "25040.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "26040.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "28760.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "29760.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "32480.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "33480.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "36200.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "37200.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "39920.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "40920.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "43640.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "44640.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "47360.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "48360.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "51080.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "52080.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "54800.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "55800.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "58520.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "59520.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "62240.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "63240.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "65960.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "66960.0"
+                },
+                {
+                  "capacity": "740.0",
+                  "cost": "69680.0"
+                },
+                {
+                  "capacity": "760.0",
+                  "cost": "70680.0"
+                },
+                {
+                  "capacity": "780.0",
+                  "cost": "73400.0"
+                },
+                {
+                  "capacity": "800.0",
+                  "cost": "74400.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L19",
+            "source": "Hannover",
+            "target": "Leipzig",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "20.0",
+                  "cost": "3580.0"
+                },
+                {
+                  "capacity": "40.0",
+                  "cost": "4580.0"
+                },
+                {
+                  "capacity": "60.0",
+                  "cost": "8160.0"
+                },
+                {
+                  "capacity": "80.0",
+                  "cost": "9160.0"
+                },
+                {
+                  "capacity": "100.0",
+                  "cost": "12740.0"
+                },
+                {
+                  "capacity": "120.0",
+                  "cost": "13740.0"
+                },
+                {
+                  "capacity": "140.0",
+                  "cost": "17320.0"
+                },
+                {
+                  "capacity": "160.0",
+                  "cost": "18320.0"
+                },
+                {
+                  "capacity": "180.0",
+                  "cost": "21900.0"
+                },
+                {
+                  "capacity": "200.0",
+                  "cost": "22900.0"
+                },
+                {
+                  "capacity": "220.0",
+                  "cost": "26480.0"
+                },
+                {
+                  "capacity": "240.0",
+                  "cost": "27480.0"
+                },
+                {
+                  "capacity": "260.0",
+                  "cost": "31060.0"
+                },
+                {
+                  "capacity": "280.0",
+                  "cost": "32060.0"
+                },
+                {
+                  "capacity": "300.0",
+                  "cost": "35640.0"
+                },
+                {
+                  "capacity": "320.0",
+                  "cost": "36640.0"
+                },
+                {
+                  "capacity": "340.0",
+                  "cost": "40220.0"
+                },
+                {
+                  "capacity": "360.0",
+                  "cost": "41220.0"
+                },
+                {
+                  "capacity": "380.0",
+                  "cost": "44800.0"
+                },
+                {
+                  "capacity": "400.0",
+                  "cost": "45800.0"
+                },
+                {
+                  "capacity": "420.0",
+                  "cost": "49380.0"
+                },
+                {
+                  "capacity": "440.0",
+                  "cost": "50380.0"
+                },
+                {
+                  "capacity": "460.0",
+                  "cost": "53960.0"
+                },
+                {
+                  "capacity": "480.0",
+                  "cost": "54960.0"
+                },
+                {
+                  "capacity": "500.0",
+                  "cost": "58540.0"
+                },
+                {
+                  "capacity": "520.0",
+                  "cost": "59540.0"
+                },
+                {
+                  "capacity": "540.0",
+                  "cost": "63120.0"
+                },
+                {
+                  "capacity": "560.0",
+                  "cost": "64120.0"
+                },
+                {
+                  "capacity": "580.0",
+                  "cost": "67700.0"
+                },
+                {
+                  "capacity": "600.0",
+                  "cost": "68700.0"
+                },
+                {
+                  "capacity": "620.0",
+                  "cost": "72280.0"
+                },
+                {
+                  "capacity": "640.0",
+                  "cost": "73280.0"
+                },
+                {
+                  "capacity": "660.0",
+                  "cost": "76860.0"
+                },
+                {
+                  "capacity": "680.0",
+                  "cost": "77860.0"
+                },
+                {
+                  "capacity": "700.0",
+                  "cost": "81440.0"
+                },
+                {
+                  "capacity": "720.0",
+                  "cost": "82440.0"
+                },
+                {
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "#encoding": "ISO-8859-1"
+}

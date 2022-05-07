@@ -4,6 +4,7 @@
 #define NETWORK_RELIABILITY_UNRELIABILITY_RELIABILITY_HPP
 
 #include <bits/stdc++.h>
+#include "median_trick.hpp"
 #include "graph.hpp"
 #include "random.hpp"
 #include "types.hpp"
@@ -89,7 +90,7 @@ t_double compute_reliability(DiGraph g, const t_double eps) {
 
 t_double compute_r_optimised(DiGraph g, DiGraph gi, vector<t_edge> cntr_edges, const t_double eps) {
     // defined in proposition 9
-    int s = ceil(5.0 * 1.0 / (eps * eps) * (g.get_n() - 1.0));
+    int s = ceil(5.0 / (eps * eps) * (g.get_n() - 1.0));
 
     int cnt = 0;
     for (int i = 0; i < s; i++) {
@@ -121,7 +122,11 @@ t_double compute_reliability_optimised(DiGraph g, const t_double eps) {
     int r = g.nodes[0];
     for (int i = 1; i < n; i++) {
         int vtx = g.edges[ g.adj[r][0] ].to;
-        auto[gi, cntr_edges] = unite(g, r, vtx);
+//        auto[gi, cntr_edges] = unite(g, r, vtx);
+        auto gi_cntr = unite(g, r, vtx);
+        auto gi = gi_cntr.first;
+        auto cntr_edges = gi_cntr.second;
+//        t_double rel = median_trick([&]() {return compute_r_optimised(g, gi, cntr_edges, eps);}, 4, 0.05);
         t_double rel = compute_r_optimised(g, gi, cntr_edges, eps);
         zreach *= rel;
         g = gi;

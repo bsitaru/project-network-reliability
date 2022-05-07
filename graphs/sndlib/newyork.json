@@ -1,0 +1,886 @@
+{
+  "network": {
+    "average-avl": 0.996655,
+    "-xmlns": "http://sndlib.zib.de/network",
+    "-version": "1.0",
+    "parsererror": {
+      "-on": "1.0",
+      "-encoding": "ISO-8859-1",
+      "h3": [
+        "This page contains the following errors:",
+        {
+          "#item": {
+            "div": {
+              "-version": "1.0",
+              "-encoding": "ISO-8859-1",
+              "#text": "error on line 716 at column 2: Extra content at the end of the document\n"
+            }
+          }
+        },
+        "Below is a rendering of the page up to the first error."
+      ]
+    },
+    "networkStructure": {
+      "nodes": {
+        "-coordinatesType": "pixel",
+        "node": [
+          {
+            "-id": "N1",
+            "coordinates": {
+              "x": "237.0",
+              "y": "338.0"
+            }
+          },
+          {
+            "-id": "N2",
+            "coordinates": {
+              "x": "130.0",
+              "y": "207.0"
+            }
+          },
+          {
+            "-id": "N3",
+            "coordinates": {
+              "x": "126.0",
+              "y": "531.0"
+            }
+          },
+          {
+            "-id": "N4",
+            "coordinates": {
+              "x": "209.0",
+              "y": "523.0"
+            }
+          },
+          {
+            "-id": "N5",
+            "coordinates": {
+              "x": "345.0",
+              "y": "232.0"
+            }
+          },
+          {
+            "-id": "N6",
+            "coordinates": {
+              "x": "95.0",
+              "y": "350.0"
+            }
+          },
+          {
+            "-id": "N7",
+            "coordinates": {
+              "x": "302.0",
+              "y": "404.0"
+            }
+          },
+          {
+            "-id": "N8",
+            "coordinates": {
+              "x": "161.0",
+              "y": "454.0"
+            }
+          },
+          {
+            "-id": "N9",
+            "coordinates": {
+              "x": "394.0",
+              "y": "499.0"
+            }
+          },
+          {
+            "-id": "N10",
+            "coordinates": {
+              "x": "389.0",
+              "y": "656.0"
+            }
+          },
+          {
+            "-id": "N11",
+            "coordinates": {
+              "x": "237.0",
+              "y": "645.0"
+            }
+          },
+          {
+            "-id": "N12",
+            "coordinates": {
+              "x": "277.0",
+              "y": "70.0"
+            }
+          },
+          {
+            "-id": "N13",
+            "coordinates": {
+              "x": "540.0",
+              "y": "147.0"
+            }
+          },
+          {
+            "-id": "N14",
+            "coordinates": {
+              "x": "592.0",
+              "y": "503.0"
+            }
+          },
+          {
+            "-id": "N15",
+            "coordinates": {
+              "x": "490.0",
+              "y": "349.0"
+            }
+          },
+          {
+            "-id": "N16",
+            "coordinates": {
+              "x": "463.0",
+              "y": "543.0"
+            }
+          }
+        ]
+      },
+      "links": {
+        "link": [
+          {
+            "-id": "L1",
+            "source": "N1",
+            "target": "N2",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "44400.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "54400.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L2",
+            "source": "N1",
+            "target": "N5",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "59600.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "69600.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L3",
+            "source": "N1",
+            "target": "N6",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "59600.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "69600.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L4",
+            "source": "N1",
+            "target": "N7",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "74800.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "84800.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L5",
+            "source": "N1",
+            "target": "N8",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "74800.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "84800.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L6",
+            "source": "N1",
+            "target": "N12",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "74800.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "84800.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L7",
+            "source": "N1",
+            "target": "N13",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "105200.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "115200.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L8",
+            "source": "N1",
+            "target": "N15",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "90000.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "100000.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L9",
+            "source": "N2",
+            "target": "N5",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "29200.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "39200.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L10",
+            "source": "N2",
+            "target": "N6",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "59600.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "69600.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L11",
+            "source": "N2",
+            "target": "N12",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "74800.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "84800.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L12",
+            "source": "N2",
+            "target": "N13",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "105200.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "115200.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L13",
+            "source": "N2",
+            "target": "N15",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "105200.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "115200.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L14",
+            "source": "N3",
+            "target": "N4",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "59600.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "69600.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L15",
+            "source": "N3",
+            "target": "N6",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "59600.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "69600.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L16",
+            "source": "N3",
+            "target": "N7",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "59600.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "69600.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L17",
+            "source": "N3",
+            "target": "N8",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "29200.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "39200.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L18",
+            "source": "N3",
+            "target": "N11",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "74800.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "84800.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L19",
+            "source": "N4",
+            "target": "N7",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "74800.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "84800.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L20",
+            "source": "N4",
+            "target": "N8",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "59600.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "69600.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L21",
+            "source": "N4",
+            "target": "N9",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "105200.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "115200.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L22",
+            "source": "N4",
+            "target": "N10",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "90000.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "100000.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L23",
+            "source": "N4",
+            "target": "N11",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "29200.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "39200.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L24",
+            "source": "N5",
+            "target": "N12",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "59600.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "69600.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L25",
+            "source": "N5",
+            "target": "N13",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "90000.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "100000.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L26",
+            "source": "N5",
+            "target": "N15",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "105200.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "115200.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L27",
+            "source": "N6",
+            "target": "N7",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "59600.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "69600.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L28",
+            "source": "N6",
+            "target": "N8",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "44400.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "54400.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L29",
+            "source": "N7",
+            "target": "N8",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "44400.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "54400.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L30",
+            "source": "N7",
+            "target": "N9",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "120400.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "130400.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L31",
+            "source": "N7",
+            "target": "N10",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "120400.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "130400.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L32",
+            "source": "N7",
+            "target": "N12",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "120400.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "130400.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L33",
+            "source": "N7",
+            "target": "N13",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "135600.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "145600.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L34",
+            "source": "N7",
+            "target": "N14",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "135600.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "145600.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L35",
+            "source": "N7",
+            "target": "N15",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "90000.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "100000.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L36",
+            "source": "N9",
+            "target": "N10",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "44400.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "54400.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L37",
+            "source": "N9",
+            "target": "N11",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "90000.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "100000.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L38",
+            "source": "N9",
+            "target": "N14",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "120400.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "130400.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L39",
+            "source": "N9",
+            "target": "N15",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "166000.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "176000.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L40",
+            "source": "N9",
+            "target": "N16",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "257200.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "267200.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L41",
+            "source": "N10",
+            "target": "N11",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "74800.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "84800.0"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "#encoding": "ISO-8859-1"
+}

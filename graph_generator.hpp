@@ -6,6 +6,7 @@
 #include "random.hpp"
 #include "types.hpp"
 #include "graph.hpp"
+#include "utils.hpp"
 
 using namespace std;
 namespace Generator {
@@ -241,6 +242,35 @@ Graph read_graph(string file_path) {
     }
 
     return Graph(nodes, edges, 0.1);
+}
+
+Graph read_sndlib_graph(string file) {
+    ifstream json_reader("graphs/sndlib/" + file + ".json");
+    json j;
+    json_reader >> j;
+
+    auto j_nodes = j["network"]["networkStructure"]["nodes"]["node"];
+    int n = j_nodes.size();
+
+    vector<t_node> nodes;
+    map<string, int> node_map;
+    for(int i = 0; i < n; i++) {
+        nodes.push_back(i);
+        node_map[j_nodes[i]["-id"]] = i;
+    }
+
+    auto j_edges = j["network"]["networkStructure"]["links"]["link"];
+    int m = j_edges.size();
+    vector<t_edge> edges;
+    
+    for(int i = 0; i < m; i++) {
+        int x = node_map[ j_edges[i]["source"] ];
+        int y = node_map[ j_edges[i]["target"] ];
+        edges.push_back({x, y, i, 1});
+    }
+
+    t_double p = t_double(1.0) - t_double(j["network"]["average-avl"]);
+    return Graph(nodes, edges, p);
 }
 
 #endif //NETWORK_RELIABILITY_UNRELIABILITY_GRAPH_GENERATOR_HPP

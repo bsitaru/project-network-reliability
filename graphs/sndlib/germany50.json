@@ -1,0 +1,5313 @@
+{
+  "network": {
+    "average-avl": 0.999968,
+    "-xmlns": "http://sndlib.zib.de/network",
+    "-version": "1.0",
+    "networkStructure": {
+      "nodes": {
+        "-coordinatesType": "geographical",
+        "node": [
+          {
+            "-id": "Aachen",
+            "coordinates": {
+              "x": "6.04",
+              "y": "50.76"
+            }
+          },
+          {
+            "-id": "Augsburg",
+            "coordinates": {
+              "x": "10.9",
+              "y": "48.33"
+            }
+          },
+          {
+            "-id": "Bayreuth",
+            "coordinates": {
+              "x": "11.59",
+              "y": "49.93"
+            }
+          },
+          {
+            "-id": "Berlin",
+            "coordinates": {
+              "x": "13.39",
+              "y": "52.52"
+            }
+          },
+          {
+            "-id": "Bielefeld",
+            "coordinates": {
+              "x": "8.5",
+              "y": "52.04"
+            }
+          },
+          {
+            "-id": "Braunschweig",
+            "coordinates": {
+              "x": "10.55",
+              "y": "52.28"
+            }
+          },
+          {
+            "-id": "Bremen",
+            "coordinates": {
+              "x": "8.85",
+              "y": "53.11"
+            }
+          },
+          {
+            "-id": "Bremerhaven",
+            "coordinates": {
+              "x": "8.58",
+              "y": "53.54"
+            }
+          },
+          {
+            "-id": "Chemnitz",
+            "coordinates": {
+              "x": "12.93",
+              "y": "50.84"
+            }
+          },
+          {
+            "-id": "Darmstadt",
+            "coordinates": {
+              "x": "8.65",
+              "y": "49.89"
+            }
+          },
+          {
+            "-id": "Dortmund",
+            "coordinates": {
+              "x": "7.45",
+              "y": "51.51"
+            }
+          },
+          {
+            "-id": "Dresden",
+            "coordinates": {
+              "x": "13.73",
+              "y": "51.03"
+            }
+          },
+          {
+            "-id": "Duesseldorf",
+            "coordinates": {
+              "x": "6.77",
+              "y": "51.25"
+            }
+          },
+          {
+            "-id": "Erfurt",
+            "coordinates": {
+              "x": "11.04",
+              "y": "50.98"
+            }
+          },
+          {
+            "-id": "Essen",
+            "coordinates": {
+              "x": "7.02",
+              "y": "51.46"
+            }
+          },
+          {
+            "-id": "Flensburg",
+            "coordinates": {
+              "x": "9.45",
+              "y": "54.77"
+            }
+          },
+          {
+            "-id": "Frankfurt",
+            "coordinates": {
+              "x": "8.71",
+              "y": "50.12"
+            }
+          },
+          {
+            "-id": "Freiburg",
+            "coordinates": {
+              "x": "7.8",
+              "y": "47.98"
+            }
+          },
+          {
+            "-id": "Fulda",
+            "coordinates": {
+              "x": "9.69",
+              "y": "50.56"
+            }
+          },
+          {
+            "-id": "Giessen",
+            "coordinates": {
+              "x": "8.67",
+              "y": "50.57"
+            }
+          },
+          {
+            "-id": "Greifswald",
+            "coordinates": {
+              "x": "13.4",
+              "y": "54.09"
+            }
+          },
+          {
+            "-id": "Hamburg",
+            "coordinates": {
+              "x": "9.99",
+              "y": "53.57"
+            }
+          },
+          {
+            "-id": "Hannover",
+            "coordinates": {
+              "x": "9.72",
+              "y": "52.38"
+            }
+          },
+          {
+            "-id": "Kaiserslautern",
+            "coordinates": {
+              "x": "7.75",
+              "y": "49.43"
+            }
+          },
+          {
+            "-id": "Karlsruhe",
+            "coordinates": {
+              "x": "8.41",
+              "y": "49.01"
+            }
+          },
+          {
+            "-id": "Kassel",
+            "coordinates": {
+              "x": "9.51",
+              "y": "51.32"
+            }
+          },
+          {
+            "-id": "Kempten",
+            "coordinates": {
+              "x": "10.32",
+              "y": "47.72"
+            }
+          },
+          {
+            "-id": "Kiel",
+            "coordinates": {
+              "x": "10.12",
+              "y": "54.34"
+            }
+          },
+          {
+            "-id": "Koblenz",
+            "coordinates": {
+              "x": "7.52",
+              "y": "50.4"
+            }
+          },
+          {
+            "-id": "Koeln",
+            "coordinates": {
+              "x": "6.87",
+              "y": "50.94"
+            }
+          },
+          {
+            "-id": "Konstanz",
+            "coordinates": {
+              "x": "9.18",
+              "y": "47.66"
+            }
+          },
+          {
+            "-id": "Leipzig",
+            "coordinates": {
+              "x": "12.38",
+              "y": "51.34"
+            }
+          },
+          {
+            "-id": "Magdeburg",
+            "coordinates": {
+              "x": "11.64",
+              "y": "52.14"
+            }
+          },
+          {
+            "-id": "Mannheim",
+            "coordinates": {
+              "x": "8.49",
+              "y": "49.49"
+            }
+          },
+          {
+            "-id": "Muenchen",
+            "coordinates": {
+              "x": "11.57",
+              "y": "48.15"
+            }
+          },
+          {
+            "-id": "Muenster",
+            "coordinates": {
+              "x": "7.6",
+              "y": "51.97"
+            }
+          },
+          {
+            "-id": "Norden",
+            "coordinates": {
+              "x": "7.21",
+              "y": "53.6"
+            }
+          },
+          {
+            "-id": "Nuernberg",
+            "coordinates": {
+              "x": "11.03",
+              "y": "49.57"
+            }
+          },
+          {
+            "-id": "Oldenburg",
+            "coordinates": {
+              "x": "8.21",
+              "y": "53.11"
+            }
+          },
+          {
+            "-id": "Osnabrueck",
+            "coordinates": {
+              "x": "8.03",
+              "y": "52.28"
+            }
+          },
+          {
+            "-id": "Passau",
+            "coordinates": {
+              "x": "13.46",
+              "y": "48.57"
+            }
+          },
+          {
+            "-id": "Regensburg",
+            "coordinates": {
+              "x": "12.09",
+              "y": "49.0"
+            }
+          },
+          {
+            "-id": "Saarbruecken",
+            "coordinates": {
+              "x": "7.03",
+              "y": "49.23"
+            }
+          },
+          {
+            "-id": "Schwerin",
+            "coordinates": {
+              "x": "11.45",
+              "y": "53.55"
+            }
+          },
+          {
+            "-id": "Siegen",
+            "coordinates": {
+              "x": "8.03",
+              "y": "50.91"
+            }
+          },
+          {
+            "-id": "Stuttgart",
+            "coordinates": {
+              "x": "9.1",
+              "y": "48.74"
+            }
+          },
+          {
+            "-id": "Trier",
+            "coordinates": {
+              "x": "6.68",
+              "y": "49.75"
+            }
+          },
+          {
+            "-id": "Ulm",
+            "coordinates": {
+              "x": "9.99",
+              "y": "48.4"
+            }
+          },
+          {
+            "-id": "Wesel",
+            "coordinates": {
+              "x": "6.37",
+              "y": "51.39"
+            }
+          },
+          {
+            "-id": "Wuerzburg",
+            "coordinates": {
+              "x": "9.97",
+              "y": "49.78"
+            }
+          }
+        ]
+      },
+      "links": {
+        "link": [
+          {
+            "-id": "L1",
+            "source": "Duesseldorf",
+            "target": "Essen",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L2",
+            "source": "Dortmund",
+            "target": "Essen",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L3",
+            "source": "Wesel",
+            "target": "Essen",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L4",
+            "source": "Koeln",
+            "target": "Duesseldorf",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L5",
+            "source": "Aachen",
+            "target": "Koeln",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L6",
+            "source": "Koblenz",
+            "target": "Koeln",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L7",
+            "source": "Muenster",
+            "target": "Dortmund",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L8",
+            "source": "Siegen",
+            "target": "Dortmund",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L9",
+            "source": "Kassel",
+            "target": "Dortmund",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L10",
+            "source": "Wesel",
+            "target": "Aachen",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L11",
+            "source": "Trier",
+            "target": "Aachen",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L12",
+            "source": "Bielefeld",
+            "target": "Muenster",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L13",
+            "source": "Osnabrueck",
+            "target": "Muenster",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L14",
+            "source": "Siegen",
+            "target": "Koblenz",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L15",
+            "source": "Frankfurt",
+            "target": "Koblenz",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L16",
+            "source": "Kaiserslautern",
+            "target": "Koblenz",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L17",
+            "source": "Trier",
+            "target": "Koblenz",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L18",
+            "source": "Bielefeld",
+            "target": "Siegen",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L19",
+            "source": "Giessen",
+            "target": "Siegen",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L20",
+            "source": "Oldenburg",
+            "target": "Wesel",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "4150.0"
+              }
+            }
+          },
+          {
+            "-id": "L21",
+            "source": "Norden",
+            "target": "Wesel",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "4150.0"
+              }
+            }
+          },
+          {
+            "-id": "L22",
+            "source": "Leipzig",
+            "target": "Berlin",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L23",
+            "source": "Dresden",
+            "target": "Berlin",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "4150.0"
+              }
+            }
+          },
+          {
+            "-id": "L24",
+            "source": "Schwerin",
+            "target": "Berlin",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "4150.0"
+              }
+            }
+          },
+          {
+            "-id": "L25",
+            "source": "Magdeburg",
+            "target": "Berlin",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L26",
+            "source": "Greifswald",
+            "target": "Berlin",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "4150.0"
+              }
+            }
+          },
+          {
+            "-id": "L27",
+            "source": "Dresden",
+            "target": "Leipzig",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L28",
+            "source": "Erfurt",
+            "target": "Leipzig",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L29",
+            "source": "Magdeburg",
+            "target": "Leipzig",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L30",
+            "source": "Bayreuth",
+            "target": "Leipzig",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "4150.0"
+              }
+            }
+          },
+          {
+            "-id": "L31",
+            "source": "Erfurt",
+            "target": "Dresden",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "4150.0"
+              }
+            }
+          },
+          {
+            "-id": "L32",
+            "source": "Chemnitz",
+            "target": "Dresden",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L33",
+            "source": "Chemnitz",
+            "target": "Erfurt",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L34",
+            "source": "Kassel",
+            "target": "Erfurt",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L35",
+            "source": "Wuerzburg",
+            "target": "Erfurt",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L36",
+            "source": "Bayreuth",
+            "target": "Chemnitz",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L37",
+            "source": "Magdeburg",
+            "target": "Schwerin",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "4150.0"
+              }
+            }
+          },
+          {
+            "-id": "L38",
+            "source": "Greifswald",
+            "target": "Schwerin",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L39",
+            "source": "Hamburg",
+            "target": "Schwerin",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L40",
+            "source": "Kiel",
+            "target": "Schwerin",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L41",
+            "source": "Braunschweig",
+            "target": "Magdeburg",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L42",
+            "source": "Kiel",
+            "target": "Hamburg",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L43",
+            "source": "Hannover",
+            "target": "Hamburg",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L44",
+            "source": "Braunschweig",
+            "target": "Hamburg",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L45",
+            "source": "Oldenburg",
+            "target": "Bremen",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L46",
+            "source": "Bremerhaven",
+            "target": "Bremen",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L47",
+            "source": "Hannover",
+            "target": "Bremen",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L48",
+            "source": "Flensburg",
+            "target": "Kiel",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L49",
+            "source": "Norden",
+            "target": "Oldenburg",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L50",
+            "source": "Osnabrueck",
+            "target": "Oldenburg",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L51",
+            "source": "Bremerhaven",
+            "target": "Flensburg",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L52",
+            "source": "Bielefeld",
+            "target": "Hannover",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L53",
+            "source": "Braunschweig",
+            "target": "Hannover",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L54",
+            "source": "Osnabrueck",
+            "target": "Hannover",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L55",
+            "source": "Braunschweig",
+            "target": "Bielefeld",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L56",
+            "source": "Kassel",
+            "target": "Braunschweig",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L57",
+            "source": "Giessen",
+            "target": "Kassel",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L58",
+            "source": "Fulda",
+            "target": "Kassel",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L59",
+            "source": "Darmstadt",
+            "target": "Frankfurt",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L60",
+            "source": "Giessen",
+            "target": "Frankfurt",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L61",
+            "source": "Fulda",
+            "target": "Frankfurt",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L62",
+            "source": "Mannheim",
+            "target": "Darmstadt",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L63",
+            "source": "Kaiserslautern",
+            "target": "Darmstadt",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L64",
+            "source": "Karlsruhe",
+            "target": "Mannheim",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L65",
+            "source": "Saarbruecken",
+            "target": "Kaiserslautern",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L66",
+            "source": "Karlsruhe",
+            "target": "Kaiserslautern",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L67",
+            "source": "Fulda",
+            "target": "Giessen",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L68",
+            "source": "Saarbruecken",
+            "target": "Trier",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L69",
+            "source": "Wuerzburg",
+            "target": "Fulda",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L70",
+            "source": "Karlsruhe",
+            "target": "Saarbruecken",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L71",
+            "source": "Karlsruhe",
+            "target": "Stuttgart",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L72",
+            "source": "Ulm",
+            "target": "Stuttgart",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L73",
+            "source": "Konstanz",
+            "target": "Stuttgart",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L74",
+            "source": "Wuerzburg",
+            "target": "Stuttgart",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L75",
+            "source": "Freiburg",
+            "target": "Karlsruhe",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L76",
+            "source": "Augsburg",
+            "target": "Ulm",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L77",
+            "source": "Freiburg",
+            "target": "Konstanz",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L78",
+            "source": "Kempten",
+            "target": "Konstanz",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L79",
+            "source": "Augsburg",
+            "target": "Muenchen",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L80",
+            "source": "Kempten",
+            "target": "Muenchen",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L81",
+            "source": "Passau",
+            "target": "Muenchen",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L82",
+            "source": "Nuernberg",
+            "target": "Muenchen",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L83",
+            "source": "Regensburg",
+            "target": "Muenchen",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L84",
+            "source": "Wuerzburg",
+            "target": "Augsburg",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "4150.0"
+              }
+            }
+          },
+          {
+            "-id": "L85",
+            "source": "Regensburg",
+            "target": "Passau",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L86",
+            "source": "Bayreuth",
+            "target": "Nuernberg",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3290.0"
+              }
+            }
+          },
+          {
+            "-id": "L87",
+            "source": "Wuerzburg",
+            "target": "Nuernberg",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          },
+          {
+            "-id": "L88",
+            "source": "Regensburg",
+            "target": "Nuernberg",
+            "additionalModules": {
+              "addModule": {
+                "capacity": "40.0",
+                "cost": "3720.0"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "demands": {
+      "demand": [
+        {
+          "-id": "Essen_Duesseldorf",
+          "source": "Essen",
+          "target": "Duesseldorf",
+          "demandValue": "34.0"
+        },
+        {
+          "-id": "Essen_Koeln",
+          "source": "Essen",
+          "target": "Koeln",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "Essen_Dortmund",
+          "source": "Essen",
+          "target": "Dortmund",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "Essen_Aachen",
+          "source": "Essen",
+          "target": "Aachen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Muenster",
+          "source": "Essen",
+          "target": "Muenster",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Koblenz",
+          "source": "Essen",
+          "target": "Koblenz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Siegen",
+          "source": "Essen",
+          "target": "Siegen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Wesel",
+          "source": "Essen",
+          "target": "Wesel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Berlin",
+          "source": "Essen",
+          "target": "Berlin",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Leipzig",
+          "source": "Essen",
+          "target": "Leipzig",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Dresden",
+          "source": "Essen",
+          "target": "Dresden",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Erfurt",
+          "source": "Essen",
+          "target": "Erfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Chemnitz",
+          "source": "Essen",
+          "target": "Chemnitz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Schwerin",
+          "source": "Essen",
+          "target": "Schwerin",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Magdeburg",
+          "source": "Essen",
+          "target": "Magdeburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Hamburg",
+          "source": "Essen",
+          "target": "Hamburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Bremen",
+          "source": "Essen",
+          "target": "Bremen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Kiel",
+          "source": "Essen",
+          "target": "Kiel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Norden",
+          "source": "Essen",
+          "target": "Norden",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Hannover",
+          "source": "Essen",
+          "target": "Hannover",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Bielefeld",
+          "source": "Essen",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Osnabrueck",
+          "source": "Essen",
+          "target": "Osnabrueck",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Frankfurt",
+          "source": "Essen",
+          "target": "Frankfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Darmstadt",
+          "source": "Essen",
+          "target": "Darmstadt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Mannheim",
+          "source": "Essen",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Saarbruecken",
+          "source": "Essen",
+          "target": "Saarbruecken",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Stuttgart",
+          "source": "Essen",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Karlsruhe",
+          "source": "Essen",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Muenchen",
+          "source": "Essen",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Augsburg",
+          "source": "Essen",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Nuernberg",
+          "source": "Essen",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Essen_Wuerzburg",
+          "source": "Essen",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Koeln",
+          "source": "Duesseldorf",
+          "target": "Koeln",
+          "demandValue": "76.0"
+        },
+        {
+          "-id": "Duesseldorf_Dortmund",
+          "source": "Duesseldorf",
+          "target": "Dortmund",
+          "demandValue": "25.0"
+        },
+        {
+          "-id": "Duesseldorf_Aachen",
+          "source": "Duesseldorf",
+          "target": "Aachen",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Duesseldorf_Muenster",
+          "source": "Duesseldorf",
+          "target": "Muenster",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "Duesseldorf_Koblenz",
+          "source": "Duesseldorf",
+          "target": "Koblenz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Siegen",
+          "source": "Duesseldorf",
+          "target": "Siegen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Wesel",
+          "source": "Duesseldorf",
+          "target": "Wesel",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Duesseldorf_Berlin",
+          "source": "Duesseldorf",
+          "target": "Berlin",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "Duesseldorf_Leipzig",
+          "source": "Duesseldorf",
+          "target": "Leipzig",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Dresden",
+          "source": "Duesseldorf",
+          "target": "Dresden",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Erfurt",
+          "source": "Duesseldorf",
+          "target": "Erfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Schwerin",
+          "source": "Duesseldorf",
+          "target": "Schwerin",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Magdeburg",
+          "source": "Duesseldorf",
+          "target": "Magdeburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Greifswald",
+          "source": "Duesseldorf",
+          "target": "Greifswald",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Hamburg",
+          "source": "Duesseldorf",
+          "target": "Hamburg",
+          "demandValue": "15.0"
+        },
+        {
+          "-id": "Duesseldorf_Bremen",
+          "source": "Duesseldorf",
+          "target": "Bremen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Kiel",
+          "source": "Duesseldorf",
+          "target": "Kiel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Oldenburg",
+          "source": "Duesseldorf",
+          "target": "Oldenburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Flensburg",
+          "source": "Duesseldorf",
+          "target": "Flensburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Bremerhaven",
+          "source": "Duesseldorf",
+          "target": "Bremerhaven",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Norden",
+          "source": "Duesseldorf",
+          "target": "Norden",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Hannover",
+          "source": "Duesseldorf",
+          "target": "Hannover",
+          "demandValue": "19.0"
+        },
+        {
+          "-id": "Duesseldorf_Bielefeld",
+          "source": "Duesseldorf",
+          "target": "Bielefeld",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "Duesseldorf_Braunschweig",
+          "source": "Duesseldorf",
+          "target": "Braunschweig",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Osnabrueck",
+          "source": "Duesseldorf",
+          "target": "Osnabrueck",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Kassel",
+          "source": "Duesseldorf",
+          "target": "Kassel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Frankfurt",
+          "source": "Duesseldorf",
+          "target": "Frankfurt",
+          "demandValue": "33.0"
+        },
+        {
+          "-id": "Duesseldorf_Darmstadt",
+          "source": "Duesseldorf",
+          "target": "Darmstadt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Mannheim",
+          "source": "Duesseldorf",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Giessen",
+          "source": "Duesseldorf",
+          "target": "Giessen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Trier",
+          "source": "Duesseldorf",
+          "target": "Trier",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Fulda",
+          "source": "Duesseldorf",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Saarbruecken",
+          "source": "Duesseldorf",
+          "target": "Saarbruecken",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Stuttgart",
+          "source": "Duesseldorf",
+          "target": "Stuttgart",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Duesseldorf_Karlsruhe",
+          "source": "Duesseldorf",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Ulm",
+          "source": "Duesseldorf",
+          "target": "Ulm",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Freiburg",
+          "source": "Duesseldorf",
+          "target": "Freiburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Muenchen",
+          "source": "Duesseldorf",
+          "target": "Muenchen",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "Duesseldorf_Augsburg",
+          "source": "Duesseldorf",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Nuernberg",
+          "source": "Duesseldorf",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Wuerzburg",
+          "source": "Duesseldorf",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Duesseldorf_Regensburg",
+          "source": "Duesseldorf",
+          "target": "Regensburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Dortmund",
+          "source": "Koeln",
+          "target": "Dortmund",
+          "demandValue": "13.0"
+        },
+        {
+          "-id": "Koeln_Aachen",
+          "source": "Koeln",
+          "target": "Aachen",
+          "demandValue": "10.0"
+        },
+        {
+          "-id": "Koeln_Muenster",
+          "source": "Koeln",
+          "target": "Muenster",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Koblenz",
+          "source": "Koeln",
+          "target": "Koblenz",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Koeln_Siegen",
+          "source": "Koeln",
+          "target": "Siegen",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "Koeln_Wesel",
+          "source": "Koeln",
+          "target": "Wesel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Berlin",
+          "source": "Koeln",
+          "target": "Berlin",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "Koeln_Leipzig",
+          "source": "Koeln",
+          "target": "Leipzig",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Koeln_Dresden",
+          "source": "Koeln",
+          "target": "Dresden",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Erfurt",
+          "source": "Koeln",
+          "target": "Erfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Chemnitz",
+          "source": "Koeln",
+          "target": "Chemnitz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Schwerin",
+          "source": "Koeln",
+          "target": "Schwerin",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Magdeburg",
+          "source": "Koeln",
+          "target": "Magdeburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Hamburg",
+          "source": "Koeln",
+          "target": "Hamburg",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Koeln_Bremen",
+          "source": "Koeln",
+          "target": "Bremen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Kiel",
+          "source": "Koeln",
+          "target": "Kiel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Oldenburg",
+          "source": "Koeln",
+          "target": "Oldenburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Bremerhaven",
+          "source": "Koeln",
+          "target": "Bremerhaven",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Norden",
+          "source": "Koeln",
+          "target": "Norden",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Hannover",
+          "source": "Koeln",
+          "target": "Hannover",
+          "demandValue": "12.0"
+        },
+        {
+          "-id": "Koeln_Bielefeld",
+          "source": "Koeln",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Braunschweig",
+          "source": "Koeln",
+          "target": "Braunschweig",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Osnabrueck",
+          "source": "Koeln",
+          "target": "Osnabrueck",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Kassel",
+          "source": "Koeln",
+          "target": "Kassel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Frankfurt",
+          "source": "Koeln",
+          "target": "Frankfurt",
+          "demandValue": "28.0"
+        },
+        {
+          "-id": "Koeln_Darmstadt",
+          "source": "Koeln",
+          "target": "Darmstadt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Mannheim",
+          "source": "Koeln",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Kaiserslautern",
+          "source": "Koeln",
+          "target": "Kaiserslautern",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Giessen",
+          "source": "Koeln",
+          "target": "Giessen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Trier",
+          "source": "Koeln",
+          "target": "Trier",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Koeln_Fulda",
+          "source": "Koeln",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Saarbruecken",
+          "source": "Koeln",
+          "target": "Saarbruecken",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Stuttgart",
+          "source": "Koeln",
+          "target": "Stuttgart",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "Koeln_Karlsruhe",
+          "source": "Koeln",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Ulm",
+          "source": "Koeln",
+          "target": "Ulm",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Konstanz",
+          "source": "Koeln",
+          "target": "Konstanz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Freiburg",
+          "source": "Koeln",
+          "target": "Freiburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Muenchen",
+          "source": "Koeln",
+          "target": "Muenchen",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Koeln_Augsburg",
+          "source": "Koeln",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Kempten",
+          "source": "Koeln",
+          "target": "Kempten",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Nuernberg",
+          "source": "Koeln",
+          "target": "Nuernberg",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Koeln_Bayreuth",
+          "source": "Koeln",
+          "target": "Bayreuth",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Wuerzburg",
+          "source": "Koeln",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koeln_Regensburg",
+          "source": "Koeln",
+          "target": "Regensburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Aachen",
+          "source": "Dortmund",
+          "target": "Aachen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Muenster",
+          "source": "Dortmund",
+          "target": "Muenster",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "Dortmund_Koblenz",
+          "source": "Dortmund",
+          "target": "Koblenz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Siegen",
+          "source": "Dortmund",
+          "target": "Siegen",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Dortmund_Wesel",
+          "source": "Dortmund",
+          "target": "Wesel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Berlin",
+          "source": "Dortmund",
+          "target": "Berlin",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Leipzig",
+          "source": "Dortmund",
+          "target": "Leipzig",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Dortmund_Dresden",
+          "source": "Dortmund",
+          "target": "Dresden",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Erfurt",
+          "source": "Dortmund",
+          "target": "Erfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Chemnitz",
+          "source": "Dortmund",
+          "target": "Chemnitz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Schwerin",
+          "source": "Dortmund",
+          "target": "Schwerin",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Magdeburg",
+          "source": "Dortmund",
+          "target": "Magdeburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Greifswald",
+          "source": "Dortmund",
+          "target": "Greifswald",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Hamburg",
+          "source": "Dortmund",
+          "target": "Hamburg",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Dortmund_Bremen",
+          "source": "Dortmund",
+          "target": "Bremen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Kiel",
+          "source": "Dortmund",
+          "target": "Kiel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Oldenburg",
+          "source": "Dortmund",
+          "target": "Oldenburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Flensburg",
+          "source": "Dortmund",
+          "target": "Flensburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Bremerhaven",
+          "source": "Dortmund",
+          "target": "Bremerhaven",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Norden",
+          "source": "Dortmund",
+          "target": "Norden",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Hannover",
+          "source": "Dortmund",
+          "target": "Hannover",
+          "demandValue": "15.0"
+        },
+        {
+          "-id": "Dortmund_Bielefeld",
+          "source": "Dortmund",
+          "target": "Bielefeld",
+          "demandValue": "8.0"
+        },
+        {
+          "-id": "Dortmund_Braunschweig",
+          "source": "Dortmund",
+          "target": "Braunschweig",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Osnabrueck",
+          "source": "Dortmund",
+          "target": "Osnabrueck",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Kassel",
+          "source": "Dortmund",
+          "target": "Kassel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Frankfurt",
+          "source": "Dortmund",
+          "target": "Frankfurt",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "Dortmund_Darmstadt",
+          "source": "Dortmund",
+          "target": "Darmstadt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Mannheim",
+          "source": "Dortmund",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Giessen",
+          "source": "Dortmund",
+          "target": "Giessen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Fulda",
+          "source": "Dortmund",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Saarbruecken",
+          "source": "Dortmund",
+          "target": "Saarbruecken",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Stuttgart",
+          "source": "Dortmund",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Karlsruhe",
+          "source": "Dortmund",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Ulm",
+          "source": "Dortmund",
+          "target": "Ulm",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Freiburg",
+          "source": "Dortmund",
+          "target": "Freiburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Muenchen",
+          "source": "Dortmund",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Augsburg",
+          "source": "Dortmund",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Nuernberg",
+          "source": "Dortmund",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dortmund_Wuerzburg",
+          "source": "Dortmund",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Aachen_Muenster",
+          "source": "Aachen",
+          "target": "Muenster",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Aachen_Koblenz",
+          "source": "Aachen",
+          "target": "Koblenz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Aachen_Wesel",
+          "source": "Aachen",
+          "target": "Wesel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Aachen_Berlin",
+          "source": "Aachen",
+          "target": "Berlin",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Aachen_Dresden",
+          "source": "Aachen",
+          "target": "Dresden",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Aachen_Erfurt",
+          "source": "Aachen",
+          "target": "Erfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Aachen_Hamburg",
+          "source": "Aachen",
+          "target": "Hamburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Aachen_Bremerhaven",
+          "source": "Aachen",
+          "target": "Bremerhaven",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Aachen_Norden",
+          "source": "Aachen",
+          "target": "Norden",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Aachen_Osnabrueck",
+          "source": "Aachen",
+          "target": "Osnabrueck",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Aachen_Frankfurt",
+          "source": "Aachen",
+          "target": "Frankfurt",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Aachen_Kaiserslautern",
+          "source": "Aachen",
+          "target": "Kaiserslautern",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Aachen_Trier",
+          "source": "Aachen",
+          "target": "Trier",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Aachen_Fulda",
+          "source": "Aachen",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Aachen_Saarbruecken",
+          "source": "Aachen",
+          "target": "Saarbruecken",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Aachen_Konstanz",
+          "source": "Aachen",
+          "target": "Konstanz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Aachen_Freiburg",
+          "source": "Aachen",
+          "target": "Freiburg",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Aachen_Nuernberg",
+          "source": "Aachen",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Muenster_Siegen",
+          "source": "Muenster",
+          "target": "Siegen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Muenster_Wesel",
+          "source": "Muenster",
+          "target": "Wesel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Muenster_Berlin",
+          "source": "Muenster",
+          "target": "Berlin",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Muenster_Schwerin",
+          "source": "Muenster",
+          "target": "Schwerin",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Muenster_Hamburg",
+          "source": "Muenster",
+          "target": "Hamburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Muenster_Bremen",
+          "source": "Muenster",
+          "target": "Bremen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Muenster_Bremerhaven",
+          "source": "Muenster",
+          "target": "Bremerhaven",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Muenster_Norden",
+          "source": "Muenster",
+          "target": "Norden",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Muenster_Hannover",
+          "source": "Muenster",
+          "target": "Hannover",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Muenster_Bielefeld",
+          "source": "Muenster",
+          "target": "Bielefeld",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Muenster_Osnabrueck",
+          "source": "Muenster",
+          "target": "Osnabrueck",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Muenster_Kassel",
+          "source": "Muenster",
+          "target": "Kassel",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Muenster_Frankfurt",
+          "source": "Muenster",
+          "target": "Frankfurt",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Muenster_Fulda",
+          "source": "Muenster",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Muenster_Konstanz",
+          "source": "Muenster",
+          "target": "Konstanz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Muenster_Nuernberg",
+          "source": "Muenster",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Siegen",
+          "source": "Koblenz",
+          "target": "Siegen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Berlin",
+          "source": "Koblenz",
+          "target": "Berlin",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Dresden",
+          "source": "Koblenz",
+          "target": "Dresden",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Hamburg",
+          "source": "Koblenz",
+          "target": "Hamburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Bremerhaven",
+          "source": "Koblenz",
+          "target": "Bremerhaven",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Norden",
+          "source": "Koblenz",
+          "target": "Norden",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Bielefeld",
+          "source": "Koblenz",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Osnabrueck",
+          "source": "Koblenz",
+          "target": "Osnabrueck",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Kassel",
+          "source": "Koblenz",
+          "target": "Kassel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Frankfurt",
+          "source": "Koblenz",
+          "target": "Frankfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Darmstadt",
+          "source": "Koblenz",
+          "target": "Darmstadt",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "Koblenz_Mannheim",
+          "source": "Koblenz",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Kaiserslautern",
+          "source": "Koblenz",
+          "target": "Kaiserslautern",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Giessen",
+          "source": "Koblenz",
+          "target": "Giessen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Trier",
+          "source": "Koblenz",
+          "target": "Trier",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Fulda",
+          "source": "Koblenz",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Saarbruecken",
+          "source": "Koblenz",
+          "target": "Saarbruecken",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Konstanz",
+          "source": "Koblenz",
+          "target": "Konstanz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Koblenz_Wuerzburg",
+          "source": "Koblenz",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Siegen_Berlin",
+          "source": "Siegen",
+          "target": "Berlin",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Siegen_Hamburg",
+          "source": "Siegen",
+          "target": "Hamburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Siegen_Bremerhaven",
+          "source": "Siegen",
+          "target": "Bremerhaven",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Siegen_Osnabrueck",
+          "source": "Siegen",
+          "target": "Osnabrueck",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Siegen_Frankfurt",
+          "source": "Siegen",
+          "target": "Frankfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Siegen_Mannheim",
+          "source": "Siegen",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Siegen_Giessen",
+          "source": "Siegen",
+          "target": "Giessen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Siegen_Fulda",
+          "source": "Siegen",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Siegen_Saarbruecken",
+          "source": "Siegen",
+          "target": "Saarbruecken",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Siegen_Konstanz",
+          "source": "Siegen",
+          "target": "Konstanz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Siegen_Nuernberg",
+          "source": "Siegen",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Wesel_Berlin",
+          "source": "Wesel",
+          "target": "Berlin",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Wesel_Hamburg",
+          "source": "Wesel",
+          "target": "Hamburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Wesel_Bremerhaven",
+          "source": "Wesel",
+          "target": "Bremerhaven",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Wesel_Norden",
+          "source": "Wesel",
+          "target": "Norden",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Wesel_Bielefeld",
+          "source": "Wesel",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Wesel_Osnabrueck",
+          "source": "Wesel",
+          "target": "Osnabrueck",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Wesel_Frankfurt",
+          "source": "Wesel",
+          "target": "Frankfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Wesel_Fulda",
+          "source": "Wesel",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Wesel_Saarbruecken",
+          "source": "Wesel",
+          "target": "Saarbruecken",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Wesel_Konstanz",
+          "source": "Wesel",
+          "target": "Konstanz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Leipzig",
+          "source": "Berlin",
+          "target": "Leipzig",
+          "demandValue": "20.0"
+        },
+        {
+          "-id": "Berlin_Dresden",
+          "source": "Berlin",
+          "target": "Dresden",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "Berlin_Erfurt",
+          "source": "Berlin",
+          "target": "Erfurt",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Berlin_Chemnitz",
+          "source": "Berlin",
+          "target": "Chemnitz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Schwerin",
+          "source": "Berlin",
+          "target": "Schwerin",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Berlin_Magdeburg",
+          "source": "Berlin",
+          "target": "Magdeburg",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "Berlin_Greifswald",
+          "source": "Berlin",
+          "target": "Greifswald",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "Berlin_Hamburg",
+          "source": "Berlin",
+          "target": "Hamburg",
+          "demandValue": "23.0"
+        },
+        {
+          "-id": "Berlin_Bremen",
+          "source": "Berlin",
+          "target": "Bremen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Kiel",
+          "source": "Berlin",
+          "target": "Kiel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Oldenburg",
+          "source": "Berlin",
+          "target": "Oldenburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Bremerhaven",
+          "source": "Berlin",
+          "target": "Bremerhaven",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Hannover",
+          "source": "Berlin",
+          "target": "Hannover",
+          "demandValue": "25.0"
+        },
+        {
+          "-id": "Berlin_Bielefeld",
+          "source": "Berlin",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Braunschweig",
+          "source": "Berlin",
+          "target": "Braunschweig",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Osnabrueck",
+          "source": "Berlin",
+          "target": "Osnabrueck",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Kassel",
+          "source": "Berlin",
+          "target": "Kassel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Frankfurt",
+          "source": "Berlin",
+          "target": "Frankfurt",
+          "demandValue": "16.0"
+        },
+        {
+          "-id": "Berlin_Darmstadt",
+          "source": "Berlin",
+          "target": "Darmstadt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Mannheim",
+          "source": "Berlin",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Kaiserslautern",
+          "source": "Berlin",
+          "target": "Kaiserslautern",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Giessen",
+          "source": "Berlin",
+          "target": "Giessen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Trier",
+          "source": "Berlin",
+          "target": "Trier",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Fulda",
+          "source": "Berlin",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Saarbruecken",
+          "source": "Berlin",
+          "target": "Saarbruecken",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Stuttgart",
+          "source": "Berlin",
+          "target": "Stuttgart",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Berlin_Karlsruhe",
+          "source": "Berlin",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Ulm",
+          "source": "Berlin",
+          "target": "Ulm",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Konstanz",
+          "source": "Berlin",
+          "target": "Konstanz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Freiburg",
+          "source": "Berlin",
+          "target": "Freiburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Muenchen",
+          "source": "Berlin",
+          "target": "Muenchen",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "Berlin_Augsburg",
+          "source": "Berlin",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Passau",
+          "source": "Berlin",
+          "target": "Passau",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Nuernberg",
+          "source": "Berlin",
+          "target": "Nuernberg",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Berlin_Bayreuth",
+          "source": "Berlin",
+          "target": "Bayreuth",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Berlin_Wuerzburg",
+          "source": "Berlin",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Leipzig_Dresden",
+          "source": "Leipzig",
+          "target": "Dresden",
+          "demandValue": "10.0"
+        },
+        {
+          "-id": "Leipzig_Erfurt",
+          "source": "Leipzig",
+          "target": "Erfurt",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "Leipzig_Chemnitz",
+          "source": "Leipzig",
+          "target": "Chemnitz",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Leipzig_Schwerin",
+          "source": "Leipzig",
+          "target": "Schwerin",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Leipzig_Magdeburg",
+          "source": "Leipzig",
+          "target": "Magdeburg",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "Leipzig_Greifswald",
+          "source": "Leipzig",
+          "target": "Greifswald",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Leipzig_Hamburg",
+          "source": "Leipzig",
+          "target": "Hamburg",
+          "demandValue": "17.0"
+        },
+        {
+          "-id": "Leipzig_Hannover",
+          "source": "Leipzig",
+          "target": "Hannover",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Leipzig_Bielefeld",
+          "source": "Leipzig",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Leipzig_Braunschweig",
+          "source": "Leipzig",
+          "target": "Braunschweig",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Leipzig_Frankfurt",
+          "source": "Leipzig",
+          "target": "Frankfurt",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "Leipzig_Darmstadt",
+          "source": "Leipzig",
+          "target": "Darmstadt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Leipzig_Mannheim",
+          "source": "Leipzig",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Leipzig_Stuttgart",
+          "source": "Leipzig",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Leipzig_Karlsruhe",
+          "source": "Leipzig",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Leipzig_Ulm",
+          "source": "Leipzig",
+          "target": "Ulm",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Leipzig_Muenchen",
+          "source": "Leipzig",
+          "target": "Muenchen",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Leipzig_Augsburg",
+          "source": "Leipzig",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Leipzig_Nuernberg",
+          "source": "Leipzig",
+          "target": "Nuernberg",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "Leipzig_Wuerzburg",
+          "source": "Leipzig",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Erfurt",
+          "source": "Dresden",
+          "target": "Erfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Chemnitz",
+          "source": "Dresden",
+          "target": "Chemnitz",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "Dresden_Schwerin",
+          "source": "Dresden",
+          "target": "Schwerin",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Magdeburg",
+          "source": "Dresden",
+          "target": "Magdeburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Greifswald",
+          "source": "Dresden",
+          "target": "Greifswald",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Hamburg",
+          "source": "Dresden",
+          "target": "Hamburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Bremen",
+          "source": "Dresden",
+          "target": "Bremen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Kiel",
+          "source": "Dresden",
+          "target": "Kiel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Norden",
+          "source": "Dresden",
+          "target": "Norden",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Hannover",
+          "source": "Dresden",
+          "target": "Hannover",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Bielefeld",
+          "source": "Dresden",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Braunschweig",
+          "source": "Dresden",
+          "target": "Braunschweig",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Kassel",
+          "source": "Dresden",
+          "target": "Kassel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Frankfurt",
+          "source": "Dresden",
+          "target": "Frankfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Darmstadt",
+          "source": "Dresden",
+          "target": "Darmstadt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Mannheim",
+          "source": "Dresden",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Trier",
+          "source": "Dresden",
+          "target": "Trier",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Stuttgart",
+          "source": "Dresden",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Karlsruhe",
+          "source": "Dresden",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Ulm",
+          "source": "Dresden",
+          "target": "Ulm",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Konstanz",
+          "source": "Dresden",
+          "target": "Konstanz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Freiburg",
+          "source": "Dresden",
+          "target": "Freiburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Muenchen",
+          "source": "Dresden",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Augsburg",
+          "source": "Dresden",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Nuernberg",
+          "source": "Dresden",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Bayreuth",
+          "source": "Dresden",
+          "target": "Bayreuth",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Wuerzburg",
+          "source": "Dresden",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Dresden_Regensburg",
+          "source": "Dresden",
+          "target": "Regensburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Chemnitz",
+          "source": "Erfurt",
+          "target": "Chemnitz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Schwerin",
+          "source": "Erfurt",
+          "target": "Schwerin",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Magdeburg",
+          "source": "Erfurt",
+          "target": "Magdeburg",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "Erfurt_Hamburg",
+          "source": "Erfurt",
+          "target": "Hamburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Bremen",
+          "source": "Erfurt",
+          "target": "Bremen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Kiel",
+          "source": "Erfurt",
+          "target": "Kiel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Hannover",
+          "source": "Erfurt",
+          "target": "Hannover",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Bielefeld",
+          "source": "Erfurt",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Braunschweig",
+          "source": "Erfurt",
+          "target": "Braunschweig",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Kassel",
+          "source": "Erfurt",
+          "target": "Kassel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Frankfurt",
+          "source": "Erfurt",
+          "target": "Frankfurt",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Erfurt_Darmstadt",
+          "source": "Erfurt",
+          "target": "Darmstadt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Mannheim",
+          "source": "Erfurt",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Giessen",
+          "source": "Erfurt",
+          "target": "Giessen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Fulda",
+          "source": "Erfurt",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Stuttgart",
+          "source": "Erfurt",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Karlsruhe",
+          "source": "Erfurt",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Muenchen",
+          "source": "Erfurt",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Augsburg",
+          "source": "Erfurt",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Nuernberg",
+          "source": "Erfurt",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Bayreuth",
+          "source": "Erfurt",
+          "target": "Bayreuth",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Erfurt_Wuerzburg",
+          "source": "Erfurt",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Chemnitz_Schwerin",
+          "source": "Chemnitz",
+          "target": "Schwerin",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Chemnitz_Magdeburg",
+          "source": "Chemnitz",
+          "target": "Magdeburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Chemnitz_Hamburg",
+          "source": "Chemnitz",
+          "target": "Hamburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Chemnitz_Hannover",
+          "source": "Chemnitz",
+          "target": "Hannover",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Chemnitz_Bielefeld",
+          "source": "Chemnitz",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Chemnitz_Braunschweig",
+          "source": "Chemnitz",
+          "target": "Braunschweig",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Chemnitz_Frankfurt",
+          "source": "Chemnitz",
+          "target": "Frankfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Chemnitz_Mannheim",
+          "source": "Chemnitz",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Chemnitz_Giessen",
+          "source": "Chemnitz",
+          "target": "Giessen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Chemnitz_Stuttgart",
+          "source": "Chemnitz",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Chemnitz_Karlsruhe",
+          "source": "Chemnitz",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Chemnitz_Muenchen",
+          "source": "Chemnitz",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Chemnitz_Augsburg",
+          "source": "Chemnitz",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Chemnitz_Nuernberg",
+          "source": "Chemnitz",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Chemnitz_Bayreuth",
+          "source": "Chemnitz",
+          "target": "Bayreuth",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Chemnitz_Wuerzburg",
+          "source": "Chemnitz",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Schwerin_Magdeburg",
+          "source": "Schwerin",
+          "target": "Magdeburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Schwerin_Greifswald",
+          "source": "Schwerin",
+          "target": "Greifswald",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Schwerin_Hamburg",
+          "source": "Schwerin",
+          "target": "Hamburg",
+          "demandValue": "8.0"
+        },
+        {
+          "-id": "Schwerin_Bremen",
+          "source": "Schwerin",
+          "target": "Bremen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Schwerin_Kiel",
+          "source": "Schwerin",
+          "target": "Kiel",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Schwerin_Hannover",
+          "source": "Schwerin",
+          "target": "Hannover",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Schwerin_Bielefeld",
+          "source": "Schwerin",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Schwerin_Frankfurt",
+          "source": "Schwerin",
+          "target": "Frankfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Schwerin_Mannheim",
+          "source": "Schwerin",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Schwerin_Stuttgart",
+          "source": "Schwerin",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Schwerin_Karlsruhe",
+          "source": "Schwerin",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Schwerin_Muenchen",
+          "source": "Schwerin",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Schwerin_Augsburg",
+          "source": "Schwerin",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Schwerin_Nuernberg",
+          "source": "Schwerin",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Schwerin_Wuerzburg",
+          "source": "Schwerin",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Magdeburg_Greifswald",
+          "source": "Magdeburg",
+          "target": "Greifswald",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Magdeburg_Hamburg",
+          "source": "Magdeburg",
+          "target": "Hamburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Magdeburg_Bremen",
+          "source": "Magdeburg",
+          "target": "Bremen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Magdeburg_Kiel",
+          "source": "Magdeburg",
+          "target": "Kiel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Magdeburg_Hannover",
+          "source": "Magdeburg",
+          "target": "Hannover",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Magdeburg_Bielefeld",
+          "source": "Magdeburg",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Magdeburg_Braunschweig",
+          "source": "Magdeburg",
+          "target": "Braunschweig",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Magdeburg_Frankfurt",
+          "source": "Magdeburg",
+          "target": "Frankfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Magdeburg_Mannheim",
+          "source": "Magdeburg",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Magdeburg_Stuttgart",
+          "source": "Magdeburg",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Magdeburg_Karlsruhe",
+          "source": "Magdeburg",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Magdeburg_Muenchen",
+          "source": "Magdeburg",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Magdeburg_Augsburg",
+          "source": "Magdeburg",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Magdeburg_Nuernberg",
+          "source": "Magdeburg",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Magdeburg_Bayreuth",
+          "source": "Magdeburg",
+          "target": "Bayreuth",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Magdeburg_Wuerzburg",
+          "source": "Magdeburg",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Greifswald_Hamburg",
+          "source": "Greifswald",
+          "target": "Hamburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Greifswald_Bremen",
+          "source": "Greifswald",
+          "target": "Bremen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Greifswald_Kiel",
+          "source": "Greifswald",
+          "target": "Kiel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Greifswald_Hannover",
+          "source": "Greifswald",
+          "target": "Hannover",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Greifswald_Bielefeld",
+          "source": "Greifswald",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Greifswald_Frankfurt",
+          "source": "Greifswald",
+          "target": "Frankfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Greifswald_Karlsruhe",
+          "source": "Greifswald",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hamburg_Bremen",
+          "source": "Hamburg",
+          "target": "Bremen",
+          "demandValue": "13.0"
+        },
+        {
+          "-id": "Hamburg_Kiel",
+          "source": "Hamburg",
+          "target": "Kiel",
+          "demandValue": "14.0"
+        },
+        {
+          "-id": "Hamburg_Oldenburg",
+          "source": "Hamburg",
+          "target": "Oldenburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hamburg_Flensburg",
+          "source": "Hamburg",
+          "target": "Flensburg",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Hamburg_Bremerhaven",
+          "source": "Hamburg",
+          "target": "Bremerhaven",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Hamburg_Norden",
+          "source": "Hamburg",
+          "target": "Norden",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hamburg_Hannover",
+          "source": "Hamburg",
+          "target": "Hannover",
+          "demandValue": "71.0"
+        },
+        {
+          "-id": "Hamburg_Bielefeld",
+          "source": "Hamburg",
+          "target": "Bielefeld",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Hamburg_Braunschweig",
+          "source": "Hamburg",
+          "target": "Braunschweig",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hamburg_Osnabrueck",
+          "source": "Hamburg",
+          "target": "Osnabrueck",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hamburg_Kassel",
+          "source": "Hamburg",
+          "target": "Kassel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hamburg_Frankfurt",
+          "source": "Hamburg",
+          "target": "Frankfurt",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "Hamburg_Darmstadt",
+          "source": "Hamburg",
+          "target": "Darmstadt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hamburg_Mannheim",
+          "source": "Hamburg",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hamburg_Giessen",
+          "source": "Hamburg",
+          "target": "Giessen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hamburg_Fulda",
+          "source": "Hamburg",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hamburg_Saarbruecken",
+          "source": "Hamburg",
+          "target": "Saarbruecken",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hamburg_Stuttgart",
+          "source": "Hamburg",
+          "target": "Stuttgart",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Hamburg_Karlsruhe",
+          "source": "Hamburg",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hamburg_Ulm",
+          "source": "Hamburg",
+          "target": "Ulm",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hamburg_Freiburg",
+          "source": "Hamburg",
+          "target": "Freiburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hamburg_Muenchen",
+          "source": "Hamburg",
+          "target": "Muenchen",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "Hamburg_Augsburg",
+          "source": "Hamburg",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hamburg_Nuernberg",
+          "source": "Hamburg",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hamburg_Wuerzburg",
+          "source": "Hamburg",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hamburg_Regensburg",
+          "source": "Hamburg",
+          "target": "Regensburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Kiel",
+          "source": "Bremen",
+          "target": "Kiel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Oldenburg",
+          "source": "Bremen",
+          "target": "Oldenburg",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "Bremen_Flensburg",
+          "source": "Bremen",
+          "target": "Flensburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Bremerhaven",
+          "source": "Bremen",
+          "target": "Bremerhaven",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Norden",
+          "source": "Bremen",
+          "target": "Norden",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Bremen_Hannover",
+          "source": "Bremen",
+          "target": "Hannover",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "Bremen_Bielefeld",
+          "source": "Bremen",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Braunschweig",
+          "source": "Bremen",
+          "target": "Braunschweig",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Osnabrueck",
+          "source": "Bremen",
+          "target": "Osnabrueck",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Kassel",
+          "source": "Bremen",
+          "target": "Kassel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Frankfurt",
+          "source": "Bremen",
+          "target": "Frankfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Darmstadt",
+          "source": "Bremen",
+          "target": "Darmstadt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Mannheim",
+          "source": "Bremen",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Giessen",
+          "source": "Bremen",
+          "target": "Giessen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Trier",
+          "source": "Bremen",
+          "target": "Trier",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Stuttgart",
+          "source": "Bremen",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Karlsruhe",
+          "source": "Bremen",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Muenchen",
+          "source": "Bremen",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Augsburg",
+          "source": "Bremen",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Nuernberg",
+          "source": "Bremen",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremen_Wuerzburg",
+          "source": "Bremen",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kiel_Oldenburg",
+          "source": "Kiel",
+          "target": "Oldenburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kiel_Flensburg",
+          "source": "Kiel",
+          "target": "Flensburg",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Kiel_Bremerhaven",
+          "source": "Kiel",
+          "target": "Bremerhaven",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kiel_Hannover",
+          "source": "Kiel",
+          "target": "Hannover",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kiel_Bielefeld",
+          "source": "Kiel",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kiel_Braunschweig",
+          "source": "Kiel",
+          "target": "Braunschweig",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kiel_Kassel",
+          "source": "Kiel",
+          "target": "Kassel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kiel_Frankfurt",
+          "source": "Kiel",
+          "target": "Frankfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kiel_Darmstadt",
+          "source": "Kiel",
+          "target": "Darmstadt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kiel_Mannheim",
+          "source": "Kiel",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kiel_Stuttgart",
+          "source": "Kiel",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kiel_Karlsruhe",
+          "source": "Kiel",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kiel_Muenchen",
+          "source": "Kiel",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kiel_Augsburg",
+          "source": "Kiel",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kiel_Nuernberg",
+          "source": "Kiel",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kiel_Bayreuth",
+          "source": "Kiel",
+          "target": "Bayreuth",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kiel_Wuerzburg",
+          "source": "Kiel",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Oldenburg_Bremerhaven",
+          "source": "Oldenburg",
+          "target": "Bremerhaven",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Oldenburg_Norden",
+          "source": "Oldenburg",
+          "target": "Norden",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Oldenburg_Hannover",
+          "source": "Oldenburg",
+          "target": "Hannover",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Oldenburg_Bielefeld",
+          "source": "Oldenburg",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Oldenburg_Osnabrueck",
+          "source": "Oldenburg",
+          "target": "Osnabrueck",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Oldenburg_Frankfurt",
+          "source": "Oldenburg",
+          "target": "Frankfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Oldenburg_Stuttgart",
+          "source": "Oldenburg",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Oldenburg_Muenchen",
+          "source": "Oldenburg",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Flensburg_Bremerhaven",
+          "source": "Flensburg",
+          "target": "Bremerhaven",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Flensburg_Hannover",
+          "source": "Flensburg",
+          "target": "Hannover",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Flensburg_Bielefeld",
+          "source": "Flensburg",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Flensburg_Frankfurt",
+          "source": "Flensburg",
+          "target": "Frankfurt",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Bremerhaven_Hannover",
+          "source": "Bremerhaven",
+          "target": "Hannover",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremerhaven_Bielefeld",
+          "source": "Bremerhaven",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bremerhaven_Frankfurt",
+          "source": "Bremerhaven",
+          "target": "Frankfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Norden_Hannover",
+          "source": "Norden",
+          "target": "Hannover",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Norden_Bielefeld",
+          "source": "Norden",
+          "target": "Bielefeld",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Norden_Osnabrueck",
+          "source": "Norden",
+          "target": "Osnabrueck",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Norden_Frankfurt",
+          "source": "Norden",
+          "target": "Frankfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Norden_Saarbruecken",
+          "source": "Norden",
+          "target": "Saarbruecken",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Norden_Konstanz",
+          "source": "Norden",
+          "target": "Konstanz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Norden_Muenchen",
+          "source": "Norden",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Norden_Passau",
+          "source": "Norden",
+          "target": "Passau",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hannover_Bielefeld",
+          "source": "Hannover",
+          "target": "Bielefeld",
+          "demandValue": "25.0"
+        },
+        {
+          "-id": "Hannover_Braunschweig",
+          "source": "Hannover",
+          "target": "Braunschweig",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Hannover_Osnabrueck",
+          "source": "Hannover",
+          "target": "Osnabrueck",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Hannover_Kassel",
+          "source": "Hannover",
+          "target": "Kassel",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "Hannover_Frankfurt",
+          "source": "Hannover",
+          "target": "Frankfurt",
+          "demandValue": "49.0"
+        },
+        {
+          "-id": "Hannover_Darmstadt",
+          "source": "Hannover",
+          "target": "Darmstadt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hannover_Mannheim",
+          "source": "Hannover",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hannover_Giessen",
+          "source": "Hannover",
+          "target": "Giessen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hannover_Trier",
+          "source": "Hannover",
+          "target": "Trier",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hannover_Fulda",
+          "source": "Hannover",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hannover_Saarbruecken",
+          "source": "Hannover",
+          "target": "Saarbruecken",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hannover_Stuttgart",
+          "source": "Hannover",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hannover_Karlsruhe",
+          "source": "Hannover",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hannover_Ulm",
+          "source": "Hannover",
+          "target": "Ulm",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hannover_Konstanz",
+          "source": "Hannover",
+          "target": "Konstanz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hannover_Freiburg",
+          "source": "Hannover",
+          "target": "Freiburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hannover_Muenchen",
+          "source": "Hannover",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hannover_Augsburg",
+          "source": "Hannover",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Hannover_Nuernberg",
+          "source": "Hannover",
+          "target": "Nuernberg",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "Hannover_Wuerzburg",
+          "source": "Hannover",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bielefeld_Braunschweig",
+          "source": "Bielefeld",
+          "target": "Braunschweig",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bielefeld_Osnabrueck",
+          "source": "Bielefeld",
+          "target": "Osnabrueck",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "Bielefeld_Kassel",
+          "source": "Bielefeld",
+          "target": "Kassel",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Bielefeld_Frankfurt",
+          "source": "Bielefeld",
+          "target": "Frankfurt",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Bielefeld_Darmstadt",
+          "source": "Bielefeld",
+          "target": "Darmstadt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bielefeld_Mannheim",
+          "source": "Bielefeld",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bielefeld_Giessen",
+          "source": "Bielefeld",
+          "target": "Giessen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bielefeld_Fulda",
+          "source": "Bielefeld",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bielefeld_Saarbruecken",
+          "source": "Bielefeld",
+          "target": "Saarbruecken",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bielefeld_Stuttgart",
+          "source": "Bielefeld",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bielefeld_Karlsruhe",
+          "source": "Bielefeld",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bielefeld_Ulm",
+          "source": "Bielefeld",
+          "target": "Ulm",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bielefeld_Muenchen",
+          "source": "Bielefeld",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bielefeld_Augsburg",
+          "source": "Bielefeld",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bielefeld_Nuernberg",
+          "source": "Bielefeld",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bielefeld_Bayreuth",
+          "source": "Bielefeld",
+          "target": "Bayreuth",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Bielefeld_Wuerzburg",
+          "source": "Bielefeld",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Braunschweig_Kassel",
+          "source": "Braunschweig",
+          "target": "Kassel",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Braunschweig_Frankfurt",
+          "source": "Braunschweig",
+          "target": "Frankfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Braunschweig_Stuttgart",
+          "source": "Braunschweig",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Braunschweig_Karlsruhe",
+          "source": "Braunschweig",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Braunschweig_Muenchen",
+          "source": "Braunschweig",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Osnabrueck_Frankfurt",
+          "source": "Osnabrueck",
+          "target": "Frankfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Osnabrueck_Stuttgart",
+          "source": "Osnabrueck",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Osnabrueck_Muenchen",
+          "source": "Osnabrueck",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kassel_Frankfurt",
+          "source": "Kassel",
+          "target": "Frankfurt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kassel_Darmstadt",
+          "source": "Kassel",
+          "target": "Darmstadt",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kassel_Mannheim",
+          "source": "Kassel",
+          "target": "Mannheim",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kassel_Giessen",
+          "source": "Kassel",
+          "target": "Giessen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kassel_Fulda",
+          "source": "Kassel",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kassel_Stuttgart",
+          "source": "Kassel",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kassel_Karlsruhe",
+          "source": "Kassel",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kassel_Muenchen",
+          "source": "Kassel",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kassel_Nuernberg",
+          "source": "Kassel",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Frankfurt_Darmstadt",
+          "source": "Frankfurt",
+          "target": "Darmstadt",
+          "demandValue": "25.0"
+        },
+        {
+          "-id": "Frankfurt_Mannheim",
+          "source": "Frankfurt",
+          "target": "Mannheim",
+          "demandValue": "35.0"
+        },
+        {
+          "-id": "Frankfurt_Kaiserslautern",
+          "source": "Frankfurt",
+          "target": "Kaiserslautern",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Frankfurt_Giessen",
+          "source": "Frankfurt",
+          "target": "Giessen",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "Frankfurt_Trier",
+          "source": "Frankfurt",
+          "target": "Trier",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Frankfurt_Fulda",
+          "source": "Frankfurt",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Frankfurt_Saarbruecken",
+          "source": "Frankfurt",
+          "target": "Saarbruecken",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Frankfurt_Stuttgart",
+          "source": "Frankfurt",
+          "target": "Stuttgart",
+          "demandValue": "19.0"
+        },
+        {
+          "-id": "Frankfurt_Karlsruhe",
+          "source": "Frankfurt",
+          "target": "Karlsruhe",
+          "demandValue": "8.0"
+        },
+        {
+          "-id": "Frankfurt_Ulm",
+          "source": "Frankfurt",
+          "target": "Ulm",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Frankfurt_Konstanz",
+          "source": "Frankfurt",
+          "target": "Konstanz",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Frankfurt_Freiburg",
+          "source": "Frankfurt",
+          "target": "Freiburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Frankfurt_Muenchen",
+          "source": "Frankfurt",
+          "target": "Muenchen",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Frankfurt_Augsburg",
+          "source": "Frankfurt",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Frankfurt_Kempten",
+          "source": "Frankfurt",
+          "target": "Kempten",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Frankfurt_Passau",
+          "source": "Frankfurt",
+          "target": "Passau",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Frankfurt_Nuernberg",
+          "source": "Frankfurt",
+          "target": "Nuernberg",
+          "demandValue": "23.0"
+        },
+        {
+          "-id": "Frankfurt_Bayreuth",
+          "source": "Frankfurt",
+          "target": "Bayreuth",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Frankfurt_Wuerzburg",
+          "source": "Frankfurt",
+          "target": "Wuerzburg",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Frankfurt_Regensburg",
+          "source": "Frankfurt",
+          "target": "Regensburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Darmstadt_Mannheim",
+          "source": "Darmstadt",
+          "target": "Mannheim",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "Darmstadt_Kaiserslautern",
+          "source": "Darmstadt",
+          "target": "Kaiserslautern",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Darmstadt_Giessen",
+          "source": "Darmstadt",
+          "target": "Giessen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Darmstadt_Trier",
+          "source": "Darmstadt",
+          "target": "Trier",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Darmstadt_Fulda",
+          "source": "Darmstadt",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Darmstadt_Saarbruecken",
+          "source": "Darmstadt",
+          "target": "Saarbruecken",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Darmstadt_Stuttgart",
+          "source": "Darmstadt",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Darmstadt_Karlsruhe",
+          "source": "Darmstadt",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Darmstadt_Ulm",
+          "source": "Darmstadt",
+          "target": "Ulm",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Darmstadt_Freiburg",
+          "source": "Darmstadt",
+          "target": "Freiburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Darmstadt_Muenchen",
+          "source": "Darmstadt",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Darmstadt_Augsburg",
+          "source": "Darmstadt",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Darmstadt_Nuernberg",
+          "source": "Darmstadt",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Darmstadt_Wuerzburg",
+          "source": "Darmstadt",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Mannheim_Kaiserslautern",
+          "source": "Mannheim",
+          "target": "Kaiserslautern",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "Mannheim_Giessen",
+          "source": "Mannheim",
+          "target": "Giessen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Mannheim_Trier",
+          "source": "Mannheim",
+          "target": "Trier",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Mannheim_Fulda",
+          "source": "Mannheim",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Mannheim_Saarbruecken",
+          "source": "Mannheim",
+          "target": "Saarbruecken",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Mannheim_Stuttgart",
+          "source": "Mannheim",
+          "target": "Stuttgart",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Mannheim_Karlsruhe",
+          "source": "Mannheim",
+          "target": "Karlsruhe",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "Mannheim_Ulm",
+          "source": "Mannheim",
+          "target": "Ulm",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Mannheim_Konstanz",
+          "source": "Mannheim",
+          "target": "Konstanz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Mannheim_Freiburg",
+          "source": "Mannheim",
+          "target": "Freiburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Mannheim_Muenchen",
+          "source": "Mannheim",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Mannheim_Augsburg",
+          "source": "Mannheim",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Mannheim_Kempten",
+          "source": "Mannheim",
+          "target": "Kempten",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Mannheim_Nuernberg",
+          "source": "Mannheim",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Mannheim_Bayreuth",
+          "source": "Mannheim",
+          "target": "Bayreuth",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Mannheim_Wuerzburg",
+          "source": "Mannheim",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kaiserslautern_Trier",
+          "source": "Kaiserslautern",
+          "target": "Trier",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kaiserslautern_Saarbruecken",
+          "source": "Kaiserslautern",
+          "target": "Saarbruecken",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kaiserslautern_Stuttgart",
+          "source": "Kaiserslautern",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Kaiserslautern_Karlsruhe",
+          "source": "Kaiserslautern",
+          "target": "Karlsruhe",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Kaiserslautern_Muenchen",
+          "source": "Kaiserslautern",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Giessen_Fulda",
+          "source": "Giessen",
+          "target": "Fulda",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Giessen_Stuttgart",
+          "source": "Giessen",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Giessen_Karlsruhe",
+          "source": "Giessen",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Giessen_Muenchen",
+          "source": "Giessen",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Giessen_Nuernberg",
+          "source": "Giessen",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Giessen_Wuerzburg",
+          "source": "Giessen",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Trier_Saarbruecken",
+          "source": "Trier",
+          "target": "Saarbruecken",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Trier_Stuttgart",
+          "source": "Trier",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Trier_Karlsruhe",
+          "source": "Trier",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Trier_Muenchen",
+          "source": "Trier",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Fulda_Stuttgart",
+          "source": "Fulda",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Fulda_Karlsruhe",
+          "source": "Fulda",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Fulda_Muenchen",
+          "source": "Fulda",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Fulda_Nuernberg",
+          "source": "Fulda",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Fulda_Bayreuth",
+          "source": "Fulda",
+          "target": "Bayreuth",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Fulda_Wuerzburg",
+          "source": "Fulda",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Saarbruecken_Stuttgart",
+          "source": "Saarbruecken",
+          "target": "Stuttgart",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Saarbruecken_Karlsruhe",
+          "source": "Saarbruecken",
+          "target": "Karlsruhe",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Saarbruecken_Freiburg",
+          "source": "Saarbruecken",
+          "target": "Freiburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Saarbruecken_Muenchen",
+          "source": "Saarbruecken",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Saarbruecken_Augsburg",
+          "source": "Saarbruecken",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Saarbruecken_Nuernberg",
+          "source": "Saarbruecken",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Stuttgart_Karlsruhe",
+          "source": "Stuttgart",
+          "target": "Karlsruhe",
+          "demandValue": "35.0"
+        },
+        {
+          "-id": "Stuttgart_Ulm",
+          "source": "Stuttgart",
+          "target": "Ulm",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "Stuttgart_Konstanz",
+          "source": "Stuttgart",
+          "target": "Konstanz",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "Stuttgart_Freiburg",
+          "source": "Stuttgart",
+          "target": "Freiburg",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "Stuttgart_Muenchen",
+          "source": "Stuttgart",
+          "target": "Muenchen",
+          "demandValue": "30.0"
+        },
+        {
+          "-id": "Stuttgart_Augsburg",
+          "source": "Stuttgart",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Stuttgart_Kempten",
+          "source": "Stuttgart",
+          "target": "Kempten",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Stuttgart_Passau",
+          "source": "Stuttgart",
+          "target": "Passau",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Stuttgart_Nuernberg",
+          "source": "Stuttgart",
+          "target": "Nuernberg",
+          "demandValue": "35.0"
+        },
+        {
+          "-id": "Stuttgart_Bayreuth",
+          "source": "Stuttgart",
+          "target": "Bayreuth",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Stuttgart_Wuerzburg",
+          "source": "Stuttgart",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Stuttgart_Regensburg",
+          "source": "Stuttgart",
+          "target": "Regensburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Karlsruhe_Ulm",
+          "source": "Karlsruhe",
+          "target": "Ulm",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Karlsruhe_Konstanz",
+          "source": "Karlsruhe",
+          "target": "Konstanz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Karlsruhe_Freiburg",
+          "source": "Karlsruhe",
+          "target": "Freiburg",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Karlsruhe_Muenchen",
+          "source": "Karlsruhe",
+          "target": "Muenchen",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "Karlsruhe_Augsburg",
+          "source": "Karlsruhe",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Karlsruhe_Kempten",
+          "source": "Karlsruhe",
+          "target": "Kempten",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Karlsruhe_Nuernberg",
+          "source": "Karlsruhe",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Karlsruhe_Bayreuth",
+          "source": "Karlsruhe",
+          "target": "Bayreuth",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Karlsruhe_Wuerzburg",
+          "source": "Karlsruhe",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Ulm_Konstanz",
+          "source": "Ulm",
+          "target": "Konstanz",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Ulm_Muenchen",
+          "source": "Ulm",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Ulm_Augsburg",
+          "source": "Ulm",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Ulm_Kempten",
+          "source": "Ulm",
+          "target": "Kempten",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Ulm_Nuernberg",
+          "source": "Ulm",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Ulm_Wuerzburg",
+          "source": "Ulm",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Konstanz_Freiburg",
+          "source": "Konstanz",
+          "target": "Freiburg",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Konstanz_Muenchen",
+          "source": "Konstanz",
+          "target": "Muenchen",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Konstanz_Augsburg",
+          "source": "Konstanz",
+          "target": "Augsburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Konstanz_Kempten",
+          "source": "Konstanz",
+          "target": "Kempten",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Konstanz_Bayreuth",
+          "source": "Konstanz",
+          "target": "Bayreuth",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Freiburg_Muenchen",
+          "source": "Freiburg",
+          "target": "Muenchen",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Muenchen_Augsburg",
+          "source": "Muenchen",
+          "target": "Augsburg",
+          "demandValue": "20.0"
+        },
+        {
+          "-id": "Muenchen_Kempten",
+          "source": "Muenchen",
+          "target": "Kempten",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Muenchen_Passau",
+          "source": "Muenchen",
+          "target": "Passau",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Muenchen_Nuernberg",
+          "source": "Muenchen",
+          "target": "Nuernberg",
+          "demandValue": "32.0"
+        },
+        {
+          "-id": "Muenchen_Bayreuth",
+          "source": "Muenchen",
+          "target": "Bayreuth",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Muenchen_Wuerzburg",
+          "source": "Muenchen",
+          "target": "Wuerzburg",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Muenchen_Regensburg",
+          "source": "Muenchen",
+          "target": "Regensburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Augsburg_Kempten",
+          "source": "Augsburg",
+          "target": "Kempten",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Augsburg_Nuernberg",
+          "source": "Augsburg",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Augsburg_Bayreuth",
+          "source": "Augsburg",
+          "target": "Bayreuth",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Augsburg_Wuerzburg",
+          "source": "Augsburg",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Passau_Nuernberg",
+          "source": "Passau",
+          "target": "Nuernberg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Passau_Bayreuth",
+          "source": "Passau",
+          "target": "Bayreuth",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Passau_Wuerzburg",
+          "source": "Passau",
+          "target": "Wuerzburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Passau_Regensburg",
+          "source": "Passau",
+          "target": "Regensburg",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "Nuernberg_Bayreuth",
+          "source": "Nuernberg",
+          "target": "Bayreuth",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "Nuernberg_Wuerzburg",
+          "source": "Nuernberg",
+          "target": "Wuerzburg",
+          "demandValue": "10.0"
+        },
+        {
+          "-id": "Nuernberg_Regensburg",
+          "source": "Nuernberg",
+          "target": "Regensburg",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "Bayreuth_Wuerzburg",
+          "source": "Bayreuth",
+          "target": "Wuerzburg",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "Bayreuth_Regensburg",
+          "source": "Bayreuth",
+          "target": "Regensburg",
+          "demandValue": "3.0"
+        }
+      ]
+    }
+  },
+  "#encoding": "ISO-8859-1"
+}

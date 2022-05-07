@@ -4,7 +4,6 @@
 #include "types.hpp"
 
 #include "libraries/json.hpp"
-
 using json = nlohmann::json;
 
 t_double power(t_double x, int e, t_double ans = 1.0) {
