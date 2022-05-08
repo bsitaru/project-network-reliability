@@ -1,25 +1,9 @@
 {
   "network": {
     "average-avl": 0.996655,
+    "exact-ans": 0.99998801,
     "-xmlns": "http://sndlib.zib.de/network",
     "-version": "1.0",
-    "parsererror": {
-      "-on": "1.0",
-      "-encoding": "ISO-8859-1",
-      "h3": [
-        "This page contains the following errors:",
-        {
-          "#item": {
-            "div": {
-              "-version": "1.0",
-              "-encoding": "ISO-8859-1",
-              "#text": "error on line 716 at column 2: Extra content at the end of the document\n"
-            }
-          }
-        },
-        "Below is a rendering of the page up to the first error."
-      ]
-    },
     "networkStructure": {
       "nodes": {
         "-coordinatesType": "pixel",
@@ -877,9 +861,1597 @@
                 }
               ]
             }
+          },
+          {
+            "-id": "L42",
+            "source": "N10",
+            "target": "N14",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "150800.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "160800.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L43",
+            "source": "N10",
+            "target": "N15",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "181200.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "191200.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L44",
+            "source": "N12",
+            "target": "N13",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "59600.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "69600.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L45",
+            "source": "N12",
+            "target": "N15",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "90000.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "100000.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L46",
+            "source": "N13",
+            "target": "N14",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "150800.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "160800.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L47",
+            "source": "N13",
+            "target": "N15",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "74800.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "84800.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L48",
+            "source": "N14",
+            "target": "N15",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "105200.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "115200.0"
+                }
+              ]
+            }
+          },
+          {
+            "-id": "L49",
+            "source": "N14",
+            "target": "N16",
+            "routingCost": "2.0",
+            "additionalModules": {
+              "addModule": [
+                {
+                  "capacity": "1000.0",
+                  "cost": "226800.0"
+                },
+                {
+                  "capacity": "4000.0",
+                  "cost": "236800.0"
+                }
+              ]
+            }
           }
         ]
       }
+    },
+    "demands": {
+      "demand": [
+        {
+          "-id": "D1",
+          "source": "N1",
+          "target": "N2",
+          "demandValue": "42.0"
+        },
+        {
+          "-id": "D2",
+          "source": "N1",
+          "target": "N3",
+          "demandValue": "42.0"
+        },
+        {
+          "-id": "D3",
+          "source": "N1",
+          "target": "N4",
+          "demandValue": "22.0"
+        },
+        {
+          "-id": "D4",
+          "source": "N1",
+          "target": "N5",
+          "demandValue": "20.0"
+        },
+        {
+          "-id": "D5",
+          "source": "N1",
+          "target": "N6",
+          "demandValue": "20.0"
+        },
+        {
+          "-id": "D6",
+          "source": "N1",
+          "target": "N7",
+          "demandValue": "20.0"
+        },
+        {
+          "-id": "D7",
+          "source": "N1",
+          "target": "N8",
+          "demandValue": "20.0"
+        },
+        {
+          "-id": "D8",
+          "source": "N1",
+          "target": "N9",
+          "demandValue": "17.0"
+        },
+        {
+          "-id": "D9",
+          "source": "N1",
+          "target": "N10",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "D10",
+          "source": "N1",
+          "target": "N11",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "D11",
+          "source": "N1",
+          "target": "N12",
+          "demandValue": "17.0"
+        },
+        {
+          "-id": "D12",
+          "source": "N1",
+          "target": "N13",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "D13",
+          "source": "N1",
+          "target": "N14",
+          "demandValue": "17.0"
+        },
+        {
+          "-id": "D14",
+          "source": "N1",
+          "target": "N15",
+          "demandValue": "17.0"
+        },
+        {
+          "-id": "D15",
+          "source": "N1",
+          "target": "N16",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "D16",
+          "source": "N2",
+          "target": "N1",
+          "demandValue": "41.0"
+        },
+        {
+          "-id": "D17",
+          "source": "N2",
+          "target": "N3",
+          "demandValue": "14.0"
+        },
+        {
+          "-id": "D18",
+          "source": "N2",
+          "target": "N4",
+          "demandValue": "14.0"
+        },
+        {
+          "-id": "D19",
+          "source": "N2",
+          "target": "N5",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "D20",
+          "source": "N2",
+          "target": "N6",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "D21",
+          "source": "N2",
+          "target": "N7",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "D22",
+          "source": "N2",
+          "target": "N8",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "D23",
+          "source": "N2",
+          "target": "N9",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D24",
+          "source": "N2",
+          "target": "N10",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D25",
+          "source": "N2",
+          "target": "N11",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D26",
+          "source": "N2",
+          "target": "N12",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D27",
+          "source": "N2",
+          "target": "N13",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D28",
+          "source": "N2",
+          "target": "N14",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D29",
+          "source": "N2",
+          "target": "N15",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D30",
+          "source": "N2",
+          "target": "N16",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D31",
+          "source": "N3",
+          "target": "N1",
+          "demandValue": "41.0"
+        },
+        {
+          "-id": "D32",
+          "source": "N3",
+          "target": "N2",
+          "demandValue": "14.0"
+        },
+        {
+          "-id": "D33",
+          "source": "N3",
+          "target": "N4",
+          "demandValue": "14.0"
+        },
+        {
+          "-id": "D34",
+          "source": "N3",
+          "target": "N5",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "D35",
+          "source": "N3",
+          "target": "N6",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "D36",
+          "source": "N3",
+          "target": "N7",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "D37",
+          "source": "N3",
+          "target": "N8",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "D38",
+          "source": "N3",
+          "target": "N9",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D39",
+          "source": "N3",
+          "target": "N10",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D40",
+          "source": "N3",
+          "target": "N11",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D41",
+          "source": "N3",
+          "target": "N12",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D42",
+          "source": "N3",
+          "target": "N13",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D43",
+          "source": "N3",
+          "target": "N14",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D44",
+          "source": "N3",
+          "target": "N15",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D45",
+          "source": "N3",
+          "target": "N16",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D46",
+          "source": "N4",
+          "target": "N1",
+          "demandValue": "21.0"
+        },
+        {
+          "-id": "D47",
+          "source": "N4",
+          "target": "N2",
+          "demandValue": "14.0"
+        },
+        {
+          "-id": "D48",
+          "source": "N4",
+          "target": "N3",
+          "demandValue": "14.0"
+        },
+        {
+          "-id": "D49",
+          "source": "N4",
+          "target": "N5",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "D50",
+          "source": "N4",
+          "target": "N6",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "D51",
+          "source": "N4",
+          "target": "N7",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "D52",
+          "source": "N4",
+          "target": "N8",
+          "demandValue": "7.0"
+        },
+        {
+          "-id": "D53",
+          "source": "N4",
+          "target": "N9",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D54",
+          "source": "N4",
+          "target": "N10",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D55",
+          "source": "N4",
+          "target": "N11",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D56",
+          "source": "N4",
+          "target": "N12",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D57",
+          "source": "N4",
+          "target": "N13",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D58",
+          "source": "N4",
+          "target": "N14",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D59",
+          "source": "N4",
+          "target": "N15",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D60",
+          "source": "N4",
+          "target": "N16",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D61",
+          "source": "N5",
+          "target": "N1",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "D62",
+          "source": "N5",
+          "target": "N2",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "D63",
+          "source": "N5",
+          "target": "N3",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "D64",
+          "source": "N5",
+          "target": "N4",
+          "demandValue": "16.0"
+        },
+        {
+          "-id": "D65",
+          "source": "N5",
+          "target": "N6",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "D66",
+          "source": "N5",
+          "target": "N7",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "D67",
+          "source": "N5",
+          "target": "N8",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "D68",
+          "source": "N5",
+          "target": "N9",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D69",
+          "source": "N5",
+          "target": "N10",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D70",
+          "source": "N5",
+          "target": "N11",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D71",
+          "source": "N5",
+          "target": "N12",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D72",
+          "source": "N5",
+          "target": "N13",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D73",
+          "source": "N5",
+          "target": "N14",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D74",
+          "source": "N5",
+          "target": "N15",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D75",
+          "source": "N5",
+          "target": "N16",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D76",
+          "source": "N6",
+          "target": "N1",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "D77",
+          "source": "N6",
+          "target": "N2",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "D78",
+          "source": "N6",
+          "target": "N3",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "D79",
+          "source": "N6",
+          "target": "N4",
+          "demandValue": "16.0"
+        },
+        {
+          "-id": "D80",
+          "source": "N6",
+          "target": "N5",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "D81",
+          "source": "N6",
+          "target": "N7",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "D82",
+          "source": "N6",
+          "target": "N8",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "D83",
+          "source": "N6",
+          "target": "N9",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D84",
+          "source": "N6",
+          "target": "N10",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D85",
+          "source": "N6",
+          "target": "N11",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D86",
+          "source": "N6",
+          "target": "N12",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D87",
+          "source": "N6",
+          "target": "N13",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D88",
+          "source": "N6",
+          "target": "N14",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D89",
+          "source": "N6",
+          "target": "N15",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D90",
+          "source": "N6",
+          "target": "N16",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D91",
+          "source": "N7",
+          "target": "N1",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "D92",
+          "source": "N7",
+          "target": "N2",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "D93",
+          "source": "N7",
+          "target": "N3",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "D94",
+          "source": "N7",
+          "target": "N4",
+          "demandValue": "16.0"
+        },
+        {
+          "-id": "D95",
+          "source": "N7",
+          "target": "N5",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "D96",
+          "source": "N7",
+          "target": "N6",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "D97",
+          "source": "N7",
+          "target": "N8",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "D98",
+          "source": "N7",
+          "target": "N9",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D99",
+          "source": "N7",
+          "target": "N10",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D100",
+          "source": "N7",
+          "target": "N11",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D101",
+          "source": "N7",
+          "target": "N12",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D102",
+          "source": "N7",
+          "target": "N13",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D103",
+          "source": "N7",
+          "target": "N14",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D104",
+          "source": "N7",
+          "target": "N15",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D105",
+          "source": "N7",
+          "target": "N16",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D106",
+          "source": "N8",
+          "target": "N1",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "D107",
+          "source": "N8",
+          "target": "N2",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "D108",
+          "source": "N8",
+          "target": "N3",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "D109",
+          "source": "N8",
+          "target": "N4",
+          "demandValue": "16.0"
+        },
+        {
+          "-id": "D110",
+          "source": "N8",
+          "target": "N5",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "D111",
+          "source": "N8",
+          "target": "N6",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "D112",
+          "source": "N8",
+          "target": "N7",
+          "demandValue": "3.0"
+        },
+        {
+          "-id": "D113",
+          "source": "N8",
+          "target": "N9",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D114",
+          "source": "N8",
+          "target": "N10",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D115",
+          "source": "N8",
+          "target": "N11",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D116",
+          "source": "N8",
+          "target": "N12",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D117",
+          "source": "N8",
+          "target": "N13",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D118",
+          "source": "N8",
+          "target": "N14",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D119",
+          "source": "N8",
+          "target": "N15",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D120",
+          "source": "N8",
+          "target": "N16",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D121",
+          "source": "N9",
+          "target": "N1",
+          "demandValue": "16.0"
+        },
+        {
+          "-id": "D122",
+          "source": "N9",
+          "target": "N2",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D123",
+          "source": "N9",
+          "target": "N3",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D124",
+          "source": "N9",
+          "target": "N4",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D125",
+          "source": "N9",
+          "target": "N5",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D126",
+          "source": "N9",
+          "target": "N6",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D127",
+          "source": "N9",
+          "target": "N7",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D128",
+          "source": "N9",
+          "target": "N8",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D129",
+          "source": "N9",
+          "target": "N10",
+          "demandValue": "10.0"
+        },
+        {
+          "-id": "D130",
+          "source": "N9",
+          "target": "N11",
+          "demandValue": "10.0"
+        },
+        {
+          "-id": "D131",
+          "source": "N9",
+          "target": "N12",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "D132",
+          "source": "N9",
+          "target": "N13",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D133",
+          "source": "N9",
+          "target": "N14",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "D134",
+          "source": "N9",
+          "target": "N15",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "D135",
+          "source": "N9",
+          "target": "N16",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D136",
+          "source": "N10",
+          "target": "N1",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "D137",
+          "source": "N10",
+          "target": "N2",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D138",
+          "source": "N10",
+          "target": "N3",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D139",
+          "source": "N10",
+          "target": "N4",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D140",
+          "source": "N10",
+          "target": "N5",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D141",
+          "source": "N10",
+          "target": "N6",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D142",
+          "source": "N10",
+          "target": "N7",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D143",
+          "source": "N10",
+          "target": "N8",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D144",
+          "source": "N10",
+          "target": "N9",
+          "demandValue": "10.0"
+        },
+        {
+          "-id": "D145",
+          "source": "N10",
+          "target": "N11",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D146",
+          "source": "N10",
+          "target": "N12",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D147",
+          "source": "N10",
+          "target": "N13",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D148",
+          "source": "N10",
+          "target": "N14",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D149",
+          "source": "N10",
+          "target": "N15",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D150",
+          "source": "N10",
+          "target": "N16",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D151",
+          "source": "N11",
+          "target": "N1",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "D152",
+          "source": "N11",
+          "target": "N2",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D153",
+          "source": "N11",
+          "target": "N3",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D154",
+          "source": "N11",
+          "target": "N4",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D155",
+          "source": "N11",
+          "target": "N5",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D156",
+          "source": "N11",
+          "target": "N6",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D157",
+          "source": "N11",
+          "target": "N7",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D158",
+          "source": "N11",
+          "target": "N8",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D159",
+          "source": "N11",
+          "target": "N9",
+          "demandValue": "10.0"
+        },
+        {
+          "-id": "D160",
+          "source": "N11",
+          "target": "N10",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D161",
+          "source": "N11",
+          "target": "N12",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D162",
+          "source": "N11",
+          "target": "N13",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D163",
+          "source": "N11",
+          "target": "N14",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D164",
+          "source": "N11",
+          "target": "N15",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D165",
+          "source": "N11",
+          "target": "N16",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D166",
+          "source": "N12",
+          "target": "N1",
+          "demandValue": "29.0"
+        },
+        {
+          "-id": "D167",
+          "source": "N12",
+          "target": "N2",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D168",
+          "source": "N12",
+          "target": "N3",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D169",
+          "source": "N12",
+          "target": "N4",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D170",
+          "source": "N12",
+          "target": "N5",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D171",
+          "source": "N12",
+          "target": "N6",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D172",
+          "source": "N12",
+          "target": "N7",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D173",
+          "source": "N12",
+          "target": "N8",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D174",
+          "source": "N12",
+          "target": "N9",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "D175",
+          "source": "N12",
+          "target": "N10",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D176",
+          "source": "N12",
+          "target": "N11",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D177",
+          "source": "N12",
+          "target": "N13",
+          "demandValue": "10.0"
+        },
+        {
+          "-id": "D178",
+          "source": "N12",
+          "target": "N14",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "D179",
+          "source": "N12",
+          "target": "N15",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "D180",
+          "source": "N12",
+          "target": "N16",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D181",
+          "source": "N13",
+          "target": "N1",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "D182",
+          "source": "N13",
+          "target": "N2",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D183",
+          "source": "N13",
+          "target": "N3",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D184",
+          "source": "N13",
+          "target": "N4",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D185",
+          "source": "N13",
+          "target": "N5",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D186",
+          "source": "N13",
+          "target": "N6",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D187",
+          "source": "N13",
+          "target": "N7",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D188",
+          "source": "N13",
+          "target": "N8",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D189",
+          "source": "N13",
+          "target": "N9",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D190",
+          "source": "N13",
+          "target": "N10",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D191",
+          "source": "N13",
+          "target": "N11",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D192",
+          "source": "N13",
+          "target": "N12",
+          "demandValue": "10.0"
+        },
+        {
+          "-id": "D193",
+          "source": "N13",
+          "target": "N14",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D194",
+          "source": "N13",
+          "target": "N15",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D195",
+          "source": "N13",
+          "target": "N16",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D196",
+          "source": "N14",
+          "target": "N1",
+          "demandValue": "16.0"
+        },
+        {
+          "-id": "D197",
+          "source": "N14",
+          "target": "N2",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D198",
+          "source": "N14",
+          "target": "N3",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D199",
+          "source": "N14",
+          "target": "N4",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D200",
+          "source": "N14",
+          "target": "N5",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D201",
+          "source": "N14",
+          "target": "N6",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D202",
+          "source": "N14",
+          "target": "N7",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D203",
+          "source": "N14",
+          "target": "N8",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D204",
+          "source": "N14",
+          "target": "N9",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "D205",
+          "source": "N14",
+          "target": "N10",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D206",
+          "source": "N14",
+          "target": "N11",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D207",
+          "source": "N14",
+          "target": "N12",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "D208",
+          "source": "N14",
+          "target": "N13",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D209",
+          "source": "N14",
+          "target": "N15",
+          "demandValue": "25.0"
+        },
+        {
+          "-id": "D210",
+          "source": "N14",
+          "target": "N16",
+          "demandValue": "10.0"
+        },
+        {
+          "-id": "D211",
+          "source": "N15",
+          "target": "N1",
+          "demandValue": "16.0"
+        },
+        {
+          "-id": "D212",
+          "source": "N15",
+          "target": "N2",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D213",
+          "source": "N15",
+          "target": "N3",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D214",
+          "source": "N15",
+          "target": "N4",
+          "demandValue": "11.0"
+        },
+        {
+          "-id": "D215",
+          "source": "N15",
+          "target": "N5",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D216",
+          "source": "N15",
+          "target": "N6",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D217",
+          "source": "N15",
+          "target": "N7",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D218",
+          "source": "N15",
+          "target": "N8",
+          "demandValue": "5.0"
+        },
+        {
+          "-id": "D219",
+          "source": "N15",
+          "target": "N9",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "D220",
+          "source": "N15",
+          "target": "N10",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D221",
+          "source": "N15",
+          "target": "N11",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D222",
+          "source": "N15",
+          "target": "N12",
+          "demandValue": "9.0"
+        },
+        {
+          "-id": "D223",
+          "source": "N15",
+          "target": "N13",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D224",
+          "source": "N15",
+          "target": "N14",
+          "demandValue": "25.0"
+        },
+        {
+          "-id": "D225",
+          "source": "N15",
+          "target": "N16",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D226",
+          "source": "N16",
+          "target": "N1",
+          "demandValue": "6.0"
+        },
+        {
+          "-id": "D227",
+          "source": "N16",
+          "target": "N2",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D228",
+          "source": "N16",
+          "target": "N3",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D229",
+          "source": "N16",
+          "target": "N4",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D230",
+          "source": "N16",
+          "target": "N5",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D231",
+          "source": "N16",
+          "target": "N6",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D232",
+          "source": "N16",
+          "target": "N7",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D233",
+          "source": "N16",
+          "target": "N8",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D234",
+          "source": "N16",
+          "target": "N9",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D235",
+          "source": "N16",
+          "target": "N10",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D236",
+          "source": "N16",
+          "target": "N11",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D237",
+          "source": "N16",
+          "target": "N12",
+          "demandValue": "4.0"
+        },
+        {
+          "-id": "D238",
+          "source": "N16",
+          "target": "N13",
+          "demandValue": "2.0"
+        },
+        {
+          "-id": "D239",
+          "source": "N16",
+          "target": "N14",
+          "demandValue": "10.0"
+        },
+        {
+          "-id": "D240",
+          "source": "N16",
+          "target": "N15",
+          "demandValue": "4.0"
+        }
+      ]
     }
   },
   "#encoding": "ISO-8859-1"

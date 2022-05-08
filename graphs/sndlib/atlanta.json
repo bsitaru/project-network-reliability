@@ -1,6 +1,7 @@
 {
   "network": {
     "average-avl": 0.996398,
+    "exact-ans": 0.99995341,
     "-xmlns": "http://sndlib.zib.de/network",
     "-version": "1.0",
     "networkStructure": {
