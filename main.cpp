@@ -292,8 +292,8 @@ void complete_diffrent_p() {
 
 void experiment(string graph_id, Graph &ig, vector<t_double> ps) {
     cout << graph_id << endl;
-    const t_double eps = 0.2;
-    const t_double delta = 0.05;
+    const t_double eps = 1.0;
+    const t_double delta = 0.1;
     for(auto p: ps) {
         cout << scientific << "p = " << p << endl;
         Graph g = ig;
@@ -302,8 +302,9 @@ void experiment(string graph_id, Graph &ig, vector<t_double> ps) {
         profiler.start("time_unrel");
         auto ans_unrel = median_trick([&]() { return compute_unreliability(g, eps); }, 4, delta);
         cout << scientific << "answer: " << ans_unrel << endl;
+//        cout << fixed << setprecision(20) << "answer: " << 1.0 - ans_unrel << endl;
         profiler.stop("time_unrel");
-        cout << "time: " << profiler.time_spent["time_unrel"] / 1000 << endl;
+        cout << "time: " << profiler.time_spent["time_unrel"] / 1000 << "ms" << endl;
         cout << endl;
     }
 }
@@ -635,6 +636,15 @@ void parallel_experiments() {
     experiment("k100", k100, ps);
 }
 
+void paredes_experiments() {
+    vector<t_double> ps = {0.5, 0.125, 0.03125};
+    for(int i = 2; i <= 10; i++) {
+        Graph g = Generator::grid(i);
+        string id = "grid_" + to_string(i);
+        experiment(id, g, ps);
+    }
+}
+
 void brute_comparison() {
     Random::init_predictable(true);
     for (int t = 0; t < 100000; t++) {
@@ -674,9 +684,11 @@ void rel_verify() {
     const vector<t_double> ps = {0.75, 0.9};
 
     Random::init(26);
-    for (int t = 0; t < 5; t++) {
-        int n = Random::get_int(5, 8);
-        int m = Random::get_int(n - 1, n * (n - 1) / 2);
+    t_double max_act_eps = 0.0;
+    int cnt_good = 0, cnt_bad = 0;
+    for (int t = 0; t < 300; t++) {
+        int n = Random::get_int(10, 11);
+        int m = Random::get_int(n - 1, min(n * (n - 1) / 2, 40));
 //        t_double p = t_double(0.001) * Random::get_int(1, 950);
         Graph g = Generator::random(n, m);
         for(auto p: ps) {
@@ -686,14 +698,14 @@ void rel_verify() {
             cout << "Graph " << t << ": n = " << n << ", m = " << m << ", p = " << p << endl;
 
             profiler.reset();
-            profiler.start("rel");
-            auto ans_rel = median_trick([&]() { return compute_reliability(dg, eps); }, 4, delta);
-            profiler.stop("rel");
+//            profiler.start("rel");
+//            auto ans_rel = median_trick([&]() { return compute_reliability(dg, eps); }, 4, delta);
+//            profiler.stop("rel");
 
-            cout << scientific << "ans_rel: " << ans_rel << endl;
+//            cout << scientific << "ans_rel: " << ans_rel << endl;
 
             profiler.start("rel_optimised");
-            auto ans_rel_opt = median_trick([&]() { return compute_reliability_optimised(dg, eps); }, 4, delta);
+            auto ans_rel_opt = median_trick([&]() {return compute_reliability_optimised(dg, eps);}, 4, delta);
             profiler.stop("rel_optimised");
 
             cout << scientific << "ans_rel_opt: " << ans_rel_opt << endl;
@@ -703,21 +715,112 @@ void rel_verify() {
             profiler.stop("brute");
 
             cout << scientific << "ans_brute: " << ans_brute << endl;
-            t_double act_eps = (ans_rel / ans_brute) - 1.0;
-            cout << scientific << "epsilon: " << act_eps << endl;
+//            t_double act_eps = (ans_rel / ans_brute) - 1.0;
+//            cout << scientific << "epsilon: " << act_eps << endl;
             t_double act_eps_opt = (ans_rel_opt / ans_brute) - 1.0;
             cout << scientific << "epsilon_opt: " << act_eps_opt << endl;
+            max_act_eps = max(max_act_eps, fabs(act_eps_opt));
 
             profiler.print();
 
             cout << endl;
 
-            if (fabs(act_eps) > 2 * eps) {
-                ofstream out("logs/rel_verify.log");
-                print_graph(g, out);
-                assert(0);
-            }
+            if( fabs(act_eps_opt) <= eps)
+                cnt_good++;
+            else
+                cnt_bad++;
+
+//            if (fabs(act_eps_opt) > 2 * eps) {
+//                ofstream out("logs/rel_verify.log");
+//                print_graph(g, out);
+//                assert(0);
+//            }
         }
+    }
+
+    cout << scientific << "MAX ACT EPS" << max_act_eps << endl;
+    cout << "good: " << cnt_good << ", bad: " << cnt_bad << endl;
+    cout << "bad percent: " << t_double(cnt_bad) / t_double(cnt_good + cnt_bad) << endl;
+}
+
+void sndlib_testing() {
+    const vector<string> networks_ids = {
+//            "polska",
+            "atlanta",
+            "newyork",
+//            "nobel-germany",
+            "geant",
+            "france",
+            "nobel-eu",
+//            "pioro40",
+//            "germany50",
+            "ta2",
+            "india35"
+    };
+
+    const t_double eps = 0.1;
+    const t_double delta = 0.05;
+
+    auto read_exact_answer = [](string id) {
+        ifstream in("graphs/sndlib/" + id + ".json");
+        json j;
+        in >> j;
+        return t_double(j["network"]["exact-ans"]);
+    };
+
+    for(const auto& id: networks_ids) {
+        Graph g = read_sndlib_graph(id);
+        cout << "Graph " << id << ": n = " << g.get_n() << " , m = " << g.get_m() << endl;
+        cout << fixed << setprecision(6) << "average avl: " << g.p << endl;
+
+        profiler.reset();
+        profiler.start("time_unrel");
+        auto ans_unrel = median_trick([&]() { return compute_unreliability(g, eps); }, 4, delta);
+        cout << scientific << "answer unrel: " << ans_unrel << endl;
+        cout << fixed << setprecision(20) << "answer: " << 1.0 - ans_unrel << endl;
+        profiler.stop("time_unrel");
+
+        t_double exact = read_exact_answer(id);
+        cout << fixed << setprecision(20) << "exact:  " << exact << endl;
+        t_double exact_u = 1.0 - exact;
+
+        cout << fixed << setprecision(20) << "answer unrel: " << ans_unrel <<  endl;
+        cout << fixed << setprecision(20) << "exact_u: " << exact_u <<  endl;
+
+        t_double act_eps = ans_unrel / exact_u - 1.0;
+        cout << fixed << setprecision(20) << "act_eps: " << act_eps << endl;
+
+
+        cout << "time: " << profiler.time_spent["time_unrel"] / 1000 << "ms" << endl;
+        cout << endl;
+    }
+}
+
+void write_cnf_style() {
+    for(int n = 2; n <= 10; n++) {
+        Graph g = Generator::grid(n);
+        g.p = 0.125;
+        string file = "graphs/cnf/grid_" + to_string(n) + ".txt";
+        ofstream out(file);
+        out << "p g" << endl;
+        out << "T";
+        for(auto x: g.nodes)
+            out << " " << x;
+        out << endl;
+        for(auto e: g.edges)
+            out << "e " << e.from << " " << e.to << " " << g.p << endl;
+    }
+}
+
+void limit_testing() {
+    vector<int> ns = {
+            300, 500, 1000
+    };
+    for(auto n: ns) {
+        Graph g = Generator::complete_graph(n);
+//    Graph g = Generator::grid(n);
+        vector<t_double> ps = {0.95};
+        experiment(to_string(n), g, ps);
     }
 }
 
@@ -743,7 +846,13 @@ int main() {
 
 //    rel_verify();
 
-    epsilon_comparison_rel();
+//    epsilon_comparison_rel();
 
+//read_sndlib_graph();
+//sndlib_testing();
+
+//paredes_experiments();
+//write_cnf_style();
+    limit_testing();
     return 0;
 }
