@@ -43,6 +43,7 @@ DiGraph sample_root_connected(DiGraph g) {
         steps++;
     }
 
+    cout << steps << '\n';
     return gs;
 }
 

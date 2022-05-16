@@ -292,8 +292,8 @@ void complete_diffrent_p() {
 
 void experiment(string graph_id, Graph &ig, vector<t_double> ps) {
     cout << graph_id << endl;
-    const t_double eps = 1.0;
-    const t_double delta = 0.1;
+    const t_double eps = 0.2;
+    const t_double delta = 0.05;
     for(auto p: ps) {
         cout << scientific << "p = " << p << endl;
         Graph g = ig;
@@ -814,13 +814,92 @@ void write_cnf_style() {
 
 void limit_testing() {
     vector<int> ns = {
-            300, 500, 1000
+            10, 20, 30, 40, 50
     };
     for(auto n: ns) {
-        Graph g = Generator::complete_graph(n);
-//    Graph g = Generator::grid(n);
-        vector<t_double> ps = {0.95};
+//        Graph g = Generator::complete_graph(n);
+    Graph g = Generator::grid(n);
+        vector<t_double> ps = {0.01, 0.05, 0.1};
         experiment(to_string(n), g, ps);
+    }
+}
+
+void limit_testing_rel() {
+    const t_double eps = 0.2;
+    const t_double delta = 0.05;
+    const vector<t_double> ps = {0.5};
+
+    Random::init(26);
+    vector<int> ns = {4, 5, 6, 7, 8, 9, 10};
+    for(auto n: ns) {
+        Graph g = Generator::complete_graph(n);
+        for(auto p: ps) {
+            g.p = p;
+            DiGraph dg(g);
+
+            cout << "Graph " << ": n = " << n << ", p = " << p << endl;
+
+            profiler.reset();
+
+            profiler.start("rel");
+            auto ans_rel = median_trick([&]() {return compute_reliability(dg, eps);}, 4, delta);
+            profiler.stop("rel");
+
+            cout << scientific << "ans_rel: " << ans_rel << endl;
+
+//            profiler.start("brute");
+//            auto ans_brute = brute_reliability(g);
+//            profiler.stop("brute");
+
+            profiler.print();
+
+            cout << endl;
+        }
+    }
+}
+
+void eps_emp_manual() {
+    const vector<t_double> epses = {0.2, 0.1, 0.05};
+    const t_double p = 0.1;
+    const t_double delta = 0.05;
+
+    vector<Graph> gs = {
+            Generator::complete_graph(8),
+            Generator::complete_graph(9),
+            Generator::complete_graph(10),
+            Generator::grid(2),
+            Generator::grid(3)
+    };
+
+    for(int t = 0; t < 5; t++) {
+        cout << "Graph " << t << endl;
+
+        auto g = gs[t];
+        g.p = p;
+        auto ans_brute = brute_unreliability(g);
+
+        cout << scientific << "Brute: " << ans_brute << endl;
+
+        for(auto eps: epses) {
+            auto ans_u = median_trick([&]() { return compute_unreliability(g, eps); }, 4, delta);
+            cout << scientific << "Ans_u, eps = " << eps << " : " << ans_u << endl;
+            auto act_eps = fabsl( (ans_u / ans_brute) - 1.0 );
+            cout << scientific << "act eps: " << act_eps << endl;
+        }
+
+    }
+}
+
+void sampler_test() {
+    int n = 1000;
+    for(int t = 0; t < 1; t++) {
+        Graph g = Generator::random(n, 100*n);
+        g.p = 0.999;
+        DiGraph dg = DiGraph(g);
+
+        for(int i = 0; i < 20; i++) {
+            auto _ = sample_root_connected(dg);
+        }
     }
 }
 
@@ -853,6 +932,10 @@ int main() {
 
 //paredes_experiments();
 //write_cnf_style();
-    limit_testing();
+//    limit_testing();
+//    limit_testing_rel();
+//    eps_emp_manual();
+
+    sampler_test();
     return 0;
 }
